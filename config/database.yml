@@ -1,0 +1,25 @@
+common: &common
+  adapter: postgresql
+  encoding: unicode
+  min_messages: warning
+  username: digitalopera
+  password:
+  pool: 5
+
+development:
+  <<: *common
+  host: localhost
+  database: r2d2_development
+
+test:
+  <<: *common
+  database: r2d2_test
+
+production:
+  <<: *common
+  # host: ec2-107-20-226-110.compute-1.amazonaws.com
+  # database: d929kje6s46t5l
+  # username: ucu37mmkdc5c04
+  # password: p1b98s430fupp4fsd739vlloimq
+  # port: 5682
+  # pool: 20
