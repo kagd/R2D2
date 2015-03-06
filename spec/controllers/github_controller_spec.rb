@@ -7,7 +7,7 @@ describe GithubController do
 
   describe '#index' do
     before(:each) do
-      CommitLanguageService.stubs(:percentages).returns true
+      FactoryGirl.create :commit_language
       dec_commit
     end
 

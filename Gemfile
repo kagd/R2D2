@@ -24,4 +24,5 @@ group :development, :test do
   gem 'guard-spork',          '~> 2.1.0'
   gem 'spork-rails',          '~> 4.0.0'
   gem 'database_cleaner',     '~> 1.4.0'
+  gem 'json_spec',            '~> 1.1.4'
 end
