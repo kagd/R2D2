@@ -3,7 +3,7 @@ class CommitPresenter < DigitalOpera::Presenter::Base
     {
       repo_full_name: self.repo_full_name,
       message: self.message,
-      commit: {
+      date: {
         year: self.date.year,
         month: self.date.strftime("%B"),
         day: self.date.day.ordinalize
