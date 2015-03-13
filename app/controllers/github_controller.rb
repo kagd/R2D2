@@ -1,6 +1,6 @@
 class GithubController < ApplicationController
   def index
-    commits = Commit.where(repo_full_name: ['kagd/R2D2', 'kagd/C3PO']).order('date DESC')
+    commits = Commit.where(repo_full_name: ['kagd/R2D2', 'kagd/C3PO', 'kagd/prototypeof']).order('date DESC')
 
     service = CommitService.new commits
     @site_commits = service.group_by_year_month
