@@ -25,4 +25,6 @@ group :development, :test do
   gem 'spork-rails',          '~> 4.0.0'
   gem 'database_cleaner',     '~> 1.4.0'
   gem 'json_spec',            '~> 1.1.4'
+  gem 'vcr',                  '~> 2.9.3'
+  gem 'webmock',              '~> 1.20.4' #used with VCR
 end

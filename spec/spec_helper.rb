@@ -53,6 +53,7 @@ require 'spork'
 
 
 Spork.prefork do
+  require 'vcr'
   require 'database_cleaner'
   require_relative 'rails_helper'
   # Loading more in this block will cause your tests to run faster. However,
@@ -121,6 +122,13 @@ Spork.prefork do
     # the seed, which is printed after each run.
     #     --seed 1234
     config.order = :random
+
+    VCR.configure do |config|
+      config.cassette_library_dir = 'spec/vcr_cassettes'
+      config.hook_into :webmock
+
+      config.default_cassette_options = { :record => :new_episodes }
+    end
 
     # Clean the DB
     config.before(:suite) do

@@ -37,7 +37,7 @@ class GithubService < BaseService
 
         commit_hash = {
           repo_full_name:  repo[:full_name],
-          message:         truncate(commit[:commit][:message], length: 200),
+          message:         truncate(commit[:commit][:message], length: 255),
           date:            commit[:commit][:committer][:date],
           additions:       commit[:stats][:additions],
           deletions:       commit[:stats][:deletions],

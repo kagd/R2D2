@@ -1,0 +1,585 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://digitalopera:VYnYQlZsDZW60gX00kK2txNdFo1Op2re@bitbucket.org/api/1.0/user/repositories
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Fri, 13 Mar 2015 20:01:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - app22
+      X-Render-Time:
+      - '0.0811231136322'
+      Content-Language:
+      - en
+      X-Static-Version:
+      - c524695e7f84
+      Vary:
+      - Authorization, Accept-Language, Cookie
+      X-Version:
+      - c524695e7f84
+      X-Request-Count:
+      - '234'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Cache-Status:
+      - BYPASS
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:00:57.804",
+        "no_forks": true, "created_on": "2015-01-27T06:08:56.757", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/js_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 27942297, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        05:08:56+00:00", "website": "", "description": "Angular.js app for Morreale",
+        "has_issues": false, "is_fork": false, "slug": "adeptive-software", "is_private":
+        true, "name": "adeptive-software", "language": "javascript", "utc_last_updated":
+        "2015-01-27 06:00:57+00:00", "email_writers": true, "no_public_forks": true,
+        "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/adeptive-software"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:30:35.926",
+        "no_forks": true, "created_on": "2015-01-27T07:30:35.873", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 46062, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:30:35+00:00", "website": "", "description": "Admin Plugin for the Digital
+        Opera CMS", "has_issues": false, "is_fork": false, "slug": "admin", "is_private":
+        true, "name": "admin", "language": "ruby", "utc_last_updated": "2015-01-27
+        06:30:35+00:00", "email_writers": true, "no_public_forks": true, "creator":
+        "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/admin"}, {"scm":
+        "git", "has_wiki": false, "last_updated": "2015-03-13T05:10:03.861", "no_forks":
+        true, "created_on": "2015-01-27T06:11:29.406", "owner": "digitalopera", "logo":
+        "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 4156267, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        05:11:29+00:00", "website": "", "description": "SmileMN Advantage Plan Insurance
+        website and app portal", "has_issues": true, "is_fork": false, "slug": "advantage-plan",
+        "is_private": true, "name": "advantage-plan", "language": "ruby", "utc_last_updated":
+        "2015-03-13 04:10:03+00:00", "email_writers": true, "no_public_forks": true,
+        "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/advantage-plan"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:27:31.605",
+        "no_forks": true, "created_on": "2015-01-27T07:27:31.536", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 59944, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:27:31+00:00", "website": "", "description": "Rails engine for the the Digital
+        Opera CMS that adds Article functionality similar to posts in WordPress",
+        "has_issues": false, "is_fork": false, "slug": "articles", "is_private": true,
+        "name": "articles", "language": "ruby", "utc_last_updated": "2015-01-27 06:27:31+00:00",
+        "email_writers": true, "no_public_forks": true, "creator": "noiseunion", "resource_uri":
+        "/1.0/repositories/digitalopera/articles"}, {"scm": "git", "has_wiki": true,
+        "last_updated": "2015-01-27T06:24:00.754", "no_forks": true, "created_on":
+        "2015-01-27T06:15:20.902", "owner": "digitalopera", "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 82771620, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        05:15:20+00:00", "website": "", "description": "Lakeshirts Custom84 Application",
+        "has_issues": true, "is_fork": false, "slug": "blue-84", "is_private": true,
+        "name": "blue-84", "language": "ruby", "utc_last_updated": "2015-01-27 05:24:00+00:00",
+        "email_writers": true, "no_public_forks": true, "creator": "noiseunion", "resource_uri":
+        "/1.0/repositories/digitalopera/blue-84"}, {"scm": "git", "has_wiki": false,
+        "last_updated": "2015-01-27T07:20:29.928", "no_forks": true, "created_on":
+        "2015-01-27T07:20:29.843", "owner": "digitalopera", "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 14527413, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:20:29+00:00", "website": "", "description": "SaaS Intranet code base",
+        "has_issues": true, "is_fork": false, "slug": "breakroom", "is_private": true,
+        "name": "breakroom", "language": "ruby", "utc_last_updated": "2015-01-27 06:20:29+00:00",
+        "email_writers": true, "no_public_forks": true, "creator": "noiseunion", "resource_uri":
+        "/1.0/repositories/digitalopera/breakroom"}, {"scm": "git", "has_wiki": false,
+        "last_updated": "2015-01-27T06:27:38.155", "no_forks": false, "created_on":
+        "2015-01-27T06:14:48.843", "owner": "digitalopera", "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 432253, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        05:14:48+00:00", "website": "", "description": "Cargill Contest Site", "has_issues":
+        false, "is_fork": false, "slug": "cargill-market-madness", "is_private": true,
+        "name": "cargill-market-madness", "language": "ruby", "utc_last_updated":
+        "2015-01-27 05:27:38+00:00", "email_writers": true, "no_public_forks": true,
+        "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/cargill-market-madness"},
+        {"scm": "git", "has_wiki": true, "last_updated": "2015-02-20T22:22:43.471",
+        "no_forks": true, "created_on": "2015-01-27T05:57:55.152", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 2068295, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        04:57:55+00:00", "website": "", "description": "CBRPA Online Membership/Event
+        System", "has_issues": true, "is_fork": false, "slug": "cbrpa", "is_private":
+        true, "name": "cbrpa", "language": "ruby", "utc_last_updated": "2015-02-20
+        21:22:43+00:00", "email_writers": true, "no_public_forks": true, "creator":
+        "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/cbrpa"}, {"scm":
+        "git", "has_wiki": false, "last_updated": "2015-01-27T07:24:29.989", "no_forks":
+        true, "created_on": "2015-01-27T07:24:29.921", "owner": "digitalopera", "logo":
+        "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 127643, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:24:29+00:00", "website": "", "description": "Security Credentials Storage",
+        "has_issues": false, "is_fork": false, "slug": "credentials", "is_private":
+        true, "name": "credentials", "language": "ruby", "utc_last_updated": "2015-01-27
+        06:24:29+00:00", "email_writers": true, "no_public_forks": true, "creator":
+        "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/credentials"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:34:06.068",
+        "no_forks": true, "created_on": "2015-01-27T07:34:06.003", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/js_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 81728, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:34:06+00:00", "website": "", "description": "A collection of APIs to pull
+        information for a user", "has_issues": false, "is_fork": false, "slug": "digital-life",
+        "is_private": true, "name": "digital-life", "language": "javascript", "utc_last_updated":
+        "2015-01-27 06:34:06+00:00", "email_writers": true, "no_public_forks": true,
+        "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/digital-life"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:31:33.123",
+        "no_forks": false, "created_on": "2015-01-27T07:31:33.061", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 111632, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:31:33+00:00", "website": "", "description": "Digital Opera CMS Rails Engine",
+        "has_issues": false, "is_fork": false, "slug": "digitalopera", "is_private":
+        true, "name": "digitalopera", "language": "ruby", "utc_last_updated": "2015-01-27
+        06:31:33+00:00", "email_writers": true, "no_public_forks": true, "creator":
+        "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/digitalopera"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:29:29.875",
+        "no_forks": true, "created_on": "2015-01-27T07:29:29.794", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 356945, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:29:29+00:00", "website": "", "description": "Digital Opera CMS Engine for
+        managing documents", "has_issues": false, "is_fork": false, "slug": "documents",
+        "is_private": true, "name": "documents", "language": "ruby", "utc_last_updated":
+        "2015-01-27 06:29:29+00:00", "email_writers": true, "no_public_forks": true,
+        "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/documents"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-02-10T08:04:02.204",
+        "no_forks": true, "created_on": "2015-01-27T07:22:45.972", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 391274, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:22:45+00:00", "website": "", "description": "Backend API system for the
+        credentials app", "has_issues": true, "is_fork": false, "slug": "dothraki",
+        "is_private": true, "name": "dothraki", "language": "ruby", "utc_last_updated":
+        "2015-02-10 07:04:02+00:00", "email_writers": true, "no_public_forks": true,
+        "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/dothraki"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:36:28.173",
+        "no_forks": true, "created_on": "2015-01-27T07:36:28.096", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/js_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 111108, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:36:28+00:00", "website": "", "description": "Yeoman Generator for creating
+        a child theme for Wordpress", "has_issues": false, "is_fork": false, "slug":
+        "generator-dopress", "is_private": true, "name": "generator-dopress", "language":
+        "javascript", "utc_last_updated": "2015-01-27 06:36:28+00:00", "email_writers":
+        true, "no_public_forks": true, "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/generator-dopress"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T06:58:54.103",
+        "no_forks": true, "created_on": "2015-01-27T06:09:32.540", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 92784, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        05:09:32+00:00", "website": "", "description": "", "has_issues": false, "is_fork":
+        false, "slug": "kjergaard-sports", "is_private": true, "name": "kjergaard-sports",
+        "language": "ruby", "utc_last_updated": "2015-01-27 05:58:54+00:00", "email_writers":
+        true, "no_public_forks": true, "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/kjergaard-sports"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T06:37:35.211",
+        "no_forks": true, "created_on": "2015-01-27T06:12:04.885", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 3430837, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        05:12:04+00:00", "website": "", "description": "Lazy Bear Lodge Website &
+        Reservations System", "has_issues": false, "is_fork": false, "slug": "lazy-bear-lodge",
+        "is_private": true, "name": "lazy-bear-lodge", "language": "ruby", "utc_last_updated":
+        "2015-01-27 05:37:35+00:00", "email_writers": true, "no_public_forks": true,
+        "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/lazy-bear-lodge"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:28:33.695",
+        "no_forks": true, "created_on": "2015-01-27T07:28:33.620", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 81112, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:28:33+00:00", "website": "", "description": "Rails engine for the the Digital
+        Opera CMS that adds Page functionality similar to pages in WordPress", "has_issues":
+        false, "is_fork": false, "slug": "pages", "is_private": true, "name": "pages",
+        "language": "ruby", "utc_last_updated": "2015-01-27 06:28:33+00:00", "email_writers":
+        true, "no_public_forks": true, "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/pages"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T06:30:41.313",
+        "no_forks": true, "created_on": "2015-01-27T06:14:17.255", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 739651, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        05:14:17+00:00", "website": "", "description": "Admin application for the
+        QBQ Panic App", "has_issues": false, "is_fork": false, "slug": "qbq-panic-admin",
+        "is_private": true, "name": "qbq-panic-admin", "language": "ruby", "utc_last_updated":
+        "2015-01-27 05:30:41+00:00", "email_writers": true, "no_public_forks": true,
+        "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/qbq-panic-admin"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:26:19.917",
+        "no_forks": false, "created_on": "2015-01-27T07:26:19.833", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 203019, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:26:19+00:00", "website": "", "description": "Digital Opera CMS Sample Theme",
+        "has_issues": false, "is_fork": false, "slug": "sample_theme", "is_private":
+        true, "name": "sample_theme", "language": "ruby", "utc_last_updated": "2015-01-27
+        06:26:19+00:00", "email_writers": true, "no_public_forks": true, "creator":
+        "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/sample_theme"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T06:32:56.665",
+        "no_forks": true, "created_on": "2015-01-27T06:12:45.995", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 449892, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        05:12:45+00:00", "website": "", "description": "SmileMN Admin Application",
+        "has_issues": false, "is_fork": false, "slug": "smilemn-admin", "is_private":
+        true, "name": "smilemn-admin", "language": "ruby", "utc_last_updated": "2015-01-27
+        05:32:56+00:00", "email_writers": true, "no_public_forks": true, "creator":
+        "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/smilemn-admin"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-02-09T05:34:04.241",
+        "no_forks": true, "created_on": "2015-01-27T07:19:00.159", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/js_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 3681041, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:19:00+00:00", "website": "", "description": "Client side counterpart to
+        Dothraki", "has_issues": true, "is_fork": false, "slug": "stark", "is_private":
+        true, "name": "stark", "language": "javascript", "utc_last_updated": "2015-02-09
+        04:34:04+00:00", "email_writers": true, "no_public_forks": true, "creator":
+        "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/stark"}, {"scm":
+        "git", "has_wiki": false, "last_updated": "2015-01-27T07:32:55.926", "no_forks":
+        true, "created_on": "2015-01-27T07:32:55.775", "owner": "digitalopera", "logo":
+        "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 87138, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:32:55+00:00", "website": "", "description": "Rails engine for the Digital
+        Opera CMS Theme Engine", "has_issues": false, "is_fork": false, "slug": "themes",
+        "is_private": true, "name": "themes", "language": "ruby", "utc_last_updated":
+        "2015-01-27 06:32:55+00:00", "email_writers": true, "no_public_forks": true,
+        "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/themes"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:35:05.686",
+        "no_forks": true, "created_on": "2015-01-27T07:35:05.587", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/php_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 19725672, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:35:05+00:00", "website": "", "description": "Base Digital Opera theme for
+        creating WP sites using our favorite libs and tools", "has_issues": false,
+        "is_fork": false, "slug": "wordpress-themes", "is_private": true, "name":
+        "wordpress-themes", "language": "php", "utc_last_updated": "2015-01-27 06:35:05+00:00",
+        "email_writers": true, "no_public_forks": true, "creator": "noiseunion", "resource_uri":
+        "/1.0/repositories/digitalopera/wordpress-themes"}, {"scm": "git", "has_wiki":
+        false, "last_updated": "2015-01-27T06:52:44.984", "no_forks": true, "created_on":
+        "2015-01-27T06:10:25.034", "owner": "digitalopera", "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/php_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 303902, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        05:10:25+00:00", "website": "", "description": "WordPress plugin for connecting
+        to the Lennox products API", "has_issues": false, "is_fork": false, "slug":
+        "wp-lennox-plugin", "is_private": true, "name": "wp-lennox-plugin", "language":
+        "php", "utc_last_updated": "2015-01-27 05:52:44+00:00", "email_writers": true,
+        "no_public_forks": true, "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/wp-lennox-plugin"}]'
+    http_version: 
+  recorded_at: Fri, 13 Mar 2015 20:01:00 GMT
+- request:
+    method: get
+    uri: https://digitalopera:VYnYQlZsDZW60gX00kK2txNdFo1Op2re@bitbucket.org/api/1.0/user/repositories
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Fri, 13 Mar 2015 20:01:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - app22
+      X-Render-Time:
+      - '0.103047847748'
+      Content-Language:
+      - en
+      X-Static-Version:
+      - c524695e7f84
+      Vary:
+      - Authorization, Accept-Language, Cookie
+      X-Version:
+      - c524695e7f84
+      X-Request-Count:
+      - '407'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Cache-Status:
+      - BYPASS
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:00:57.804",
+        "no_forks": true, "created_on": "2015-01-27T06:08:56.757", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/js_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 27942297, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        05:08:56+00:00", "website": "", "description": "Angular.js app for Morreale",
+        "has_issues": false, "is_fork": false, "slug": "adeptive-software", "is_private":
+        true, "name": "adeptive-software", "language": "javascript", "utc_last_updated":
+        "2015-01-27 06:00:57+00:00", "email_writers": true, "no_public_forks": true,
+        "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/adeptive-software"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:30:35.926",
+        "no_forks": true, "created_on": "2015-01-27T07:30:35.873", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 46062, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:30:35+00:00", "website": "", "description": "Admin Plugin for the Digital
+        Opera CMS", "has_issues": false, "is_fork": false, "slug": "admin", "is_private":
+        true, "name": "admin", "language": "ruby", "utc_last_updated": "2015-01-27
+        06:30:35+00:00", "email_writers": true, "no_public_forks": true, "creator":
+        "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/admin"}, {"scm":
+        "git", "has_wiki": false, "last_updated": "2015-03-13T05:10:03.861", "no_forks":
+        true, "created_on": "2015-01-27T06:11:29.406", "owner": "digitalopera", "logo":
+        "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 4156267, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        05:11:29+00:00", "website": "", "description": "SmileMN Advantage Plan Insurance
+        website and app portal", "has_issues": true, "is_fork": false, "slug": "advantage-plan",
+        "is_private": true, "name": "advantage-plan", "language": "ruby", "utc_last_updated":
+        "2015-03-13 04:10:03+00:00", "email_writers": true, "no_public_forks": true,
+        "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/advantage-plan"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:27:31.605",
+        "no_forks": true, "created_on": "2015-01-27T07:27:31.536", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 59944, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:27:31+00:00", "website": "", "description": "Rails engine for the the Digital
+        Opera CMS that adds Article functionality similar to posts in WordPress",
+        "has_issues": false, "is_fork": false, "slug": "articles", "is_private": true,
+        "name": "articles", "language": "ruby", "utc_last_updated": "2015-01-27 06:27:31+00:00",
+        "email_writers": true, "no_public_forks": true, "creator": "noiseunion", "resource_uri":
+        "/1.0/repositories/digitalopera/articles"}, {"scm": "git", "has_wiki": true,
+        "last_updated": "2015-01-27T06:24:00.754", "no_forks": true, "created_on":
+        "2015-01-27T06:15:20.902", "owner": "digitalopera", "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 82771620, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        05:15:20+00:00", "website": "", "description": "Lakeshirts Custom84 Application",
+        "has_issues": true, "is_fork": false, "slug": "blue-84", "is_private": true,
+        "name": "blue-84", "language": "ruby", "utc_last_updated": "2015-01-27 05:24:00+00:00",
+        "email_writers": true, "no_public_forks": true, "creator": "noiseunion", "resource_uri":
+        "/1.0/repositories/digitalopera/blue-84"}, {"scm": "git", "has_wiki": false,
+        "last_updated": "2015-01-27T07:20:29.928", "no_forks": true, "created_on":
+        "2015-01-27T07:20:29.843", "owner": "digitalopera", "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 14527413, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:20:29+00:00", "website": "", "description": "SaaS Intranet code base",
+        "has_issues": true, "is_fork": false, "slug": "breakroom", "is_private": true,
+        "name": "breakroom", "language": "ruby", "utc_last_updated": "2015-01-27 06:20:29+00:00",
+        "email_writers": true, "no_public_forks": true, "creator": "noiseunion", "resource_uri":
+        "/1.0/repositories/digitalopera/breakroom"}, {"scm": "git", "has_wiki": false,
+        "last_updated": "2015-01-27T06:27:38.155", "no_forks": false, "created_on":
+        "2015-01-27T06:14:48.843", "owner": "digitalopera", "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 432253, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        05:14:48+00:00", "website": "", "description": "Cargill Contest Site", "has_issues":
+        false, "is_fork": false, "slug": "cargill-market-madness", "is_private": true,
+        "name": "cargill-market-madness", "language": "ruby", "utc_last_updated":
+        "2015-01-27 05:27:38+00:00", "email_writers": true, "no_public_forks": true,
+        "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/cargill-market-madness"},
+        {"scm": "git", "has_wiki": true, "last_updated": "2015-02-20T22:22:43.471",
+        "no_forks": true, "created_on": "2015-01-27T05:57:55.152", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 2068295, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        04:57:55+00:00", "website": "", "description": "CBRPA Online Membership/Event
+        System", "has_issues": true, "is_fork": false, "slug": "cbrpa", "is_private":
+        true, "name": "cbrpa", "language": "ruby", "utc_last_updated": "2015-02-20
+        21:22:43+00:00", "email_writers": true, "no_public_forks": true, "creator":
+        "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/cbrpa"}, {"scm":
+        "git", "has_wiki": false, "last_updated": "2015-01-27T07:24:29.989", "no_forks":
+        true, "created_on": "2015-01-27T07:24:29.921", "owner": "digitalopera", "logo":
+        "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 127643, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:24:29+00:00", "website": "", "description": "Security Credentials Storage",
+        "has_issues": false, "is_fork": false, "slug": "credentials", "is_private":
+        true, "name": "credentials", "language": "ruby", "utc_last_updated": "2015-01-27
+        06:24:29+00:00", "email_writers": true, "no_public_forks": true, "creator":
+        "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/credentials"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:34:06.068",
+        "no_forks": true, "created_on": "2015-01-27T07:34:06.003", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/js_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 81728, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:34:06+00:00", "website": "", "description": "A collection of APIs to pull
+        information for a user", "has_issues": false, "is_fork": false, "slug": "digital-life",
+        "is_private": true, "name": "digital-life", "language": "javascript", "utc_last_updated":
+        "2015-01-27 06:34:06+00:00", "email_writers": true, "no_public_forks": true,
+        "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/digital-life"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:31:33.123",
+        "no_forks": false, "created_on": "2015-01-27T07:31:33.061", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 111632, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:31:33+00:00", "website": "", "description": "Digital Opera CMS Rails Engine",
+        "has_issues": false, "is_fork": false, "slug": "digitalopera", "is_private":
+        true, "name": "digitalopera", "language": "ruby", "utc_last_updated": "2015-01-27
+        06:31:33+00:00", "email_writers": true, "no_public_forks": true, "creator":
+        "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/digitalopera"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:29:29.875",
+        "no_forks": true, "created_on": "2015-01-27T07:29:29.794", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 356945, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:29:29+00:00", "website": "", "description": "Digital Opera CMS Engine for
+        managing documents", "has_issues": false, "is_fork": false, "slug": "documents",
+        "is_private": true, "name": "documents", "language": "ruby", "utc_last_updated":
+        "2015-01-27 06:29:29+00:00", "email_writers": true, "no_public_forks": true,
+        "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/documents"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-02-10T08:04:02.204",
+        "no_forks": true, "created_on": "2015-01-27T07:22:45.972", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 391274, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:22:45+00:00", "website": "", "description": "Backend API system for the
+        credentials app", "has_issues": true, "is_fork": false, "slug": "dothraki",
+        "is_private": true, "name": "dothraki", "language": "ruby", "utc_last_updated":
+        "2015-02-10 07:04:02+00:00", "email_writers": true, "no_public_forks": true,
+        "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/dothraki"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:36:28.173",
+        "no_forks": true, "created_on": "2015-01-27T07:36:28.096", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/js_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 111108, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:36:28+00:00", "website": "", "description": "Yeoman Generator for creating
+        a child theme for Wordpress", "has_issues": false, "is_fork": false, "slug":
+        "generator-dopress", "is_private": true, "name": "generator-dopress", "language":
+        "javascript", "utc_last_updated": "2015-01-27 06:36:28+00:00", "email_writers":
+        true, "no_public_forks": true, "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/generator-dopress"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T06:58:54.103",
+        "no_forks": true, "created_on": "2015-01-27T06:09:32.540", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 92784, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        05:09:32+00:00", "website": "", "description": "", "has_issues": false, "is_fork":
+        false, "slug": "kjergaard-sports", "is_private": true, "name": "kjergaard-sports",
+        "language": "ruby", "utc_last_updated": "2015-01-27 05:58:54+00:00", "email_writers":
+        true, "no_public_forks": true, "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/kjergaard-sports"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T06:37:35.211",
+        "no_forks": true, "created_on": "2015-01-27T06:12:04.885", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 3430837, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        05:12:04+00:00", "website": "", "description": "Lazy Bear Lodge Website &
+        Reservations System", "has_issues": false, "is_fork": false, "slug": "lazy-bear-lodge",
+        "is_private": true, "name": "lazy-bear-lodge", "language": "ruby", "utc_last_updated":
+        "2015-01-27 05:37:35+00:00", "email_writers": true, "no_public_forks": true,
+        "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/lazy-bear-lodge"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:28:33.695",
+        "no_forks": true, "created_on": "2015-01-27T07:28:33.620", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 81112, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:28:33+00:00", "website": "", "description": "Rails engine for the the Digital
+        Opera CMS that adds Page functionality similar to pages in WordPress", "has_issues":
+        false, "is_fork": false, "slug": "pages", "is_private": true, "name": "pages",
+        "language": "ruby", "utc_last_updated": "2015-01-27 06:28:33+00:00", "email_writers":
+        true, "no_public_forks": true, "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/pages"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T06:30:41.313",
+        "no_forks": true, "created_on": "2015-01-27T06:14:17.255", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 739651, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        05:14:17+00:00", "website": "", "description": "Admin application for the
+        QBQ Panic App", "has_issues": false, "is_fork": false, "slug": "qbq-panic-admin",
+        "is_private": true, "name": "qbq-panic-admin", "language": "ruby", "utc_last_updated":
+        "2015-01-27 05:30:41+00:00", "email_writers": true, "no_public_forks": true,
+        "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/qbq-panic-admin"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:26:19.917",
+        "no_forks": false, "created_on": "2015-01-27T07:26:19.833", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 203019, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:26:19+00:00", "website": "", "description": "Digital Opera CMS Sample Theme",
+        "has_issues": false, "is_fork": false, "slug": "sample_theme", "is_private":
+        true, "name": "sample_theme", "language": "ruby", "utc_last_updated": "2015-01-27
+        06:26:19+00:00", "email_writers": true, "no_public_forks": true, "creator":
+        "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/sample_theme"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T06:32:56.665",
+        "no_forks": true, "created_on": "2015-01-27T06:12:45.995", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 449892, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        05:12:45+00:00", "website": "", "description": "SmileMN Admin Application",
+        "has_issues": false, "is_fork": false, "slug": "smilemn-admin", "is_private":
+        true, "name": "smilemn-admin", "language": "ruby", "utc_last_updated": "2015-01-27
+        05:32:56+00:00", "email_writers": true, "no_public_forks": true, "creator":
+        "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/smilemn-admin"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-02-09T05:34:04.241",
+        "no_forks": true, "created_on": "2015-01-27T07:19:00.159", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/js_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 3681041, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:19:00+00:00", "website": "", "description": "Client side counterpart to
+        Dothraki", "has_issues": true, "is_fork": false, "slug": "stark", "is_private":
+        true, "name": "stark", "language": "javascript", "utc_last_updated": "2015-02-09
+        04:34:04+00:00", "email_writers": true, "no_public_forks": true, "creator":
+        "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/stark"}, {"scm":
+        "git", "has_wiki": false, "last_updated": "2015-01-27T07:32:55.926", "no_forks":
+        true, "created_on": "2015-01-27T07:32:55.775", "owner": "digitalopera", "logo":
+        "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/ruby_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 87138, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:32:55+00:00", "website": "", "description": "Rails engine for the Digital
+        Opera CMS Theme Engine", "has_issues": false, "is_fork": false, "slug": "themes",
+        "is_private": true, "name": "themes", "language": "ruby", "utc_last_updated":
+        "2015-01-27 06:32:55+00:00", "email_writers": true, "no_public_forks": true,
+        "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/themes"},
+        {"scm": "git", "has_wiki": false, "last_updated": "2015-01-27T07:35:05.686",
+        "no_forks": true, "created_on": "2015-01-27T07:35:05.587", "owner": "digitalopera",
+        "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/php_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 19725672, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        06:35:05+00:00", "website": "", "description": "Base Digital Opera theme for
+        creating WP sites using our favorite libs and tools", "has_issues": false,
+        "is_fork": false, "slug": "wordpress-themes", "is_private": true, "name":
+        "wordpress-themes", "language": "php", "utc_last_updated": "2015-01-27 06:35:05+00:00",
+        "email_writers": true, "no_public_forks": true, "creator": "noiseunion", "resource_uri":
+        "/1.0/repositories/digitalopera/wordpress-themes"}, {"scm": "git", "has_wiki":
+        false, "last_updated": "2015-01-27T06:52:44.984", "no_forks": true, "created_on":
+        "2015-01-27T06:10:25.034", "owner": "digitalopera", "logo": "https://d3oaxc4q5k2d6q.cloudfront.net/m/c524695e7f84/img/language-avatars/php_16.png",
+        "email_mailinglist": "", "is_mq": false, "size": 303902, "read_only": false,
+        "fork_of": null, "mq_of": null, "state": "available", "utc_created_on": "2015-01-27
+        05:10:25+00:00", "website": "", "description": "WordPress plugin for connecting
+        to the Lennox products API", "has_issues": false, "is_fork": false, "slug":
+        "wp-lennox-plugin", "is_private": true, "name": "wp-lennox-plugin", "language":
+        "php", "utc_last_updated": "2015-01-27 05:52:44+00:00", "email_writers": true,
+        "no_public_forks": true, "creator": "noiseunion", "resource_uri": "/1.0/repositories/digitalopera/wp-lennox-plugin"}]'
+    http_version: 
+  recorded_at: Fri, 13 Mar 2015 20:01:01 GMT
+recorded_with: VCR 2.9.3

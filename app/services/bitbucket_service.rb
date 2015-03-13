@@ -1,56 +1,99 @@
-require 'pp'
-
 class BitbucketService < BaseService
   include HTTParty
+  include ActionView::Helpers::TextHelper
   attr_reader :commits
   # for use in HTTParty
   base_uri 'https://bitbucket.org/api'
 
-  # def initialize
-  #   @auth = {
-  #     username: ENV['BITBUCKET_USERNAME'],
-  #     password: ENV['BITBUCKET_TOKEN']
-  #   }
-  # end
+  def initialize
+    @last_commit_date_for_repo = {}
+  end
 
   def run
-    @commits = user_repos.map do |repo_name|
-      user_commits(repo_name)
-    end.flatten
+    repos.each do |repo_name|
+      commits = user_changesets(repo_name)
+
+      commits.each do |commit|
+        stats = changeset_diff repo_name, commit['raw_node']
+
+        commit_hash = {
+          repo_full_name:  "#{ENV['BITBUCKET_OWNER']}/#{repo_name}",
+          message:         truncate(commit['message'], length: 255),
+          date:            commit['utctimestamp'],
+          additions:       stats[:additions],
+          deletions:       stats[:deletions],
+          number_of_files: commit['files'].size,
+          sha:             commit['raw_node']
+        }
+
+        Commit.transaction do
+          CommitLanguage.transaction do
+            saved_commit = Commit.create(commit_hash)
+
+            commit['files'].each do |file|
+              matches = file['file'].match(/([\w]+)\z/)
+
+              if matches.present?
+                ext = matches[0]
+                CommitLanguage.create extention: ext, commit_id: saved_commit.id
+              end
+            end
+          end
+        end
+      end
+    end
   end
 
-  def user_repos
+  def repos
     response = v1 'user/repositories'
     json = JSON.parse response.body
-    hash = json.map &:deep_symbolize_keys
-    hash.map{|item| item[:name]}
+    json.map{|item| item['name']}
   end
 
-  def user_commits(repo)
-    response = v2 "repositories/#{ENV['BITBUCKET_USERNAME']}/#{repo}/commits"
-    user_commits = []
-    values = response['values']
+  def user_changesets(repo)
+    limit = 50
+    response = v1 "repositories/#{ENV['BITBUCKET_OWNER']}/#{repo}/changesets?limit=#{limit}"
+    total_commit_count = response['count']
+    @commits = response['changesets']
 
-    while response['next'].present? do
-      path = response['next'].gsub(self.class.base_uri, '')
+    while @commits.size < total_commit_count do
+      start_raw_node = get_last_commit['raw_node']
+      response = v1 "repositories/#{ENV['BITBUCKET_OWNER']}/#{repo}/changesets?limit=#{limit}&start=#{start_raw_node}"
 
-      response = get path
-      values << response['values']
+      response['changesets'].each do |changeset|
+        # use the unless because the bitbucket API includes the starting node,
+        # which means that if there are 4 calls, 3 changesets will be duplicated
+        @commits << changeset unless start_raw_node == changeset['raw_node']
+      end
     end
 
-    values.flatten.each do |value|
-      begin
-        is_user_commit = value['author']['user']['username'] == ENV['BITBUCKET_AUTHOR']
-      rescue
-        is_user_commit = value['author']['raw'].match ENV['BITBUCKET_FULL_NAME']
-      end
+    user_commits = []
 
-      if is_user_commit
-        user_commits << value
+    @commits.each do |commit|
+      if [ENV['BITBUCKET_FULL_NAME'], ENV['BITBUCKET_AUTHOR']].include? commit['author']
+        user_commits << commit
       end
     end
 
     user_commits
+  end
+
+  def changeset_diff(repo, sha)
+    response = v1 "repositories/#{ENV['BITBUCKET_OWNER']}/#{repo}/changesets/#{sha}/diff"
+
+    stats = {
+      additions: 0,
+      deletions: 0
+    }
+
+    response.each do |file|
+      file['hunks'].each do |hunk|
+        stats[:deletions] = stats[:deletions] + hunk['from_lines'].size
+        stats[:additions] = stats[:additions] + hunk['to_lines'].size
+      end
+    end
+
+    stats
   end
 
 private
@@ -64,14 +107,37 @@ private
   end
 
   def get(path)
-    puts "getting #{path}"
+    talk "getting #{path}"
     self.class.get path, {:basic_auth => auth}
+  end
+
+  def get_last_commit
+    sorted_commits = @commits.sort_by{|commit| Time.parse commit['utctimestamp'] }
+
+    sorted_commits.first
   end
 
   def auth
     {
-      username: ENV['BITBUCKET_USERNAME'],
+      username: ENV['BITBUCKET_OWNER'],
       password: ENV['BITBUCKET_TOKEN']
     }
+  end
+
+  def last_commit_date_for_repo(repo_full_name)
+    # if previous commit is cached, return that one
+    if @last_commit_date_for_repo[repo_full_name].present?
+      @last_commit_date_for_repo[repo_full_name]
+    else
+      # Search for last commit by commit date
+      commit = Commit.where(repo_full_name: repo_full_name).order("date DESC").first
+
+      if commit.present?
+        # add 1 second because the api search will return this commit since it matches the date since
+        @last_commit_date_for_repo[repo_full_name] = (commit.date + 1.second).utc.iso8601
+      else
+        @last_commit_date_for_repo[repo_full_name] = nil
+      end
+    end
   end
 end
