@@ -11,19 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141209165149) do
+ActiveRecord::Schema.define(version: 20150310143116) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "commit_languages", force: true do |t|
+  create_table "commit_languages", force: :cascade do |t|
     t.string   "extention"
     t.integer  "commit_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "commits", force: true do |t|
+  create_table "commits", force: :cascade do |t|
     t.string   "repo_full_name"
     t.string   "message"
     t.datetime "date"
@@ -32,9 +32,10 @@ ActiveRecord::Schema.define(version: 20141209165149) do
     t.integer  "number_of_files"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "sha"
   end
 
-  create_table "d3_heros", force: true do |t|
+  create_table "d3_heros", force: :cascade do |t|
     t.integer  "paragon_level"
     t.string   "name"
     t.integer  "hero_id"
@@ -77,7 +78,7 @@ ActiveRecord::Schema.define(version: 20141209165149) do
     t.datetime "updated_at"
   end
 
-  create_table "d3_item_attributes", force: true do |t|
+  create_table "d3_item_attributes", force: :cascade do |t|
     t.integer  "d3_item_id"
     t.string   "type"
     t.string   "text"
@@ -87,7 +88,7 @@ ActiveRecord::Schema.define(version: 20141209165149) do
     t.datetime "updated_at"
   end
 
-  create_table "d3_items", force: true do |t|
+  create_table "d3_items", force: :cascade do |t|
     t.integer  "d3_hero_id"
     t.string   "name"
     t.string   "location"
@@ -104,7 +105,7 @@ ActiveRecord::Schema.define(version: 20141209165149) do
     t.datetime "updated_at"
   end
 
-  create_table "d3_profiles", force: true do |t|
+  create_table "d3_profiles", force: :cascade do |t|
     t.integer  "last_hero_played_hero_id"
     t.integer  "kills_monsters"
     t.integer  "kills_elites"
@@ -120,7 +121,7 @@ ActiveRecord::Schema.define(version: 20141209165149) do
     t.datetime "updated_at"
   end
 
-  create_table "d3_runes", force: true do |t|
+  create_table "d3_runes", force: :cascade do |t|
     t.integer  "d3_skill_id"
     t.string   "slug"
     t.string   "type"
@@ -131,7 +132,7 @@ ActiveRecord::Schema.define(version: 20141209165149) do
     t.datetime "updated_at"
   end
 
-  create_table "d3_skills", force: true do |t|
+  create_table "d3_skills", force: :cascade do |t|
     t.integer  "d3_hero_id"
     t.string   "type"
     t.string   "slug"

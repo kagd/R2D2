@@ -10,7 +10,8 @@ class CommitPresenter < DigitalOpera::Presenter::Base
       },
       additions: self.additions,
       deletions: self.deletions,
-      number_of_files: self.number_of_files
+      number_of_files: self.number_of_files,
+      sha: self.sha
     }
   end
 end

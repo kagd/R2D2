@@ -41,7 +41,8 @@ class GithubService < BaseService
           date:            commit[:commit][:committer][:date],
           additions:       commit[:stats][:additions],
           deletions:       commit[:stats][:deletions],
-          number_of_files: commit[:files].size
+          number_of_files: commit[:files].size,
+          sha:             commit[:sha]
         }
 
         Commit.transaction do
