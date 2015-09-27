@@ -15,6 +15,7 @@ gem 'sinatra',          '>= 1.3.0', require: nil # for sidekiq ui
 gem 'digital_opera',    '~> 0.0.14'
 gem 'httparty',         '~> 0.13.3'
 gem 'dotenv',           '~> 1.0.2'
+gem 'uglifier',         '>= 1.3.0'
 
 group :development do
   # deployment
