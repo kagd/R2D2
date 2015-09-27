@@ -6,14 +6,21 @@ class CommitService
   end
 
   def group_by_year_month
-    @site_commits = commits.group_by{|commit| commit.date.strftime('%Y') }
+    grouped_commits = []
+    grouped_years = commits.group_by{|commit| commit.date.strftime('%Y').to_s }
 
-    @site_commits.each do |year, year_commits|
-      @site_commits[year] = year_commits.group_by{|commit| commit.date.strftime('%B').titleize }
+    # @site_commits = commits.group_by{|commit| commit.date.strftime('%Y').to_s }
 
-      @site_commits[year].each do |month, month_commits|
-        @site_commits[year][month] = CommitPresenter.wrap month_commits
+    grouped_years.each do |year, year_commits|
+      grouped_months = year_commits.group_by{|commit| commit.date.strftime('%-m').to_s }
+
+      grouped_months.each do |month, month_commits|
+        wrapped_commits = CommitPresenter.wrap month_commits
+
+        grouped_commits << [year, [month, wrapped_commits]]
       end
     end
+
+    grouped_commits
   end
 end

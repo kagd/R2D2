@@ -1,9 +1,9 @@
 class GithubController < ApplicationController
   def index
-    commits = Commit.where(repo_full_name: ['kagd/R2D2', 'kagd/C3PO', 'kagd/prototypeof']).order('date DESC')
+    commits = Commit.where(repo_full_name: ['kagd/R2D2', 'kagd/kagd.github.io']).order('date DESC')
 
     service = CommitService.new commits
-    @site_commits = service.group_by_year_month
+    @site_commits = commits.size
 
     @total_commits = Commit.all.count
 

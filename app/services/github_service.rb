@@ -27,38 +27,43 @@ class GithubService < BaseService
     repos.each do |repo|
       talk "Getting commits for #{repo[:full_name]}"
 
-      # pull back all user commits for repo
-      commits = client.commits repo[:full_name], commit_options(repo)
+      begin
+        # pull back all user commits for repo
+        commits = client.commits repo[:full_name], commit_options(repo)
 
-      commits.map do |commit|
-        # get detailed commit for repo
-        # it contains the files and stats saved to DB
-        commit = client.get commit[:url]
+        commits.map do |commit|
+          # get detailed commit for repo
+          # it contains the files and stats saved to DB
+          commit = client.get commit[:url]
 
-        commit_hash = {
-          repo_full_name:  repo[:full_name],
-          message:         truncate(commit[:commit][:message], length: 255),
-          date:            commit[:commit][:committer][:date],
-          additions:       commit[:stats][:additions],
-          deletions:       commit[:stats][:deletions],
-          number_of_files: commit[:files].size,
-          sha:             commit[:sha]
-        }
+          commit_hash = {
+            repo_full_name:  repo[:full_name],
+            message:         truncate(commit[:commit][:message], length: 255),
+            date:            commit[:commit][:committer][:date],
+            additions:       commit[:stats][:additions],
+            deletions:       commit[:stats][:deletions],
+            number_of_files: commit[:files].size,
+            sha:             commit[:sha]
+          }
 
-        Commit.transaction do
-          CommitLanguage.transaction do
-            saved_commit = Commit.create commit_hash
+          Commit.transaction do
+            CommitLanguage.transaction do
+              saved_commit = Commit.create commit_hash
 
-            commit[:files].each do |file|
-              matches = file[:filename].match(/([\w]+)\z/)
+              commit[:files].each do |file|
+                matches = file[:filename].match(/([\w]+)\z/)
 
-              if matches.present?
-                ext = matches[0]
-                CommitLanguage.create extention: ext, commit_id: saved_commit.id
+                if matches.present?
+                  ext = matches[0]
+                  CommitLanguage.create extention: ext, commit_id: saved_commit.id
+                end
               end
             end
           end
         end
+
+      rescue
+        talk "Problem getting commits for #{repo[:full_name]}", :red
       end
     end
   end
@@ -89,7 +94,7 @@ class GithubService < BaseService
     )
   end
 
-  def commits_by_day(repo='kagd/prototypeof')
+  def commits_by_day(repo='kagd/kagd.github.io')
     @commits_by_day ||= (
       stats = {}
       # Pulls back an array of arrays: [[0,0,0],[0,1,0]] etc

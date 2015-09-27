@@ -3,8 +3,7 @@ class CommitLanguageService
     MAPPING = {
       css: %w(scss less css),
       html: %w(jade html),
-      javascript: %w(npmignore jshintrc js handlebars hbs walrus wal dust json bson bowerrc Jakefile),
-      coffeescript: %w(coffee js Cakefile cson),
+      javascript: %w(npmignore jshintrc js handlebars hbs walrus wal dust json bson bowerrc Jakefile coffee js Cakefile cson),
       ruby: %w(Procfile ru Gemfile rails erb rb jpbuilder jbuilder slim Rakefile guard haml rspec gemspec rdoc),
       php: %w(php),
       python: %w(py),

@@ -3,6 +3,9 @@ class D3Service < BaseService
   include HTTParty
   # for use in HTTParty
   base_uri 'https://us.api.battle.net'
+  default_timeout 20
+  open_timeout 20
+  read_timeout 20
 
   def initialize
     @options = { query: {locale: 'en_US', apikey: ENV['BNET_KEY']} }
@@ -21,6 +24,9 @@ class D3Service < BaseService
     response = self.class.get("/d3/profile/#{ENV['BNET_TAG']}/", @options)
     json = JSON.parse response.body
     json = json.deep_symbolize_keys
+    puts '='*60
+    puts json
+    puts '/'*60
     @d3_profile = {
       last_hero_played_hero_id: json[:lastHeroPlayed],
       kills_monsters: (json[:kills].present? ? json[:kills][:monsters] : 0),
@@ -50,6 +56,9 @@ class D3Service < BaseService
     response = self.class.get("/d3/profile/#{ENV['BNET_TAG']}/hero/#{id}", @options)
     json = JSON.parse response.body
     hero = json.deep_symbolize_keys
+    puts '='*60
+    pp hero
+    puts '/'*60
 
     hash = {
       name: hero[:name],
@@ -130,7 +139,7 @@ class D3Service < BaseService
       end
     end
 
-    get_items(h, hero[:items])
+    # get_items(h, hero[:items])
   end
 
   def get_items(hero, items_hash)
@@ -145,6 +154,9 @@ class D3Service < BaseService
     response = self.class.get("/d3/data/item/#{id}", @options)
     json = JSON.parse response.body
     json = json.deep_symbolize_keys
+    puts '='*60
+    pp json
+    puts '/'*60
 
     item = D3Item.new({
       name: get_item_name(item_attrs, json[:name]),
@@ -170,49 +182,49 @@ class D3Service < BaseService
           text: attr[:text],
           affix_type: attr[:affixType],
           color: attr[:color]
-          })
-        end
-      end
-
-      return item
-    end
-
-    def save_profile
-      D3Profile.destroy_all
-
-      profile = D3Profile.new @d3_profile
-      profile.save!
-    end
-
-    def get_item_color(item_attrs, fallback)
-      if item_attrs[:displayColor].present?
-        item_attrs[:displayColor]
-      else
-        fallback
+        })
       end
     end
 
-    def get_item_name(item_attrs, fallback)
-      if item_attrs[:name].present?
-        item_attrs[:name]
-      else
-        fallback
-      end
-    end
+    return item
+  end
 
-    def get_item_icon(item_attrs, fallback)
-      get_item_prop_or_default(:icon, item_attrs, fallback)
-    end
+  def save_profile
+    D3Profile.destroy_all
 
-    def get_item_id(item_attrs, fallback)
-      get_item_prop_or_default(:id, item_attrs, fallback)
-    end
+    profile = D3Profile.new @d3_profile
+    profile.save!
+  end
 
-    def get_item_prop_or_default(prop, item_attrs, default)
-      if item_attrs[0].present? && item_attrs[0][:craftedBy].present? && item_attrs[0][:craftedBy][:itemProduced].present?
-        item_attrs[0][:craftedBy][:itemProduced][prop]
-      else
-        default
-      end
+  def get_item_color(item_attrs, fallback)
+    if item_attrs[:displayColor].present?
+      item_attrs[:displayColor]
+    else
+      fallback
     end
   end
+
+  def get_item_name(item_attrs, fallback)
+    if item_attrs[:name].present?
+      item_attrs[:name]
+    else
+      fallback
+    end
+  end
+
+  def get_item_icon(item_attrs, fallback)
+    get_item_prop_or_default(:icon, item_attrs, fallback)
+  end
+
+  def get_item_id(item_attrs, fallback)
+    get_item_prop_or_default(:id, item_attrs, fallback)
+  end
+
+  def get_item_prop_or_default(prop, item_attrs, default)
+    if item_attrs[0].present? && item_attrs[0][:craftedBy].present? && item_attrs[0][:craftedBy][:itemProduced].present?
+      item_attrs[0][:craftedBy][:itemProduced][prop]
+    else
+      default
+    end
+  end
+end

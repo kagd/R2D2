@@ -6,7 +6,7 @@ class BitbucketService < BaseService
   base_uri 'https://bitbucket.org/api'
 
   def initialize
-    @last_commit_date_for_repo = {}
+    @saved_commit_shas = Commit.where(source: 'bitbucket').select(:sha).map(&:sha)
   end
 
   def run
@@ -23,7 +23,8 @@ class BitbucketService < BaseService
           additions:       stats[:additions],
           deletions:       stats[:deletions],
           number_of_files: commit['files'].size,
-          sha:             commit['raw_node']
+          sha:             commit['raw_node'],
+          source:          'bitbucket'
         }
 
         Commit.transaction do
@@ -63,19 +64,23 @@ class BitbucketService < BaseService
       response['changesets'].each do |changeset|
         # use the unless because the bitbucket API includes the starting node,
         # which means that if there are 4 calls, 3 changesets will be duplicated
-        @commits << changeset unless start_raw_node == changeset['raw_node']
+        unless start_raw_node == changeset['raw_node']
+          @commits << changeset
+        end
       end
     end
 
     user_commits = []
 
     @commits.each do |commit|
-      if [ENV['BITBUCKET_FULL_NAME'], ENV['BITBUCKET_AUTHOR']].include? commit['author']
+      if [ENV['BITBUCKET_FULL_NAME'], ENV['BITBUCKET_AUTHOR']].include?(commit['author']) && !@saved_commit_shas.include?(commit['raw_node'])
         user_commits << commit
       end
     end
 
     user_commits
+
+    # if response['changesets'].map{|cs| cs[:hash]}.include? last_commit_sha
   end
 
   def changeset_diff(repo, sha)
@@ -86,10 +91,12 @@ class BitbucketService < BaseService
       deletions: 0
     }
 
-    response.each do |file|
-      file['hunks'].each do |hunk|
-        stats[:deletions] = stats[:deletions] + hunk['from_lines'].size
-        stats[:additions] = stats[:additions] + hunk['to_lines'].size
+    if response.code == 200
+      response.each do |file|
+        file['hunks'].each do |hunk|
+          stats[:deletions] = stats[:deletions] + hunk['from_lines'].size
+          stats[:additions] = stats[:additions] + hunk['to_lines'].size
+        end
       end
     end
 

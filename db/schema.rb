@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150310143116) do
+ActiveRecord::Schema.define(version: 20150313215240) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20150310143116) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "sha"
+    t.string   "source"
   end
 
   create_table "d3_heros", force: :cascade do |t|

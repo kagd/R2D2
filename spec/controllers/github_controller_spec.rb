@@ -39,7 +39,7 @@ describe GithubController do
     end
 
     it 'should have a list of all repos' do
-      jan_commit.update_attribute :repo_full_name, "kagd/R2D2"
+      jan_commit.update_attribute :repo_full_name, "kagd/C3PO"
       go_to_index
       expect(assigns(:total_repos)).to eq 2
     end
