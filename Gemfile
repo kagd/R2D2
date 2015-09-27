@@ -16,6 +16,15 @@ gem 'digital_opera',    '~> 0.0.14'
 gem 'httparty',         '~> 0.13.3'
 gem 'dotenv',           '~> 1.0.2'
 
+group :development do
+  # deployment
+  gem 'capistrano',          '~> 3.4.0'
+  gem 'capistrano-rvm',      '~> 0.1.1'
+  gem 'capistrano-rails',    '~> 1.1'
+  gem 'capistrano-bundler',  '~> 1.1.2'
+  gem 'capistrano-foreman',  github: 'koenpunt/capistrano-foreman'
+end
+
 group :development, :test do
   gem 'rspec-rails',          '~> 3.2.1'
   gem 'guard',                '~> 2.12.4'
