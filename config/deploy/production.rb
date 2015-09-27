@@ -10,5 +10,5 @@ set :deploy_to, "/var/www/api_site"
 set :rails_env, 'production'
 set :branch,    'master'
 
-set :rvm_ruby_version, "2.2.3@#{ fetch :application } --create"
+set :rvm_ruby_version, "2.2.1@#{ fetch :application } --create"
 set :rvm_roles, [:app, :web]
