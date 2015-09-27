@@ -1,5 +1,4 @@
-set :application, 'api_site'
-set :state,       :production
+set :state, :production
 
 ## Servers we are going to deploy to ----------------------
 server '159.203.78.230', user: 'deploy', roles: %w{app db}
