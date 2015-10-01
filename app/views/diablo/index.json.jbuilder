@@ -105,4 +105,5 @@ json.profile do
   json.time_played_monk @profile.time_played_monk
   json.time_played_witch_doctor @profile.time_played_witch_doctor
   json.time_played_wizard @profile.time_played_wizard
+  json.last_played_at "#{time_ago_in_words(@profile.last_played_at)} ago"
 end

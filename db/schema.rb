@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150313215240) do
+ActiveRecord::Schema.define(version: 20151001063855) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -120,6 +120,7 @@ ActiveRecord::Schema.define(version: 20150313215240) do
     t.float    "time_played_wizard"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.date     "last_played_at"
   end
 
   create_table "d3_runes", force: :cascade do |t|

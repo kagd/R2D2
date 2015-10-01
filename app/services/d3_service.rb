@@ -38,11 +38,12 @@ class D3Service < BaseService
       time_played_demon_hunter: json[:timePlayed][:'demon-hunter'],
       time_played_monk: json[:timePlayed][:monk],
       time_played_witch_doctor: json[:timePlayed][:'witch-doctor'],
-      time_played_wizard: json[:timePlayed][:wizard]
+      time_played_wizard: json[:timePlayed][:wizard],
+      last_played_at: DateTime.strptime(json[:lastUpdated].to_s,'%s')
     }
     save_profile
 
-    get_and_save_heroes json[:heroes]
+    # get_and_save_heroes json[:heroes]
   end
 
   def get_and_save_heroes(heroes)
