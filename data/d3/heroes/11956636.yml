@@ -1,39 +1,429 @@
 ---
+id: 11956636
 name: Bane
-paragon_level: 256
-hero_id: 11956636
-level: 68
-hardcore: false
-gender: 0
 class: witch-doctor
+gender: 0
+level: 68
+kills:
+  elites: 592
+paragonLevel: 256
+hardcore: false
+seasonal: false
+seasonCreated: 0
+skills:
+  active:
+  - skill:
+      slug: poison-dart
+      name: Poison Dart
+      icon: witchdoctor_poisondart
+      level: 1
+      categorySlug: primary
+      tooltipUrl: skill/witch-doctor/poison-dart
+      description: "This is a Signature spell. Signature spells are free to cast.\r\n\r\nShoot
+        a deadly Poison Dart that deals 185% weapon damage as Poison and an additional
+        40% weapon damage as Poison over 2 seconds."
+      simpleDescription: "Signature Spell\r\n\r\nShoot a deadly Poison Dart."
+      skillCalcId: a
+    rune:
+      slug: poison-dart-d
+      type: d
+      name: Spined Dart
+      level: 25
+      description: Gain 50 Mana every time a Poison Dart hits an enemy. Converts the
+        damage type to Physical.
+      simpleDescription: Gain Mana every time Poison Dart hits an enemy.
+      tooltipParams: rune/poison-dart/d
+      skillCalcId: b
+      order: 2
+  - skill:
+      slug: locust-swarm
+      name: Locust Swarm
+      icon: witchdoctor_locust_swarm
+      level: 21
+      categorySlug: secondary
+      tooltipUrl: skill/witch-doctor/locust-swarm
+      description: "Cost: 300 Mana\r\n\r\nUnleash a plague of locusts that swarms
+        an enemy, dealing 1040% weapon damage as Poison over 8 seconds.\r\n\r\nThe
+        locusts will jump to additional nearby enemies."
+      simpleDescription: "Cost: 300 Mana\r\n\r\nUnleash a plague of locusts that swarms
+        enemies."
+      skillCalcId: h
+    rune:
+      slug: locust-swarm-b
+      type: b
+      name: Pestilence
+      level: 27
+      description: 'Locust Swarm has a 100% chance to jump to two additional enemies
+        instead of one. '
+      simpleDescription: Locust Swarm has a chance to spread to additional enemies.
+      tooltipParams: rune/locust-swarm/b
+      skillCalcId: a
+      order: 0
+  - skill:
+      slug: hex
+      name: Hex
+      icon: witchdoctor_hex
+      level: 22
+      categorySlug: defensive
+      tooltipUrl: skill/witch-doctor/hex
+      description: "Cooldown: 15 seconds\r\n\r\nSummon a Fetish Shaman for 12 seconds
+        that will hex groups of enemies into chickens. Hexed enemies are unable to
+        perform offensive actions and take 15% additional damage."
+      simpleDescription: "Cooldown: 15 seconds\r\n\r\nSummon a Fetish Shaman that
+        transforms enemies into chickens."
+      skillCalcId: i
+    rune:
+      slug: hex-b
+      type: b
+      name: Angry Chicken
+      level: 36
+      description: Transform into an angry chicken for up to 2 seconds that can explode
+        for 1350% weapon damage as Poison to all enemies within 12 yards.
+      simpleDescription: Transform into an angry chicken that can explode.
+      tooltipParams: rune/hex/b
+      skillCalcId: b
+      order: 2
+  - skill:
+      slug: mass-confusion
+      name: Mass Confusion
+      icon: witchdoctor_massconfusion
+      level: 22
+      categorySlug: terror
+      tooltipUrl: skill/witch-doctor/mass-confusion
+      description: "Cooldown: 60 seconds\r\n\r\nIncite paranoia in enemies, confusing
+        them and causing some to be Charmed and fight for you for 12 seconds."
+      simpleDescription: "Cooldown: 60 seconds\r\n\r\nConfuse enemies and cause them
+        to fight for you."
+      skillCalcId: j
+    rune:
+      slug: mass-confusion-e
+      type: e
+      name: Devolution
+      level: 34
+      description: Enemies killed while Confused have a 100% chance to spawn a Zombie
+        Dog.
+      simpleDescription: Enemies killed while Confused have a chance to spawn a Zombie
+        Dog.
+      tooltipParams: rune/mass-confusion/e
+      skillCalcId: Z
+      order: 1
+  - skill:
+      slug: acid-cloud
+      name: Acid Cloud
+      icon: witchdoctor_acidcloud
+      level: 22
+      categorySlug: decay
+      tooltipUrl: skill/witch-doctor/acid-cloud
+      description: "Cost: 175 Mana\r\n\r\nCause acid to rain down, dealing an initial
+        300% weapon damage as Poison, followed by 360% weapon damage as Poison over
+        3 seconds to enemies who remain in the area."
+      simpleDescription: "Cost: 175 Mana\r\n\r\nCause acid to rain down and leave
+        pools of poison."
+      skillCalcId: R
+    rune:
+      slug: acid-cloud-b
+      type: b
+      name: Acid Rain
+      level: 26
+      description: Increase the initial area of effect of Acid Cloud to 24 yards.
+      simpleDescription: Increase the area of effect of Acid Cloud.
+      tooltipParams: rune/acid-cloud/b
+      skillCalcId: a
+      order: 0
+  - skill:
+      slug: gargantuan
+      name: Gargantuan
+      icon: witchdoctor_gargantuan
+      level: 19
+      categorySlug: voodoo
+      tooltipUrl: skill/witch-doctor/gargantuan
+      description: "Cooldown: 60 seconds\r\n\r\nSummon a Gargantuan zombie to fight
+        for you. The Gargantuan attacks for 100% of your weapon damage as Physical."
+      simpleDescription: "Cooldown: 60 seconds\r\n\r\nSummon a Gargantuan zombie to
+        fight for you."
+      skillCalcId: T
+    rune:
+      slug: gargantuan-b
+      type: b
+      name: Humongoid
+      level: 22
+      description: The Gargantuan gains the Cleave ability, allowing its attacks to
+        hit multiple enemies for 130% of your weapon damage as Cold.
+      simpleDescription: The Gargantuan gains the Cleave ability, allowing it to attack
+        multiple enemies.
+      tooltipParams: rune/gargantuan/b
+      skillCalcId: a
+      order: 0
+  passive:
+  - skill:
+      slug: jungle-fortitude
+      name: Jungle Fortitude
+      icon: witchdoctor_passive_junglefortitude
+      level: 10
+      tooltipUrl: skill/witch-doctor/jungle-fortitude
+      description: Reduce all damage taken by you and your pets by 15%.
+      flavor: To be one with the jungle is to take what you need and endure what you
+        must.
+      skillCalcId: a
+  - skill:
+      slug: gruesome-feast
+      name: Gruesome Feast
+      icon: witchdoctor_passive_gruesomefeast
+      level: 16
+      tooltipUrl: skill/witch-doctor/gruesome-feast
+      description: When you are healed by a health globe, gain 10% of your maximum
+        Mana and 10% Intelligence for 15 seconds. The Intelligence bonus stacks up
+        to 5 times.
+      flavor: '"We are all connected in life and in death. Partake of the spirits
+        of the dead and flourish like the jungle that grows wild after the fire."
+        —Shadewalker Zunimassa'
+      skillCalcId: Y
+  - skill:
+      slug: rush-of-essence
+      name: Rush of Essence
+      icon: witchdoctor_passive_rushofessence
+      level: 36
+      tooltipUrl: skill/witch-doctor/rush-of-essence
+      description: "Spirit spells return 100 Mana over 10 seconds.\r\n\r\nSpirit spells
+        are:\r\n Haunt\r\n Horrify\r\n Mass Confusion\r\n Soul Harvest\r\n Spirit
+        Barrage\r\n Spirit Walk"
+      flavor: All spirits must move onward if they wish to return to their origins.
+        There is no going back.
+      skillCalcId: f
+  - {}
+items:
+  head:
+    id: VoodooMask_205
+    name: Unformed Aspect
+    icon: voodoomask_205_demonhunter_male
+    displayColor: yellow
+    tooltipParams: item/CkQIkv2E7QESBwgEFZgA9SQdHp3kBB3xcAetHUC-2vodHDI7Xx3jfMbdIgsIABVoRAMAGBggFjCJAjiCA0AASBNQDmCCAxiwgqjPBFAGWAA
+    dyeColor:
+      item:
+        id: Dye_08
+        name: Desert Dye
+        icon: dye_08_demonhunter_male
+        displayColor: white
+        tooltipParams: item/desert-dye
+  torso:
+    id: ChestArmor_101
+    name: Sorcerous Tunic
+    icon: chestarmor_101_witchdoctor_male
+    displayColor: yellow
+    tooltipParams: item/Cp0BCNOy0IwIEgcIBBXpHRlgHXwn6dcdfTUfzB0suPDhHWkSy7cdi4qjNiILCAAVrf4BABgmIBgwiQI4iQRAAEgTUA5gxQRqKgoMCAAQg5zupYOAgMAnEhoI3PH4PhIHCAQV1l22ejCLAjgAQAFYBJABAGorCgwIABDblbDEgICAgDQSGwjRxuazBRIHCAQV1l22ejCPAjgAQAFYBJABABjS98iBDFAGWAA
+    dyeColor:
+      item:
+        id: Dye_08
+        name: Desert Dye
+        icon: dye_08_demonhunter_male
+        displayColor: white
+        tooltipParams: item/desert-dye
+  feet:
+    id: Unique_Boots_104_x1
+    name: Irontoe Mudsputters
+    icon: unique_boots_104_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CkAIrtH_ngcSBwgEFXlo-nUdb4t38B3p4uQFHd3hXAEdfFm7qx3UkW09MIsCON8BQABQElgEYPoBgAEltQFYQZt_GPKh098OUAZYAA
+  hands:
+    id: Gloves_207
+    name: Smash Surfeit
+    icon: gloves_207_witchdoctor_male
+    displayColor: yellow
+    tooltipParams: item/CkkI5-SvnAUSBwgEFchbkqQdN3XajB3xcAetHVA15Tkdz3ltpR3Ws8DVHYBgw2IiCwgBFd-gBQAYBiAOMIkCOO4DQABIAVAQYKcEGO-Q7bYLUAZYAA
+    dyeColor:
+      item:
+        id: Dye_20
+        name: Abyssal Dye
+        icon: dye_20_demonhunter_male
+        displayColor: white
+        tooltipParams: item/abyssal-dye
+  shoulders:
+    id: Shoulders_207
+    name: Sealed Mail
+    icon: shoulders_207_witchdoctor_male
+    displayColor: yellow
+    tooltipParams: item/Cj8IzaSUxAwSBwgEFdH4yBUdhiTNyB3B44pGHRkcPdgd43zG3SILCAAVrUQDABgWIB4wiQI45QNAAEgSUAxgnQQYouPH3AJQBlgA
+    dyeColor:
+      item:
+        id: Dye_01
+        name: Tanner's Dye
+        icon: dye_01_demonhunter_male
+        displayColor: white
+        tooltipParams: item/tanners-dye
+  legs:
+    id: Pants_201
+    name: Battle Nettle
+    icon: pants_201_witchdoctor_male
+    displayColor: yellow
+    tooltipParams: item/CkQI98Xigg0SBwgEFZiS1aUd5ZLcCB1W_CZIHR6brZYdXTcfzB2dKdwFIgsIARV5RAMAGCQgGDCJAjiNBEAASANQDmDJBBjPtdOiC1AGWAA
+    dyeColor:
+      item:
+        id: Dye_19
+        name: Purity Dye
+        icon: dye_19_demonhunter_male
+        displayColor: white
+        tooltipParams: item/purity-dye
+  bracers:
+    id: Bracers_207
+    name: Visceral Irons
+    icon: bracers_207_demonhunter_male
+    displayColor: yellow
+    tooltipParams: item/CkcImun_2AwSBwgEFdosyssdweOKRh2GJM3IHVA15TkdGRw92B1wi3fwHeN8xt0iCwgAFc7-AQAYFiAaMIkCOIwDQABQEGC6AxjLzK7DBlAGWAA
+  mainHand:
+    id: Polearm_301
+    name: Sentry Nexus
+    icon: polearm_301_demonhunter_male
+    displayColor: yellow
+    tooltipParams: item/CkII09jh7ggSBwgEFQNmQ7AdSic6Lx3E1RV5Her0QQAdGvqjmR2AYMNiIgsIARWKQgMAGCggCDCJAjiaA0AAUA5gyQMY-efk-wlQBlgA
+  waist:
+    id: Belt_207
+    name: Fervent Cycle
+    icon: belt_207_demonhunter_male
+    displayColor: yellow
+    tooltipParams: item/CkII6_Oq4Q8SBwgEFb-nQtQd36_-xR0em62WHcHjikYdGRw92B2AYMNiIgsIABXO_gEAGAYgCjCJAjjDA0AAUA5g9wMYgeHquwVQBlgA
+  rightFinger:
+    id: Ring_24
+    name: Dream Revenge
+    icon: ring_24_demonhunter_male
+    displayColor: yellow
+    tooltipParams: item/Cj0IrJnDiQoSBwgEFTVVXUQdM5BKBB0ZHD3YHR-4mVIdu6SNxCILCAEVbEIDABgeIBYwiQI4qwNAAFAMYNwDGOrU6sUIUAZYAA
+  leftFinger:
+    id: Ring_24
+    name: Undaunted Seal
+    icon: ring_24_demonhunter_male
+    displayColor: yellow
+    tooltipParams: item/Cj0I396bxwUSBwgEFTVVXUQdweOKRh0ZHD3YHVfVGpUd1rPA1SILCAAVrUQDABgaIAAwiQI48AJAAFAMYJsDGOrU6sUIUAZYAA
+  neck:
+    id: Unique_Amulet_103_x1
+    name: Countess Julia's Cameo
+    icon: unique_amulet_103_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CkwI9azZ0AkSBwgEFdnhXF0dKJKVgR1OwwlyHXcHxPQdVfpcZx3vcAetMIkCON0CQABQElgGYIUDgAE3tQGqxURkyAGzkvUDyAHzkpMEGLKH59ULUAZYAA
+followers: {}
+legendaryPowers: []
+stats:
+  life: 177188
+  damage: 99129.4
+  toughness: 1110630.0
+  healing: 14859.1
+  attackSpeed: 1.0499999523162842
+  armor: 4656
+  strength: 781
+  dexterity: 75
+  vitality: 2117
+  intelligence: 3534
+  physicalResist: 557
+  fireResist: 404
+  coldResist: 478
+  lightningResist: 384
+  poisonResist: 446
+  arcaneResist: 652
+  critDamage: 2.24
+  blockChance: 0.0
+  blockAmountMin: 0
+  blockAmountMax: 0
+  damageIncrease: 0.0
+  critChance: 0.05000000075
+  damageReduction: 0.0
+  thorns: 0.0
+  lifeSteal: 0.0
+  lifePerKill: 5153.0
+  goldFind: 0.0
+  magicFind: 0.0
+  lifeOnHit: 6067.0
+  primaryResource: 858
+  secondaryResource: 0
+progression:
+  act1:
+    completed: true
+    completedQuests:
+    - slug: the-fallen-star
+      name: The Fallen Star
+    - slug: the-legacy-of-cain
+      name: The Legacy of Cain
+    - slug: a-shattered-crown
+      name: A Shattered Crown
+    - slug: reign-of-the-black-king
+      name: Reign of the Black King
+    - slug: sword-of-the-stranger
+      name: Sword of the Stranger
+    - slug: the-broken-blade
+      name: The Broken Blade
+    - slug: the-doom-in-wortham
+      name: The Doom in Wortham
+    - slug: trailing-the-coven
+      name: Trailing the Coven
+    - slug: the-imprisoned-angel
+      name: The Imprisoned Angel
+    - slug: return-to-new-tristram
+      name: Return to New Tristram
+  act2:
+    completed: true
+    completedQuests:
+    - slug: shadows-in-the-desert
+      name: Shadows in the Desert
+    - slug: the-road-to-alcarnus
+      name: The Road to Alcarnus
+    - slug: city-of-blood
+      name: City of Blood
+    - slug: a-royal-audience
+      name: A Royal Audience
+    - slug: unexpected-allies
+      name: Unexpected Allies
+    - slug: betrayer-of-the-horadrim
+      name: Betrayer of the Horadrim
+    - slug: blood-and-sand
+      name: Blood and Sand
+    - slug: the-black-soulstone
+      name: The Black Soulstone
+    - slug: the-scouring-of-caldeum
+      name: The Scouring of Caldeum
+    - slug: lord-of-lies
+      name: Lord of Lies
+  act3:
+    completed: true
+    completedQuests:
+    - slug: the-siege-of-bastions-keep
+      name: The Siege of Bastion's Keep
+    - slug: turning-the-tide
+      name: Turning the Tide
+    - slug: the-breached-keep
+      name: The Breached Keep
+    - slug: tremors-in-the-stone
+      name: Tremors in the Stone
+    - slug: machines-of-war
+      name: Machines of War
+    - slug: siegebreaker
+      name: Siegebreaker
+    - slug: heart-of-sin
+      name: Heart of Sin
+  act4:
+    completed: true
+    completedQuests:
+    - slug: fall-of-the-high-heavens
+      name: Fall of the High Heavens
+    - slug: the-light-of-hope
+      name: The Light of Hope
+    - slug: beneath-the-spire
+      name: Beneath the Spire
+    - slug: prime-evil
+      name: Prime Evil
+  act5:
+    completed: false
+    completedQuests:
+    - slug: the-fall-of-westmarch
+      name: The Fall of Westmarch
+    - slug: souls-of-the-dead
+      name: Souls of the Dead
+    - slug: the-harbinger
+      name: The Harbinger
+    - slug: the-witch
+      name: The Witch
+    - slug: the-pandemonium-gate
+      name: The Pandemonium Gate
+    - slug: the-battlefields-of-eternity
+      name: The Battlefields of Eternity
+    - slug: breaching-the-fortress
+      name: Breaching the Fortress
 dead: false
-life: 177188
-damage: 99129.4
-attack_speed: 1.0499999523162842
-armor: 4656
-strength: 781
-dexterity: 75
-vitality: 2117
-intelligence: 3534
-physical_resist: 557
-fire_resist: 404
-cold_resist: 478
-lightning_resist: 384
-poison_resist: 446
-arcane_resist: 652
-critical_damage: 2.24
-block_chance: 0.0
-block_amount_min: 0
-block_amount_max: 0
-damage_increase: 0.0
-critical_chance: 0.05000000075
-damage_reduction: 0.0
-thorns: 0.0
-life_steal: 0.0
-life_per_kill: 5153.0
-gold_find: 0.0
-magic_find: 0.0
-life_on_hit: 6067.0
-primary_resource: 858
-secondary_resource: 0
-elite_kills: 592
+last-updated: 1420869423

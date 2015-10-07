@@ -1,39 +1,207 @@
 ---
+id: 56564131
 name: LarrySucks
-paragon_level: 256
-hero_id: 56564131
-level: 11
-hardcore: false
-gender: 1
 class: demon-hunter
+gender: 1
+level: 11
+kills:
+  elites: 37
+paragonLevel: 256
+hardcore: false
+seasonal: false
+seasonCreated: 0
+skills:
+  active:
+  - skill:
+      slug: hungering-arrow
+      name: Hungering Arrow
+      icon: demonhunter_hungeringarrow
+      level: 1
+      categorySlug: primary
+      tooltipUrl: skill/demon-hunter/hungering-arrow
+      description: "Generate: 3 Hatred\r\n\r\nFire a magically imbued arrow that seeks
+        out enemies for 155% weapon damage and has a 35% chance to pierce through
+        them."
+      simpleDescription: "Generate: 3 Hatred\r\n\r\nFire a piercing arrow that seeks
+        additional enemies."
+      skillCalcId: a
+    rune:
+      slug: hungering-arrow-d
+      type: d
+      name: Puncturing Arrow
+      level: 6
+      description: Increase the chance for the arrow to pierce to 50%.
+      simpleDescription: Increase the pierce chance.
+      tooltipParams: rune/hungering-arrow/d
+      skillCalcId: a
+      order: 0
+  - skill:
+      slug: rapid-fire
+      name: Rapid Fire
+      icon: demonhunter_rapidfire
+      level: 5
+      categorySlug: secondary
+      tooltipUrl: skill/demon-hunter/rapid-fire
+      description: "Cost: 20 Hatred initially, and an additional 6 Hatred while channeling\r\n\r\nRapidly
+        fire for 685% weapon damage as Physical."
+      simpleDescription: "Cost: 20 Hatred initially, and an additional 6 Hatred while
+        channeling\r\n\r\nHold your ground and continually fire a stream of arrows."
+      skillCalcId: c
+  - skill:
+      slug: vault
+      name: Vault
+      icon: demonhunter_vault
+      level: 9
+      categorySlug: hunting
+      tooltipUrl: skill/demon-hunter/vault
+      description: "Cost: 8 Discipline\r\n\r\nTumble acrobatically 35 yards."
+      simpleDescription: "Cost: 8 Discipline\r\n\r\nTumble acrobatically to avoid
+        attacks."
+      skillCalcId: d
+  - skill:
+      slug: smoke-screen
+      name: Smoke Screen
+      icon: demonhunter_smokescreen
+      level: 8
+      categorySlug: defensive
+      tooltipUrl: skill/demon-hunter/smoke-screen
+      description: "Cost: 14 Discipline\r\nCooldown: 1.5 seconds\r\n\r\nVanish behind
+        a wall of smoke, becoming momentarily invisible for 1 seconds.\r\n\r\nThis
+        ability does not start its cooldown until after its effects expire."
+      simpleDescription: "Cost: 14 Discipline\r\nCooldown: 1.5 seconds\r\n\r\nVanish
+        from sight for a limited time.\r\n\r\nThis ability does not start its cooldown
+        until after its effects expire."
+      skillCalcId: X
+  - {}
+  - {}
+  passive:
+  - skill:
+      slug: tactical-advantage
+      name: Tactical Advantage
+      icon: demonhunter_passive_tacticaladvantage
+      level: 10
+      tooltipUrl: skill/demon-hunter/tactical-advantage
+      description: Whenever you use Vault, Smoke Screen, or backflip with Evasive
+        Fire you gain 60% movement speed for 2 seconds.
+      flavor: Never start a fair fight.
+      skillCalcId: Z
+  - {}
+  - {}
+  - {}
+items:
+  head:
+    id: Helm_002
+    name: Leather Hood
+    icon: helm_002_demonhunter_male
+    displayColor: white
+    tooltipParams: item/ChoIj9SumwISBwgEFffwTl0wiQI4-ANAAGCBBBjuw_fUC1AAWAI
+  torso:
+    id: Cloak_001
+    name: Hunter Cloak of the Lion
+    icon: cloak_001_demonhunter_female
+    displayColor: blue
+    tooltipParams: item/CiEIz862vwkSBwgEFXpnbwIdcp6Y3DCJAjiUA0AAUAZgmwMY9J37JlAAWAI
+  feet:
+    id: Boots_002
+    name: Mending Boots of the Bear
+    icon: boots_002_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiYIoIrCmAwSBwgEFRg9m38dzIBq2R2XwGGNMIkCONsDQABQCGDkAxiw9Nn5D1AAWAI
+  hands:
+    id: Gloves_002
+    name: Adventuring Leather Gloves of the Hawk
+    icon: gloves_002_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiUIrMXGcBIHCAQVQVOSpB1S8N4EHfpuL7swiQI41ANAAFAIYNgDGP2y7bYLUABYAg
+  legs:
+    id: Pants_002
+    name: Leather Pants of the Hawk
+    icon: pants_002_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiEIzdacogESBwgEFReK1aUdugjgrjCJAjiOBUAAUAZglwUY0dfTogtQAFgC
+  bracers:
+    id: Bracers_001
+    name: Bracers of the Leech
+    icon: bracers_001_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiEIt9Ob7gMSBwgEFVIkyssd3g8JaTCJAjjaA0AAUAZg4wMY2-6uwwZQAFgC
+  mainHand:
+    id: HandXbow_002
+    name: Quarry Apex
+    icon: handxbow_002_demonhunter_male
+    displayColor: yellow
+    tooltipParams: item/Cj0I5NWazAISBwgEFUwVV-odfFF49B3kySYGHSMTN-cdo04dISILCAEVikIDABgWICQwiQI4pQRAAFAMYK4EGOeqx9oCUABYAg
+  offHand:
+    id: Quiver_001
+    name: Insightful Quiver of the Bear
+    icon: quiver_001_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiYIqYXd9AwSBwgEFczhvlsd5MkmBh1zMlHfMIkCOOkDQABQCGDtAxiYh_e7C1AAWAI
+  waist:
+    id: Belt_002
+    name: Hide Belt of the Bear
+    icon: belt_002_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiEI_OygqwYSBwgEFTifQtQdzIBq2TCJAjibBEAAUAZgpAQYj4PruwVQAFgC
+followers: {}
+legendaryPowers: []
+stats:
+  life: 520
+  damage: 29.5676
+  toughness: 733.274
+  healing: 7.04
+  attackSpeed: 1.600000023841858
+  armor: 201
+  strength: 26
+  dexterity: 49
+  vitality: 44
+  intelligence: 18
+  physicalResist: 2
+  fireResist: 2
+  coldResist: 2
+  lightningResist: 2
+  poisonResist: 2
+  arcaneResist: 2
+  critDamage: 1.5
+  blockChance: 0.0
+  blockAmountMin: 0
+  blockAmountMax: 0
+  damageIncrease: 0.0
+  critChance: 0.05000000075
+  damageReduction: 0.0
+  thorns: 0.0
+  lifeSteal: 0.0
+  lifePerKill: 0.0
+  goldFind: 0.0
+  magicFind: 0.0
+  lifeOnHit: 2.0
+  primaryResource: 125
+  secondaryResource: 30
+progression:
+  act1:
+    completed: false
+    completedQuests:
+    - slug: the-fallen-star
+      name: The Fallen Star
+    - slug: the-legacy-of-cain
+      name: The Legacy of Cain
+    - slug: a-shattered-crown
+      name: A Shattered Crown
+    - slug: reign-of-the-black-king
+      name: Reign of the Black King
+    - slug: sword-of-the-stranger
+      name: Sword of the Stranger
+  act2:
+    completed: false
+    completedQuests: []
+  act3:
+    completed: false
+    completedQuests: []
+  act4:
+    completed: false
+    completedQuests: []
+  act5:
+    completed: false
+    completedQuests: []
 dead: false
-life: 520
-damage: 29.5676
-attack_speed: 1.600000023841858
-armor: 201
-strength: 26
-dexterity: 49
-vitality: 44
-intelligence: 18
-physical_resist: 2
-fire_resist: 2
-cold_resist: 2
-lightning_resist: 2
-poison_resist: 2
-arcane_resist: 2
-critical_damage: 1.5
-block_chance: 0.0
-block_amount_min: 0
-block_amount_max: 0
-damage_increase: 0.0
-critical_chance: 0.05000000075
-damage_reduction: 0.0
-thorns: 0.0
-life_steal: 0.0
-life_per_kill: 0.0
-gold_find: 0.0
-magic_find: 0.0
-life_on_hit: 2.0
-primary_resource: 125
-secondary_resource: 30
-elite_kills: 37
+last-updated: 1420766767

@@ -1,39 +1,262 @@
 ---
+id: 24691209
 name: Koren
-paragon_level: 0
-hero_id: 24691209
-level: 12
-hardcore: true
-gender: 1
 class: wizard
+gender: 1
+level: 12
+kills:
+  elites: 138
+paragonLevel: 0
+hardcore: true
+seasonal: false
+seasonCreated: 0
+skills:
+  active:
+  - skill:
+      slug: magic-missile
+      name: Magic Missile
+      icon: wizard_magicmissile
+      level: 1
+      categorySlug: primary
+      tooltipUrl: skill/wizard/magic-missile
+      description: "This is a Signature spell. Signature spells are free to cast.\r\n\r\nLaunch
+        a missile of magic energy, dealing 230% weapon damage as Arcane."
+      simpleDescription: "Signature Spell\r\n\r\nCast a bolt of arcane energy towards
+        an enemy."
+      skillCalcId: a
+    rune:
+      slug: magic-missile-a
+      type: a
+      name: Charged Blast
+      level: 6
+      description: Increase the damage of Magic Missile to 325% weapon damage as Arcane.
+      simpleDescription: Increase the damage of Magic Missile.
+      tooltipParams: rune/magic-missile/a
+      skillCalcId: a
+      order: 0
+  - skill:
+      slug: arcane-orb
+      name: Arcane Orb
+      icon: wizard_arcaneorb
+      level: 5
+      categorySlug: secondary
+      tooltipUrl: skill/wizard/arcane-orb
+      description: "Cost: 30 Arcane Power\r\n\r\nHurl an orb of pure energy that explodes
+        on contact, dealing 435% weapon damage as Arcane to all enemies within 15
+        yards."
+      simpleDescription: "Cost: 30 Arcane Power\r\n\r\nCast an orb of pure arcane
+        energy that explodes on contact."
+      skillCalcId: c
+    rune:
+      slug: arcane-orb-a
+      type: a
+      name: Obliteration
+      level: 11
+      description: Increase the speed of the orb and its damage to 700% weapon damage
+        as Arcane, but reduce the area of effect to 8 yards.
+      simpleDescription: Increase the speed of the orb and its damage, but reduce
+        the area of effect.
+      tooltipParams: rune/arcane-orb/a
+      skillCalcId: a
+      order: 0
+  - skill:
+      slug: frost-nova
+      name: Frost Nova
+      icon: wizard_frostnova
+      level: 4
+      categorySlug: defensive
+      tooltipUrl: skill/wizard/frost-nova
+      description: "Cooldown: 11 seconds\r\n\r\nBlast nearby enemies with an explosion
+        of ice and freeze them for 2 seconds."
+      simpleDescription: "Cooldown: 11 seconds\r\n\r\nBlast nearby enemies and freeze
+        them in place."
+      skillCalcId: Y
+    rune:
+      slug: frost-nova-b
+      type: b
+      name: Shatter
+      level: 12
+      description: A frozen enemy that is killed has a 100% chance of releasing another
+        Frost Nova.
+      simpleDescription: A frozen enemy has a chance of releasing an additional Frost
+        Nova when killed.
+      tooltipParams: rune/frost-nova/b
+      skillCalcId: a
+      order: 0
+  - skill:
+      slug: diamond-skin
+      name: Diamond Skin
+      icon: wizard_diamondskin
+      level: 8
+      categorySlug: defensive
+      tooltipUrl: skill/wizard/diamond-skin
+      description: "Cooldown: 15 seconds\r\n\r\nTransform your skin to diamond for
+        3 seconds, absorbing up to 93337 damage from incoming attacks."
+      simpleDescription: "Cooldown: 15 seconds\r\n\r\nTransform your skin to diamond,
+        temporarily absorbing damage for a short duration."
+      skillCalcId: X
+  - {}
+  - {}
+  passive:
+  - skill:
+      slug: blur
+      name: Blur
+      icon: wizard_passive_blur
+      level: 10
+      tooltipUrl: skill/wizard/blur
+      description: Decrease damage taken by 17%.
+      flavor: Truly powerful Wizards have been known to turn their magic inward, transmuting
+        the very composition of their own bodies for boundless energy and catlike
+        reflexes.
+      skillCalcId: Z
+  - {}
+  - {}
+items:
+  head:
+    id: Helm_003
+    name: Thick Coif
+    icon: helm_003_wizard_male
+    displayColor: white
+    tooltipParams: item/CiAI0sqk8QkSBwgEFfjwTl0dHfdYKjAJOJMEQABQBGDwBBjww_fUC1AEWAI
+  torso:
+    id: ChestArmor_003
+    name: Eminence Spite
+    icon: chestarmor_003_wizard_female
+    displayColor: yellow
+    tooltipParams: item/CkgI6Y74gQwSBwgEFaoZGWAdN-jnYR13A70oHYsm_qsdLaW-jB1EfQLlHcNZU2giCwgBFYlCAwAYAiASMAk4mwRAAEgKUBBggwUY1ObIgQxQBFgC
+    dyeColor:
+      item:
+        id: Dye_15
+        name: Mariner's Dye
+        icon: dye_15_demonhunter_male
+        displayColor: white
+        tooltipParams: item/mariners-dye
+  feet:
+    id: Boots_003
+    name: Heavy Boots
+    icon: boots_003_wizard_male
+    displayColor: white
+    tooltipParams: item/ChkI28D0hgoSBwgEFRk9m38wCTixA0AAYIMEGLL02fkPUARYAg
+  hands:
+    id: Gloves_003
+    name: Apprentice Vices
+    icon: gloves_003_wizard_male
+    displayColor: yellow
+    tooltipParams: item/Cj0IkZ_bChIHCAQVQlOSpB1EfQLlHa68Y0sdGy00Yh3DWVNoIgsIABWx_gEAGAYgEjAJOIQEQABIBVAMYOkEGPuy7bYLUARYAg
+    dyeColor:
+      item:
+        id: Dye_17
+        name: Royal Dye
+        icon: dye_17_demonhunter_male
+        displayColor: white
+        tooltipParams: item/royal-dye
+  legs:
+    id: Pants_003
+    name: Hide Breeches of Focus
+    icon: pants_003_wizard_male
+    displayColor: blue
+    tooltipParams: item/CiAI6JrM7QoSBwgEFRiK1aUdhTJfajAJONUDQABQBmCOBBjP19OiC1AEWAI
+  bracers:
+    id: Bracers_002
+    name: Mending Leather Cuffs of the Hawk
+    icon: bracers_002_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiUIuYyv2wkSBwgEFVMkyssduFvoSB3ad9fcMAk46AJAAFAIYMUDGNnursMGUARYAg
+  mainHand:
+    id: Spear_002
+    name: Adventuring Fuscina of the Angels
+    icon: spear_002_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiUIlKiVkwYSBwgEFQwX9vkdw1lTaB0yqntQMAk48wJAAFAIYLYDGOejz2BQBFgC
+  offHand:
+    id: Shield_003
+    name: Heater Shield of Focus
+    icon: shield_003_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiAI742DuA4SBwgEFYsDO2wdhTJfajAJOJkEQABQBmCJBRiWjtjDDVAEWAI
+  waist:
+    id: Belt_003
+    name: Adventuring Leather Belt of the Hawk
+    icon: belt_003_wizard_male
+    displayColor: blue
+    tooltipParams: item/CiUI0fem3AUSBwgEFTmfQtQdGy00Yh3DWVNoMAk4xwJAAFAIYIUDGI2D67sFUARYAg
+  rightFinger:
+    id: Ring_03
+    name: Keen Ring of Wounding
+    icon: ring_03_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiUI08_gqQISBwgEFfJUXUQd73HA0B2WaHMFMAk45AJAAFAIYLcDGOTT6sUIUARYAg
+  leftFinger:
+    id: Ring_03
+    name: Ring of Slaughter
+    icon: ring_03_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiAIwPbYnwESBwgEFfJUXUQdZuNtUzAJOKQDQABQBmCIBBjk0-rFCFAEWAI
+followers: {}
+legendaryPowers: []
+stats:
+  life: 504
+  damage: 37.1048
+  toughness: 0.0
+  healing: 0.0
+  attackSpeed: 1.2000000476837158
+  armor: 279
+  strength: 19
+  dexterity: 35
+  vitality: 41
+  intelligence: 69
+  physicalResist: 7
+  fireResist: 7
+  coldResist: 7
+  lightningResist: 7
+  poisonResist: 7
+  arcaneResist: 7
+  critDamage: 1.5
+  blockChance: 0.1
+  blockAmountMin: 19
+  blockAmountMax: 31
+  damageIncrease: 0.0
+  critChance: 0.05000000075
+  damageReduction: 0.0
+  thorns: 1.0
+  lifeSteal: 0.0
+  lifePerKill: 5.0
+  goldFind: 0.08000000000000007
+  magicFind: 0.0
+  lifeOnHit: 0.0
+  primaryResource: 100
+  secondaryResource: 0
+progression:
+  act1:
+    completed: false
+    completedQuests:
+    - slug: the-fallen-star
+      name: The Fallen Star
+    - slug: the-legacy-of-cain
+      name: The Legacy of Cain
+    - slug: a-shattered-crown
+      name: A Shattered Crown
+    - slug: reign-of-the-black-king
+      name: Reign of the Black King
+    - slug: sword-of-the-stranger
+      name: Sword of the Stranger
+    - slug: the-broken-blade
+      name: The Broken Blade
+    - slug: the-doom-in-wortham
+      name: The Doom in Wortham
+    - slug: trailing-the-coven
+      name: Trailing the Coven
+  act2:
+    completed: false
+    completedQuests: []
+  act3:
+    completed: false
+    completedQuests: []
+  act4:
+    completed: false
+    completedQuests: []
+  act5:
+    completed: false
+    completedQuests: []
 dead: true
-life: 504
-damage: 37.1048
-attack_speed: 1.2000000476837158
-armor: 279
-strength: 19
-dexterity: 35
-vitality: 41
-intelligence: 69
-physical_resist: 7
-fire_resist: 7
-cold_resist: 7
-lightning_resist: 7
-poison_resist: 7
-arcane_resist: 7
-critical_damage: 1.5
-block_chance: 0.1
-block_amount_min: 19
-block_amount_max: 31
-damage_increase: 0.0
-critical_chance: 0.05000000075
-damage_reduction: 0.0
-thorns: 1.0
-life_steal: 0.0
-life_per_kill: 5.0
-gold_find: 0.08000000000000007
-magic_find: 0.0
-life_on_hit: 0.0
-primary_resource: 100
-secondary_resource: 0
-elite_kills: 138
+last-updated: 1344182238

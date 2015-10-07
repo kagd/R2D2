@@ -1,39 +1,296 @@
 ---
+id: 58131916
 name: Mura
-paragon_level: 256
-hero_id: 58131916
-level: 70
-hardcore: false
-gender: 1
 class: crusader
+gender: 1
+level: 70
+kills:
+  elites: 171
+paragonLevel: 256
+hardcore: false
+seasonal: false
+seasonCreated: 2
+skills:
+  active:
+  - skill:
+      slug: punish
+      name: Punish
+      icon: x1_crusader_punish
+      level: 1
+      categorySlug: primary
+      tooltipUrl: skill/crusader/punish
+      description: "Generate: 5 Wrath per attack\r\n\r\nStrike your enemy for 335%
+        weapon damage and gain Hardened Senses, increasing your Block Chance by 15%
+        for 5 seconds."
+      simpleDescription: "Generate: 5 Wrath per attack\r\n\r\nStrike your enemy and
+        gain Hardened Senses, increasing your chance to block for a short time."
+      skillCalcId: a
+  - skill:
+      slug: shield-bash
+      name: Shield Bash
+      icon: x1_crusader_shieldbash2
+      level: 2
+      categorySlug: secondary
+      tooltipUrl: skill/crusader/shield-bash
+      description: "Cost: 30 Wrath\r\n\r\nCharge at your enemy, bashing him and all
+        nearby foes. Deals 700% weapon damage plus 300% of your shield Block Chance
+        as Holy damage."
+      simpleDescription: "Cost: 30 Wrath\r\n\r\nCharge at your enemy, bashing him
+        and all nearby foes violently with your shield."
+      skillCalcId: Z
+  - skill:
+      slug: shield-glare
+      name: Shield Glare
+      icon: x1_crusader_shieldglare
+      level: 4
+      categorySlug: defensive
+      tooltipUrl: skill/crusader/shield-glare
+      description: "Cooldown: 12 seconds\r\n\r\nLight erupts from your shield, Blinding
+        all enemies up to 30 yards in front of you for 4 seconds."
+      simpleDescription: "Cooldown: 12 seconds\r\n\r\nLight erupts from your shield,
+        Blinding all enemies in front of you."
+      skillCalcId: Y
+  - skill:
+      slug: steed-charge
+      name: Steed Charge
+      icon: x1_crusader_steedcharge
+      level: 13
+      categorySlug: utility
+      tooltipUrl: skill/crusader/steed-charge
+      description: "Cooldown: 16 seconds\r\n\r\nMount a celestial war horse that allows
+        you to ride through enemies unhindered for 2 seconds."
+      simpleDescription: "Cooldown: 16 seconds\r\n\r\nMount a celestial war horse
+        that allows you to ride through enemies unhindered for a short time."
+      skillCalcId: V
+  - skill:
+      slug: laws-of-valor
+      name: Laws of Valor
+      icon: x1_crusader_lawsofvalor2
+      level: 14
+      categorySlug: laws
+      tooltipUrl: skill/crusader/laws-of-valor
+      description: "Cooldown: 30 seconds\r\n\r\nActive: Empower the Law, granting
+        you and your allies 15% increased Attack Speed for 5 seconds.\r\n\r\nPassive:
+        Recite the Law, granting you and your allies 8% increased Attack Speed.\r\n\r\nOnly
+        one Law may be active at a time."
+      simpleDescription: "Cooldown: 30 seconds\r\n\r\nActive: Empower the Law, greatly
+        increasing the Attack Speed of you and your allies for a short duration.\r\n\r\nPassive:
+        Recite the Law, increasing the Attack Speed of you and your allies.\r\n\r\nOnly
+        one Law may be active at a time."
+      skillCalcId: f
+  - skill:
+      slug: falling-sword
+      name: Falling Sword
+      icon: x1_crusader_fallingsword
+      level: 19
+      categorySlug: conviction
+      tooltipUrl: skill/crusader/falling-sword
+      description: "Cost: 25 Wrath\r\nCooldown: 30 seconds\r\n\r\nLaunch yourself
+        into the heavens and come crashing down on your enemies, dealing 1700% weapon
+        damage to everything within 14 yards of where you land.\r\n\r\nThis ability
+        does not start its cooldown until after its effects expire."
+      simpleDescription: "Cost: 25 Wrath\r\nCooldown: 30 seconds\r\n\r\nLaunch yourself
+        into the heavens and come crashing down on your enemies.\r\n\r\nThis ability
+        does not start its cooldown until after its effects expire."
+      skillCalcId: h
+  passive:
+  - {}
+  - {}
+  - {}
+  - {}
+items:
+  head:
+    id: Helm_207
+    name: Command Remnant
+    icon: helm_207_crusader_male
+    displayColor: yellow
+    tooltipParams: item/CkkI94rcuQYSBwgEFX75Tl0dN3XajB3HtEUuHX-BxsQdHp3kBB2NEFboHeN8xt0iCwgBFbVEAwAYDCAEMIkSOLEFQABIE1AQYLEFGPzl99QLUApYAg
+    dyeColor:
+      item:
+        id: Dye_08
+        name: Desert Dye
+        icon: dye_08_demonhunter_male
+        displayColor: white
+        tooltipParams: item/desert-dye
+  torso:
+    id: ChestArmor_207
+    name: Rift Relic
+    icon: chestarmor_207_crusader_male
+    displayColor: yellow
+    tooltipParams: item/CkQIsMb8hAQSBwgEFTAiGWAdweOKRh0KmG4AHXMjBlAd43zG3R1wi3fwIgsIABXL_gEAGAggADCJEjjuBEAASAJQDmDuBBjgiMmBDFAKWAI
+    dyeColor:
+      item:
+        id: Dye_18
+        name: Infernal Dye
+        icon: dye_18_demonhunter_male
+        displayColor: white
+        tooltipParams: item/infernal-dye
+  feet:
+    id: Boots_207
+    name: March Ire
+    icon: boots_207_crusader_male
+    displayColor: yellow
+    tooltipParams: item/CkkIzoLQpAQSBwgEFZ9Fm38dweOKRh1jy8CFHcfZKU4dJ7Z8rx0aykI9HXCLd_AiCwgBFUlEAwAYACAmMIkSOMIDQABIAlAQYMIDGL6W2vkPUApYAg
+    dyeColor:
+      item:
+        id: Dye_18
+        name: Infernal Dye
+        icon: dye_18_demonhunter_male
+        displayColor: white
+        tooltipParams: item/infernal-dye
+  hands:
+    id: Unique_Gloves_101_x1
+    name: St. Archew's Gage
+    icon: unique_gloves_101_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/ClIIgZ_hywUSBwgEFZ87niQdKlIaSR0JMxZGHRAvyiodmgYAyx2AgcbEMIkSOPECQABQElgGYPECgAFBtQHIW5KkyAG8qP4DyAGzkvUDyAHzkpMEGL7u8ckEUApYAg
+  shoulders:
+    id: Shoulders_207
+    name: Conquest Marque
+    icon: shoulders_207_crusader_male
+    displayColor: yellow
+    tooltipParams: item/Cj8IsLHz3QMSBwgEFdH4yBUdJ7Z8rx2GJM3IHQqYbgAdcIt38CILCAEVdkIDABguIBIwiRI43ARAAEgCUAxg3AQYouPH3AJQClgC
+    dyeColor:
+      item:
+        id: Dye_18
+        name: Infernal Dye
+        icon: dye_18_demonhunter_male
+        displayColor: white
+        tooltipParams: item/infernal-dye
+  legs:
+    id: Pants_207
+    name: Thistle Raiments
+    icon: pants_207_crusader_male
+    displayColor: yellow
+    tooltipParams: item/CkQI9Jysnw0SBwgEFZ6S1aUdj5DKUB3-vi1bHSe2fK8d43zG3R3pnL3DIgsIABXN_gEAGAAgFDCJEjiKBUAASAxQDmCKBRjDtdOiC1AKWAI
+    dyeColor:
+      item:
+        id: Dye_03
+        name: Winter Dye
+        icon: dye_03_demonhunter_male
+        displayColor: white
+        tooltipParams: item/winter-dye
+  bracers:
+    id: Bracers_207
+    name: Stout Irons
+    icon: bracers_207_demonhunter_male
+    displayColor: yellow
+    tooltipParams: item/CkIIhbDQhwsSBwgEFdosyssdPw1VCx0ntnyvHVA15Tkd1rPA1R1jOtTgIgsIABWtRAMAGAwgGjCJEjiZA0AAUA5gmQMYy8yuwwZQClgC
+  mainHand:
+    id: Unique_Dagger_003_x1
+    name: The Barber
+    icon: unique_dagger_003_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/ClcI_6zHzgoSBwgEFToM8sUdsOTqER2MHL6WHdBXlGIde6MmIh2AgcbEHZW8C3swiRI4lwNAAFASWAZglwOAAUS1Ab2CT7LIAbyo_gPIAbOS9QPIAfOSkwQYi8_voAdQClgC
+  offHand:
+    id: Unique_Shield_008_x1
+    name: Lidless Wall
+    icon: unique_shield_008_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/ClEIo4i_pwYSBwgEFU6hnwkdv605XB2jyz4uHZcGAMsdPFQuEx3b174EHX2BxsQwiRI4mwNAAFASWAZgmwOAATa1AdAHO2zIAbOS9QPIAfOSkwQYnIX9mQFQClgC
+  waist:
+    id: Belt_207
+    name: Sheath Wrath
+    icon: belt_207_demonhunter_male
+    displayColor: yellow
+    tooltipParams: item/CkcI_9b3jQ8SBwgEFb-nQtQd36_-xR3B44pGHSe2fK8dSVPLMx0mlHldHY0QVugiCwgBFUlEAwAYAiAmMIkSOLMDQABQEGCzAxiB4eq7BVAKWAI
+  rightFinger:
+    id: Ring_24
+    name: Ingenious Seal
+    icon: ring_24_demonhunter_male
+    displayColor: yellow
+    tooltipParams: item/CkII5dv6qwoSBwgEFTVVXUQd8pLcCB0zkEoEHcHjikYddwfE9B2NEFboIgsIABVpaQUAGAwgADCJEjjxA0AAUA5g8QMY6tTqxQhQClgC
+  leftFinger:
+    id: Unique_Ring_018_x1
+    name: Nagelring
+    icon: unique_ring_018_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CkwI4oXu6Q0SBwgEFWYUOLkdqOdgPh3yktwIHRRFAOIdgC4uwR3mACAqMIkSOKYCQABQElgGYKYCgAE5tQExVV1EyAGzkvUDyAHzkpMEGLOuv-wIUApYAg
+  neck:
+    id: Unique_Amulet_009_x1
+    name: Rondal's Locket
+    icon: unique_amulet_009_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/ClIIjOSd8AYSBwgEFX4DC1sdmgYAyx0JMxZGHT51eQUdq9OZOR2AgcbEMIkSOLADQABQElgGYLADgAFFtQGvxURkyAG8qP4DyAGzkvUDyAHzkpMEGPyN2LALUApYAg
+followers: {}
+legendaryPowers: []
+stats:
+  life: 319049
+  damage: 81974.6
+  toughness: 2747630.0
+  healing: 69758.6
+  attackSpeed: 1.5
+  armor: 9209
+  strength: 4209
+  dexterity: 77
+  vitality: 2990
+  intelligence: 77
+  physicalResist: 384
+  fireResist: 299
+  coldResist: 299
+  lightningResist: 403
+  poisonResist: 418
+  arcaneResist: 555
+  critDamage: 1.83
+  blockChance: 0.28
+  blockAmountMin: 1962
+  blockAmountMax: 2604
+  damageIncrease: 0.0
+  critChance: 0.05000000075
+  damageReduction: 0.0
+  thorns: 2488.0
+  lifeSteal: 0.0
+  lifePerKill: 4023.0
+  goldFind: 0.8
+  magicFind: 0.39
+  lifeOnHit: 1709.0
+  primaryResource: 100
+  secondaryResource: 0
+progression:
+  act1:
+    completed: true
+    completedQuests:
+    - slug: the-fallen-star
+      name: The Fallen Star
+    - slug: the-legacy-of-cain
+      name: The Legacy of Cain
+    - slug: a-shattered-crown
+      name: A Shattered Crown
+    - slug: reign-of-the-black-king
+      name: Reign of the Black King
+    - slug: sword-of-the-stranger
+      name: Sword of the Stranger
+    - slug: the-broken-blade
+      name: The Broken Blade
+    - slug: the-doom-in-wortham
+      name: The Doom in Wortham
+    - slug: trailing-the-coven
+      name: Trailing the Coven
+    - slug: the-imprisoned-angel
+      name: The Imprisoned Angel
+    - slug: return-to-new-tristram
+      name: Return to New Tristram
+  act2:
+    completed: false
+    completedQuests:
+    - slug: shadows-in-the-desert
+      name: Shadows in the Desert
+    - slug: the-road-to-alcarnus
+      name: The Road to Alcarnus
+    - slug: city-of-blood
+      name: City of Blood
+    - slug: a-royal-audience
+      name: A Royal Audience
+    - slug: unexpected-allies
+      name: Unexpected Allies
+  act3:
+    completed: false
+    completedQuests: []
+  act4:
+    completed: false
+    completedQuests: []
+  act5:
+    completed: false
+    completedQuests: []
 dead: false
-life: 319049
-damage: 81974.6
-attack_speed: 1.5
-armor: 9209
-strength: 4209
-dexterity: 77
-vitality: 2990
-intelligence: 77
-physical_resist: 384
-fire_resist: 299
-cold_resist: 299
-lightning_resist: 403
-poison_resist: 418
-arcane_resist: 555
-critical_damage: 1.83
-block_chance: 0.28
-block_amount_min: 1962
-block_amount_max: 2604
-damage_increase: 0.0
-critical_chance: 0.05000000075
-damage_reduction: 0.0
-thorns: 2488.0
-life_steal: 0.0
-life_per_kill: 4023.0
-gold_find: 0.8
-magic_find: 0.39
-life_on_hit: 1709.0
-primary_resource: 100
-secondary_resource: 0
-elite_kills: 171
+last-updated: 1424390731

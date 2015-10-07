@@ -1,39 +1,405 @@
 ---
+id: 24724623
 name: Koreen
-paragon_level: 0
-hero_id: 24724623
-level: 22
-hardcore: true
-gender: 1
 class: wizard
+gender: 1
+level: 22
+kills:
+  elites: 331
+paragonLevel: 0
+hardcore: true
+seasonal: false
+seasonCreated: 0
+skills:
+  active:
+  - skill:
+      slug: electrocute
+      name: Electrocute
+      icon: wizard_electrocute
+      level: 15
+      categorySlug: primary
+      tooltipUrl: skill/wizard/electrocute
+      description: "This is a Signature spell. Signature spells are free to cast.\r\n\r\nLightning
+        arcs from your fingertips, dealing 138% weapon damage as Lightning. The lightning
+        can jump, hitting up to 2 additional enemies."
+      simpleDescription: "Signature Spell\r\n\r\nCast chain lightning that electrocutes
+        up to 3 enemies."
+      skillCalcId: U
+  - skill:
+      slug: disintegrate
+      name: Disintegrate
+      icon: wizard_disintegrate
+      level: 21
+      categorySlug: secondary
+      tooltipUrl: skill/wizard/disintegrate
+      description: "Cost: 18 Arcane Power\r\n\r\nChannel a beam of pure energy, dealing
+        390% weapon damage as Arcane.\r\n\r\nDisintegrate damage is increased by 250%
+        weapon damage every second, up to a maximum total of 890% weapon damage as
+        Arcane."
+      simpleDescription: "Cost: 18 Arcane Power\r\n\r\nChannel a beam of pure energy
+        that pierces through all enemies."
+      skillCalcId: R
+  - skill:
+      slug: frost-nova
+      name: Frost Nova
+      icon: wizard_frostnova
+      level: 4
+      categorySlug: defensive
+      tooltipUrl: skill/wizard/frost-nova
+      description: "Cooldown: 11 seconds\r\n\r\nBlast nearby enemies with an explosion
+        of ice and freeze them for 2 seconds."
+      simpleDescription: "Cooldown: 11 seconds\r\n\r\nBlast nearby enemies and freeze
+        them in place."
+      skillCalcId: Y
+    rune:
+      slug: frost-nova-b
+      type: b
+      name: Shatter
+      level: 12
+      description: A frozen enemy that is killed has a 100% chance of releasing another
+        Frost Nova.
+      simpleDescription: A frozen enemy has a chance of releasing an additional Frost
+        Nova when killed.
+      tooltipParams: rune/frost-nova/b
+      skillCalcId: a
+      order: 0
+  - skill:
+      slug: diamond-skin
+      name: Diamond Skin
+      icon: wizard_diamondskin
+      level: 8
+      categorySlug: defensive
+      tooltipUrl: skill/wizard/diamond-skin
+      description: "Cooldown: 15 seconds\r\n\r\nTransform your skin to diamond for
+        3 seconds, absorbing up to 93337 damage from incoming attacks."
+      simpleDescription: "Cooldown: 15 seconds\r\n\r\nTransform your skin to diamond,
+        temporarily absorbing damage for a short duration."
+      skillCalcId: X
+    rune:
+      slug: diamond-skin-c
+      type: c
+      name: Crystal Shell
+      level: 14
+      description: Increase the maximum amount of damage absorbed to 186675 damage.
+      simpleDescription: Increase the maximum amount of damage absorbed.
+      tooltipParams: rune/diamond-skin/c
+      skillCalcId: a
+      order: 0
+  - skill:
+      slug: storm-armor
+      name: Storm Armor
+      icon: wizard_stormarmor
+      level: 17
+      categorySlug: conjuration
+      tooltipUrl: skill/wizard/storm-armor
+      description: "Cost: 25 Arcane Power\r\n\r\nBathe yourself in electrical energy,
+        periodically shocking a nearby enemy for 175% weapon damage as Lightning.
+        Lasts 10 minutes.\r\n\r\nOnly one Armor may be active at a time."
+      simpleDescription: "Cost: 25 Arcane Power\r\n\r\nSurround yourself with a magical
+        storm that electrocutes enemies with lightning.\r\n\r\nOnly one Armor may
+        be active at a time."
+      skillCalcId: T
+  - skill:
+      slug: explosive-blast
+      name: Explosive Blast
+      icon: wizard_explosiveblast
+      level: 19
+      categorySlug: mastery
+      tooltipUrl: skill/wizard/explosive-blast
+      description: "Cost: 20 Arcane Power\r\nCooldown: 6 seconds\r\n\r\nGather an
+        infusion of energy around you that explodes after 1.5 seconds for 945% weapon
+        damage as Arcane to all enemies within 12 yards."
+      simpleDescription: "Cost: 20 Arcane Power\r\nCooldown: 6 seconds\r\n\r\nGather
+        energy and release it as a devastating blast."
+      skillCalcId: h
+  passive:
+  - skill:
+      slug: power-hungry
+      name: Power Hungry
+      icon: wizard_passive_powerhungry
+      level: 10
+      tooltipUrl: skill/wizard/power-hungry
+      description: "Being healed by a health globe causes the next Arcane Power Spender
+        you cast to be cast for free.\r\n\r\nYou can have up to 10 charges of Power
+        Hungry."
+      flavor: '"It just doesn''t sit right with me. Some of the things these so-called
+        wizards do... They border on necromancy. Or worse! It''s just not proper magic."
+        —Venerable Sorcerer Fob Dunar'
+      skillCalcId: a
+  - skill:
+      slug: prodigy
+      name: Prodigy
+      icon: wizard_passive_prodigy
+      level: 20
+      tooltipUrl: skill/wizard/prodigy
+      description: "When you cast a Signature spell, you gain 5 Arcane Power.\r\n\r\nThe
+        following skills are Signature spells:\r\n Magic Missile\r\n Shock Pulse\r\n
+        Spectral Blade\r\n Electrocute"
+      flavor: '"Heavy steel armor may turn aside a blade, but let''s see how well
+        it works against lightning!" —Larra Stormlash''s infamous faux pas at the
+        Royal Westmarch Joust'
+      skillCalcId: c
+  - {}
+items:
+  head:
+    id: Helm_003
+    name: Coif of the Hawk
+    icon: helm_003_wizard_male
+    displayColor: blue
+    tooltipParams: item/CiAIv4y8rgkSBwgEFfjwTl0dGy00YjAJOPQDQABQBmDRBBjww_fUC1AEWAI
+  torso:
+    id: ChestArmor_004
+    name: Lucky Chain Mail of Focus
+    icon: chestarmor_004_wizard_female
+    displayColor: blue
+    tooltipParams: item/CiUIl9ekhg4SBwgEFasZGWAdB50YdR3ACYr1MAk4igRAAFAIYMkEGNbmyIEMUARYAg
+  feet:
+    id: Boots_004
+    name: Thick Chain Boots
+    icon: boots_004_wizard_male
+    displayColor: white
+    tooltipParams: item/CiAIn5T-gQQSBwgEFRo9m38dHvdYKjAJON0DQABQBGCXBBi09Nn5D1AEWAI
+  hands:
+    id: Gloves_004
+    name: Lucky Chain Gloves of the Hawk
+    icon: gloves_004_wizard_male
+    displayColor: blue
+    tooltipParams: item/CiUI8v-jmgoSBwgEFUNTkqQdnZftbB3ACYr1MAk40wNAAFAIYKYEGPmy7bYLUARYAg
+  shoulders:
+    id: Shoulders_003
+    name: Reptilian Shoulder Guards of the Hawk
+    icon: shoulders_003_wizard_male
+    displayColor: blue
+    tooltipParams: item/CiQIv8e1GBIHCAQVS_DIFR2dl-1sHUr49eIwCTjDA0AAUAhglwQYlsHH3AJQBFgC
+  legs:
+    id: Pants_004
+    name: War Spur
+    icon: pants_004_wizard_male
+    displayColor: yellow
+    tooltipParams: item/CkgIjvy4vg0SBwgEFRmK1aUdxue77x24W-hIHQbRkggdw1lTaB24uBmuHYutUmgiCwgBFYlCAwAYHiAOMAk4sARAAEgKUBBglAUYzdfTogtQBFgC
+    dyeColor:
+      item:
+        id: Dye_15
+        name: Mariner's Dye
+        icon: dye_15_demonhunter_male
+        displayColor: white
+        tooltipParams: item/mariners-dye
+  bracers:
+    id: Bracers_003
+    name: Engraved Pair
+    icon: bracers_003_demonhunter_male
+    displayColor: yellow
+    tooltipParams: item/CjwI4cn6rAgSBwgEFVQkyssdJ5ZAYB1EfQLlHaRgi4YdXOKQ5yILCAAVtv4BABgUICAwCTjNA0AAUAxgpQQY1-6uwwZQBFgC
+  mainHand:
+    id: Sword_1H_004
+    name: Corruption Scar
+    icon: sword_1h_004_demonhunter_male
+    displayColor: yellow
+    tooltipParams: item/CjwIuKP6uwUSBwgEFdrM2e8dpV7udR39Q1-gHc6I9w0dLIdiCCILCAAVxv4BABgaID4wCTitA0AAUAxgggQYy8yxggJQBFgC
+  offHand:
+    id: Shield_004
+    name: Lucky Kite Shield of Focus
+    icon: shield_004_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiUI54e72wsSBwgEFYwDO2wdxue77x036OdhMAk45gNAAFAIYMEEGJiO2MMNUARYAg
+  waist:
+    id: Belt_004
+    name: Bolstering Lash
+    icon: belt_004_wizard_male
+    displayColor: yellow
+    tooltipParams: item/CjwIwNzRoQ0SBwgEFTqfQtQdB50YdR2RI7xIHblb6EgdwAmK9SILCAAVuf4BABgEIAIwCTjXA0AAUAxgkAQYi4PruwVQBFgC
+  rightFinger:
+    id: Ring_04
+    name: Ring of the Hawk
+    icon: ring_04_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiAI9-v7pgYSBwgEFfNUXUQdGy00YjAJOJEDQABQBmDjAxjm0-rFCFAEWAI
+  leftFinger:
+    id: Ring_05
+    name: Scouting Ring of Focus
+    icon: ring_05_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiUIqbX90w4SBwgEFfRUXUQdFqTT2B3G57vvMAk4hQNAAFAIYNUDGOjT6sUIUARYAg
+  neck:
+    id: Amulet02
+    name: Amulet of Focus
+    icon: amulet02_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiAI0oCNrA0SBwgEFYrFRGQdXVCqBzAJOKEDQABQBmDyAxiUlqbEDFAEWAI
+followers:
+  templar:
+    slug: templar
+    level: 22
+    items:
+      mainHand:
+        id: Mace_1H_003
+        name: Adventuring Morning Star of Wounding
+        icon: mace_1h_003_demonhunter_male
+        displayColor: blue
+        tooltipParams: item/CiUIjLDmzwISBwgEFcALS50dLo1TYB2RI7xIMAk47ARAAFAIYOwEGP_Qp6sM
+      offHand:
+        id: Shield_002
+        name: Adventuring Targe Shield of the Lion
+        icon: shield_002_demonhunter_male
+        displayColor: blue
+        tooltipParams: item/CiUIlLuBlwkSBwgEFYoDO2wdGpZAYB2SDZAKMAk4ggVAAFAIYIIFGJSO2MMN
+      rightFinger:
+        id: Ring_03
+        name: Mending Ring
+        icon: ring_03_demonhunter_male
+        displayColor: blue
+        tooltipParams: item/CiAImuLBsgUSBwgEFfJUXUQduFvoSDAJONUDQABQBmD6Axjk0-rFCA
+      leftFinger:
+        id: Ring_03
+        name: Lucky Ring of the Lion
+        icon: ring_03_demonhunter_male
+        displayColor: blue
+        tooltipParams: item/CiUIrNL-yg4SBwgEFfJUXUQd08Lsjx036OdhMAk4hARAAFAIYIQEGOTT6sUI
+    stats:
+      goldFind: 1
+      magicFind: 0
+      experienceBonus: 1
+    skills:
+    - {}
+    - skill:
+        slug: loyalty
+        name: Loyalty
+        icon: templar_loyalty
+        level: 10
+        tooltipUrl: skill/templar/loyalty
+        description: Regenerates 6437 Life per second for you and the Templar.
+        simpleDescription: Provides Life regeneration for you and the Templar.
+        skillCalcId: b
+    - skill:
+        slug: onslaught
+        name: Onslaught
+        icon: templar_onslaught
+        level: 15
+        tooltipUrl: skill/templar/onslaught
+        description: "Cooldown: 10 seconds\r\n\r\nDelivers a massive blow to an enemy
+          for 800% weapon damage."
+        simpleDescription: "Cooldown: 10 seconds\r\n\r\nDelivers a massive blow to
+          an enemy."
+        skillCalcId: X
+    - {}
+  scoundrel:
+    slug: scoundrel
+    level: 22
+    items:
+      mainHand:
+        id: Crossbow_003
+        name: Keen Heavy Crossbow of the Bear
+        icon: crossbow_003_demonhunter_male
+        displayColor: blue
+        tooltipParams: item/CiUI_ceQ3Q0SBwgEFYRTygodBtGSCB1HY08wMAk45wRAAFAIYOcEGIjO0qwB
+    stats:
+      goldFind: 0
+      magicFind: 0
+      experienceBonus: 0
+    skills:
+    - skill:
+        slug: crippling-shot
+        name: Crippling Shot
+        icon: scoundrel_cripplingshot
+        level: 5
+        tooltipUrl: skill/scoundrel/crippling-shot
+        description: "Cooldown: 4 seconds\r\n\r\nRanged attack that deals 140% weapon
+          damage and slows enemies hit by 80% for 4 seconds."
+        simpleDescription: "Cooldown: 4 seconds\r\n\r\nRanged attack that slows enemies."
+        skillCalcId: a
+    - skill:
+        slug: dirty-fighting
+        name: Dirty Fighting
+        icon: scoundrel_dirtyfighting
+        level: 10
+        tooltipUrl: skill/scoundrel/dirty-fighting
+        description: "Cooldown: 6 seconds\r\n\r\nBlinds nearby enemies in front of
+          the Scoundrel for 2 seconds."
+        simpleDescription: "Cooldown: 6 seconds\r\n\r\nBlinds nearby enemies in front
+          of the Scoundrel."
+        skillCalcId: b
+    - {}
+    - {}
+legendaryPowers: []
+stats:
+  life: 864
+  damage: 53.6403
+  toughness: 0.0
+  healing: 0.0
+  attackSpeed: 1.399999976158142
+  armor: 529
+  strength: 52
+  dexterity: 101
+  vitality: 72
+  intelligence: 167
+  physicalResist: 17
+  fireResist: 17
+  coldResist: 17
+  lightningResist: 17
+  poisonResist: 17
+  arcaneResist: 17
+  critDamage: 1.5
+  blockChance: 0.19
+  blockAmountMin: 32
+  blockAmountMax: 55
+  damageIncrease: 0.0
+  critChance: 0.05000000075
+  damageReduction: 0.0
+  thorns: 2.0
+  lifeSteal: 0.015
+  lifePerKill: 7.0
+  goldFind: 0.3700000000000001
+  magicFind: 0.12
+  lifeOnHit: 0.0
+  primaryResource: 100
+  secondaryResource: 0
+progression:
+  act1:
+    completed: true
+    completedQuests:
+    - slug: the-fallen-star
+      name: The Fallen Star
+    - slug: the-legacy-of-cain
+      name: The Legacy of Cain
+    - slug: a-shattered-crown
+      name: A Shattered Crown
+    - slug: reign-of-the-black-king
+      name: Reign of the Black King
+    - slug: sword-of-the-stranger
+      name: Sword of the Stranger
+    - slug: the-broken-blade
+      name: The Broken Blade
+    - slug: the-doom-in-wortham
+      name: The Doom in Wortham
+    - slug: trailing-the-coven
+      name: Trailing the Coven
+    - slug: the-imprisoned-angel
+      name: The Imprisoned Angel
+    - slug: return-to-new-tristram
+      name: Return to New Tristram
+  act2:
+    completed: false
+    completedQuests:
+    - slug: shadows-in-the-desert
+      name: Shadows in the Desert
+    - slug: the-road-to-alcarnus
+      name: The Road to Alcarnus
+    - slug: city-of-blood
+      name: City of Blood
+    - slug: a-royal-audience
+      name: A Royal Audience
+    - slug: unexpected-allies
+      name: Unexpected Allies
+    - slug: betrayer-of-the-horadrim
+      name: Betrayer of the Horadrim
+  act3:
+    completed: false
+    completedQuests: []
+  act4:
+    completed: false
+    completedQuests: []
+  act5:
+    completed: false
+    completedQuests: []
 dead: true
-life: 864
-damage: 53.6403
-attack_speed: 1.399999976158142
-armor: 529
-strength: 52
-dexterity: 101
-vitality: 72
-intelligence: 167
-physical_resist: 17
-fire_resist: 17
-cold_resist: 17
-lightning_resist: 17
-poison_resist: 17
-arcane_resist: 17
-critical_damage: 1.5
-block_chance: 0.19
-block_amount_min: 32
-block_amount_max: 55
-damage_increase: 0.0
-critical_chance: 0.05000000075
-damage_reduction: 0.0
-thorns: 2.0
-life_steal: 0.015
-life_per_kill: 7.0
-gold_find: 0.3700000000000001
-magic_find: 0.12
-life_on_hit: 0.0
-primary_resource: 100
-secondary_resource: 0
-elite_kills: 331
+last-updated: 1345258101

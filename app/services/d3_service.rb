@@ -64,98 +64,60 @@ class D3Service < BaseService
       talk "Getting Hero #{id}"
       response = self.class.get("/d3/profile/#{ENV['BNET_TAG']}/hero/#{id}", @options)
       json = JSON.parse response.body
-      hero = json.deep_symbolize_keys
 
-      hash = {
-        name: hero[:name],
-        paragon_level: hero[:paragonLevel],
-        hero_id: hero[:id],
-        level: hero[:level],
-        hardcore: hero[:hardcore],
-        gender: hero[:gender],
-        class: hero[:class],
-        dead: hero[:dead],
-        life: hero[:stats][:life],
-        damage: hero[:stats][:damage],
-        attack_speed: hero[:stats][:attackSpeed],
-        armor: hero[:stats][:armor],
-        strength: hero[:stats][:strength],
-        dexterity: hero[:stats][:dexterity],
-        vitality: hero[:stats][:vitality],
-        intelligence: hero[:stats][:intelligence],
-        physical_resist: hero[:stats][:physicalResist],
-        fire_resist: hero[:stats][:fireResist],
-        cold_resist: hero[:stats][:coldResist],
-        lightning_resist: hero[:stats][:lightningResist],
-        poison_resist: hero[:stats][:poisonResist],
-        arcane_resist: hero[:stats][:arcaneResist],
-        critical_damage: hero[:stats][:critDamage],
-        block_chance: hero[:stats][:blockChance],
-        block_amount_min: hero[:stats][:blockAmountMin],
-        block_amount_max: hero[:stats][:blockAmountMax],
-        damage_increase: hero[:stats][:damageIncrease],
-        critical_chance: hero[:stats][:critChance],
-        damage_reduction: hero[:stats][:damageReduction],
-        thorns: hero[:stats][:thorns],
-        life_steal: hero[:stats][:lifeSteal],
-        life_per_kill: hero[:stats][:lifePerKill],
-        gold_find: hero[:stats][:goldFind],
-        magic_find: hero[:stats][:magicFind],
-        life_on_hit: hero[:stats][:lifeOnHit],
-        primary_resource: hero[:stats][:primaryResource],
-        secondary_resource: hero[:stats][:secondaryResource],
-        elite_kills: hero[:kills][:elites]
-      }
+      talk "Saving Hero #{json['name']}"
 
-      talk "Saving Hero #{hash[:name]}"
-
-      hero_file_path = Rails.root.join('data', 'd3', 'heroes', "#{id}.yml")
-      File.open(hero_file_path, "w") do |f|
-        f.write JSON.parse(hash.to_json).to_yaml
+      if json['code'].present?
+        talk "Error getting hero #{id}", :red
+        puts json
+        get_hero(id)
+      else
+        hero_file_path = Rails.root.join('data', 'd3', 'heroes', "#{id}.yml")
+        File.open(hero_file_path, "w") do |f|
+          f.write json.to_yaml
+        end
       end
-
-      # hero[:skills].each do |type, skills|
-      #   skills.each do |skill|
-      #     new_skill = nil
-      #
-      #     if skill[:skill].present?
-      #       skill_hash = {
-      #         type: type.to_s,
-      #         slug: skill[:skill][:slug],
-      #         name: skill[:skill][:name],
-      #         icon: skill[:skill][:icon],
-      #         level: skill[:skill][:level],
-      #         category_slug: skill[:skill][:categorySlug],
-      #         description: skill[:skill][:description]
-      #       }
-      #
-      #       talk "Saving skill #{skill_hash[:name]}"
-      #       new_skill = h.skills.create skill_hash
-      #     end
-      #
-      #     if new_skill.present? && skill[:rune].present?
-      #       rune_hash = {
-      #         slug: skill[:rune][:slug],
-      #         type: skill[:rune][:type],
-      #         name: skill[:rune][:name],
-      #         level: skill[:rune][:level],
-      #         description: skill[:rune][:description]
-      #       }
-      #
-      #       talk "Saving skill #{skill_hash[:name]} rune #{rune_hash[:name]}"
-      #       new_skill.create_rune rune_hash
-      #     end
-      #   end
-      # end
     rescue => e
       talk "Error getting hero #{id}", :red
       puts e.message
       puts e.backtrace.join("\n")
       get_hero(id)
     end
-
-    # get_items(h, hero[:items])
   end
+
+  # hero[:skills].each do |type, skills|
+  #   skills.each do |skill|
+  #     new_skill = nil
+  #
+  #     if skill[:skill].present?
+  #       skill_hash = {
+  #         type: type.to_s,
+  #         slug: skill[:skill][:slug],
+  #         name: skill[:skill][:name],
+  #         icon: skill[:skill][:icon],
+  #         level: skill[:skill][:level],
+  #         category_slug: skill[:skill][:categorySlug],
+  #         description: skill[:skill][:description]
+  #       }
+  #
+  #       talk "Saving skill #{skill_hash[:name]}"
+  #       new_skill = h.skills.create skill_hash
+  #     end
+  #
+  #     if new_skill.present? && skill[:rune].present?
+  #       rune_hash = {
+  #         slug: skill[:rune][:slug],
+  #         type: skill[:rune][:type],
+  #         name: skill[:rune][:name],
+  #         level: skill[:rune][:level],
+  #         description: skill[:rune][:description]
+  #       }
+  #
+  #       talk "Saving skill #{skill_hash[:name]} rune #{rune_hash[:name]}"
+  #       new_skill.create_rune rune_hash
+  #     end
+  #   end
+  # end
 
   # def get_items(hero, items_hash)
   #   items_hash.each do |location, attrs|

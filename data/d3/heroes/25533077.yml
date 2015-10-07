@@ -1,39 +1,381 @@
 ---
+id: 25533077
 name: Marta
-paragon_level: 256
-hero_id: 25533077
-level: 22
-hardcore: false
-gender: 1
 class: barbarian
+gender: 1
+level: 22
+kills:
+  elites: 187
+paragonLevel: 256
+hardcore: false
+seasonal: false
+seasonCreated: 0
+skills:
+  active:
+  - skill:
+      slug: bash
+      name: Bash
+      icon: barbarian_bash
+      level: 1
+      categorySlug: primary
+      tooltipUrl: skill/barbarian/bash
+      description: "Generate: 6 Fury per attack\r\n\r\nBrutally smash an enemy for
+        320% weapon damage."
+      simpleDescription: "Generate: 6 Fury per attack\r\n\r\nBrutally strike a single
+        enemy."
+      skillCalcId: a
+    rune:
+      slug: bash-a
+      type: a
+      name: Onslaught
+      level: 13
+      description: "The enemy has a 10% increased chance to be Critically Hit for
+        3 seconds.\r\n\r\nBash's damage turns into Lightning."
+      simpleDescription: The enemy has an increased chance to be Critically Hit.
+      tooltipParams: rune/bash/a
+      skillCalcId: Z
+      order: 1
+  - skill:
+      slug: seismic-slam
+      name: Seismic Slam
+      icon: barbarian_seismicslam
+      level: 12
+      categorySlug: secondary
+      tooltipUrl: skill/barbarian/seismic-slam
+      description: "Cost: 30 Fury\r\n\r\nSlam the ground and cause a wave of destruction
+        that deals 620% weapon damage to enemies up to 50 yards in front of you."
+      simpleDescription: "Cost: 30 Fury\r\n\r\nCreate shockwaves that damage enemies
+        in their path."
+      skillCalcId: e
+    rune:
+      slug: seismic-slam-c
+      type: c
+      name: Stagger
+      level: 18
+      description: "Reduce the cost to 22 Fury.\r\n\r\nSeismic Slam's damage turns
+        into Lightning."
+      simpleDescription: Reduce the Fury cost.
+      tooltipParams: rune/seismic-slam/c
+      skillCalcId: a
+      order: 0
+  - skill:
+      slug: leap
+      name: Leap
+      icon: barbarian_leap
+      level: 8
+      categorySlug: defensive
+      tooltipUrl: skill/barbarian/leap
+      description: "Generate: 15 Fury\r\nCooldown: 10 seconds\r\n\r\nLeap into the
+        air, dealing 180% weapon damage to all enemies within 8 yards of your destination
+        and slowing their movement speed by 60% for 3 seconds."
+      simpleDescription: "Generate: 15 Fury\r\nCooldown: 10 seconds\r\n\r\nLeap towards
+        enemies and attack them."
+      skillCalcId: X
+    rune:
+      slug: leap-d
+      type: d
+      name: Iron Impact
+      level: 14
+      description: Gain 50% additional Armor per enemy hit for 3 seconds after landing.
+      simpleDescription: Increase your Armor for a limited time after landing.
+      tooltipParams: rune/leap/d
+      skillCalcId: a
+      order: 0
+  - skill:
+      slug: revenge
+      name: Revenge
+      icon: barbarian_revenge
+      level: 13
+      categorySlug: might
+      tooltipUrl: skill/barbarian/revenge
+      description: "Cost: 1 charge\r\n\r\nDeal 300% weapon damage to all nearby enemies.
+        You heal 4% of your maximum Life for each enemy hit.\r\n\r\nRevenge has a
+        15% chance to gain a charge each time you are hit. Maximum 2 charges."
+      simpleDescription: "Cost: 1 charge\r\n\r\nRelease a retaliatory attack that
+        heals you with each enemy hit.\r\n\r\nRevenge has a chance to gain a charge
+        when you are hit. Maximum 2 charges."
+      skillCalcId: V
+    rune:
+      slug: revenge-d
+      type: d
+      name: Blood Law
+      level: 19
+      description: Increase healing to 6% of maximum Life for each enemy hit.
+      simpleDescription: Gain additional Life when Revenge is used.
+      tooltipParams: rune/revenge/d
+      skillCalcId: a
+      order: 0
+  - skill:
+      slug: battle-rage
+      name: Battle Rage
+      icon: barbarian_battlerage
+      level: 22
+      categorySlug: tactics
+      tooltipUrl: skill/barbarian/battle-rage
+      description: "Cost: 20 Fury\r\n\r\nEnter a rage which increases your damage
+        by 10% and Critical Hit Chance by 3%. Lasts 120 seconds."
+      simpleDescription: "Cost: 20 Fury\r\n\r\nUnleash your inner rage, increasing
+        your damage and Critical Hit Chance. Lasts 120 seconds."
+      skillCalcId: R
+  - skill:
+      slug: earthquake
+      name: Earthquake
+      icon: barbarian_earthquake
+      level: 19
+      categorySlug: rage
+      tooltipUrl: skill/barbarian/earthquake
+      description: "Cost: 25 Fury\r\nCooldown: 60 seconds\r\n\r\nShake the ground
+        violently, dealing 4200% weapon damage as Fire over 8 seconds to all enemies
+        within 18 yards."
+      simpleDescription: "Cost: 25 Fury\r\nCooldown: 60 seconds\r\n\r\nViolent tremors
+        shake the earth and damage nearby enemies."
+      skillCalcId: T
+  passive:
+  - skill:
+      slug: ruthless
+      name: Ruthless
+      icon: barbarian_passive_ruthless
+      level: 10
+      tooltipUrl: skill/barbarian/ruthless
+      description: You deal 40% additional damage to enemies below 30% health.
+      flavor: The clans each paint their warriors in their own unique way. Some celebrate
+        the mountain, others honor the fire, but the Targos clan worships the purifying
+        virtue of pain.
+      skillCalcId: Z
+  - skill:
+      slug: weapons-master
+      name: Weapons Master
+      icon: barbarian_passive_weaponsmaster
+      level: 16
+      tooltipUrl: skill/barbarian/weapons-master
+      description: "Gain a bonus based on the weapon type of your main hand weapon:\r\nSwords/Daggers:
+        8% increased damage\r\nMaces/Axes: 5% Critical Hit Chance\r\nPolearms/Spears:
+        8% attack speed\r\nMighty Weapons: 2 Fury per hit"
+      flavor: '"My men ambushed the traveler in the woods, but it was we who were
+        surprised. Such keen senses, swift motions, flawless strikes. We never stood
+        a chance." —Redjack the Bandit'
+      skillCalcId: Y
+  - {}
+items:
+  head:
+    id: Helm_004
+    name: Gathering Arming Cap of the Lion
+    icon: helm_004_barbarian_male
+    displayColor: blue
+    tooltipParams: item/CiUI0Ia4lgQSBwgEFfnwTl0djCb-qx3TwuyPMAk4lgRAAFAIYJYEGPLD99QLUAJYAg
+  torso:
+    id: ChestArmor_004
+    name: Scouting Chain Mail of the Lion
+    icon: chestarmor_004_barbarian_female
+    displayColor: blue
+    tooltipParams: item/CiUIm9HWkw4SBwgEFasZGWAdVS2mmh0WpNPYMAk4pQVAAFAIYKUFGNbmyIEMUAJYAg
+  feet:
+    id: Boots_004
+    name: Marching Cleats
+    icon: boots_004_barbarian_male
+    displayColor: yellow
+    tooltipParams: item/Cj4Iue_mzQoSBwgEFRo9m38dJ5ZAYB1VLaaaHQfqUAgdrw94lyILCAAVyv4BABgSIAowCTjZA0AASA5QDGDZAxi09Nn5D1ACWAI
+    dyeColor:
+      item:
+        id: Dye_14
+        name: Forester's Dye
+        icon: dye_14_demonhunter_male
+        displayColor: white
+        tooltipParams: item/foresters-dye
+  hands:
+    id: Gloves_004
+    name: Windfall Fists
+    icon: gloves_004_barbarian_male
+    displayColor: yellow
+    tooltipParams: item/Cj0IrY3-ahIHCAQVQ1OSpB0WpNPYHdPC7I8djCb-qx25W-hIIgsIABW2_gEAGAQgDjAJOPUEQABIDFAMYPUEGPmy7bYLUAJYAg
+    dyeColor:
+      item:
+        id: Dye_03
+        name: Winter Dye
+        icon: dye_03_demonhunter_male
+        displayColor: white
+        tooltipParams: item/winter-dye
+  shoulders:
+    id: Shoulders_002
+    name: Adventuring Leather Mantle of the Lion
+    icon: shoulders_002_barbarian_male
+    displayColor: blue
+    tooltipParams: item/CiUIpfLPpQQSBwgEFUrwyBUdJ5ZAYB3TwuyPMAk4hQVAAFAIYIUFGJTBx9wCUAJYAg
+  legs:
+    id: Pants_004
+    name: Battle Defiance
+    icon: pants_004_barbarian_male
+    displayColor: yellow
+    tooltipParams: item/Cj4I0e7NnwMSBwgEFRmK1aUdFqTT2B036OdhHYutUmgdFHhJFSILCAEVhUIDABgAIBgwCTj7BEAASAxQDGD7BBjN19OiC1ACWAI
+    dyeColor:
+      item:
+        id: Dye_03
+        name: Winter Dye
+        icon: dye_03_demonhunter_male
+        displayColor: white
+        tooltipParams: item/winter-dye
+  bracers:
+    id: Bracers_003
+    name: Gathering Bindings of the Lion
+    icon: bracers_003_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiUI66Hp_gQSBwgEFVQkyssdjCb-qx3TwuyPMAk4pwNAAFAIYKcDGNfursMGUAJYAg
+  mainHand:
+    id: Sword_2H_003
+    name: Combat Harbinger
+    icon: sword_2h_003_barbarian_male
+    displayColor: yellow
+    tooltipParams: item/CjwIp8K62QcSBwgEFXr1LvIdniO8SB1eUKoHHS2HYggdL41TYCILCAEVZ0IDABgiIEIwCTjjBEAAUAxg4wQYi6qI3QFQAlgC
+  waist:
+    id: BarbBelt_002
+    name: Adventuring Harness of the Lion
+    icon: barbbelt_002_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiUIm8bJrwUSBwgEFQ_v5H0d08Lsjx3DWVNoMAk4twNAAFAIYLcDGJ68p94PUAJYAg
+  rightFinger:
+    id: Ring_06
+    name: Damnation Accolade
+    icon: ring_06_demonhunter_male
+    displayColor: yellow
+    tooltipParams: item/CkYIpKGWxAYSBwgEFfVUXUQdwAmK9R3Nj5yuHYW_NIodlmhzBR2eI7xIHZ2X7WwiCwgBFXZCAwAYHiAgMAk41ANAAFAQYNQDGOrT6sUIUAJYAg
+  leftFinger:
+    id: Ring_06
+    name: Ring of the Lion
+    icon: ring_06_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiAIlYy71g8SBwgEFfVUXUQdVS2mmjAJOIkDQABQBmCJAxjq0-rFCFACWAI
+  neck:
+    id: Amulet03
+    name: Clever Amulet of the Lion
+    icon: amulet03_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiQI44aFGxIHCAQVi8VEZB0th2IIHZ4jvEgwCTiPBEAAUAhgjwQYlpamxAxQAlgC
+followers:
+  templar:
+    slug: templar
+    level: 22
+    items: {}
+    stats:
+      goldFind: 0
+      magicFind: 0
+      experienceBonus: 0
+    skills:
+    - {}
+    - skill:
+        slug: loyalty
+        name: Loyalty
+        icon: templar_loyalty
+        level: 10
+        tooltipUrl: skill/templar/loyalty
+        description: Regenerates 6437 Life per second for you and the Templar.
+        simpleDescription: Provides Life regeneration for you and the Templar.
+        skillCalcId: b
+    - skill:
+        slug: charge
+        name: Charge
+        icon: templar_shieldcharge
+        level: 15
+        tooltipUrl: skill/templar/charge
+        description: "Cooldown: 10 seconds\r\n\r\nCharges a target, dealing 280% weapon
+          damage and stunning all enemies within 8 yards for 3 seconds."
+        simpleDescription: "Cooldown: 10 seconds\r\n\r\nCharges an enemy, dealing
+          damage and stunning nearby enemies."
+        skillCalcId: c
+    - skill:
+        slug: inspire
+        name: Inspire
+        icon: templar_inspire
+        level: 20
+        tooltipUrl: skill/templar/inspire
+        description: "Increases your resource generation.\r\n\r\nMana: 7 per second.\r\nHatred:
+          1 per second.\r\nWrath: 1.1 per second.\r\nArcane Power: 1.4 per second.\r\nFury:
+          10% generated.\r\nSpirit: 10% generated."
+        simpleDescription: Increases your resource generation.
+        skillCalcId: d
+legendaryPowers: []
+stats:
+  life: 854
+  damage: 128.324
+  toughness: 0.0
+  healing: 0.0
+  attackSpeed: 1.100000023841858
+  armor: 688
+  strength: 248
+  dexterity: 47
+  vitality: 73
+  intelligence: 53
+  physicalResist: 5
+  fireResist: 5
+  coldResist: 5
+  lightningResist: 5
+  poisonResist: 5
+  arcaneResist: 5
+  critDamage: 1.5
+  blockChance: 0.0
+  blockAmountMin: 0
+  blockAmountMax: 0
+  damageIncrease: 0.0
+  critChance: 0.05000000075
+  damageReduction: 0.0
+  thorns: 0.0
+  lifeSteal: 0.0
+  lifePerKill: 0.0
+  goldFind: 0.15999999999999992
+  magicFind: 0.27
+  lifeOnHit: 0.0
+  primaryResource: 100
+  secondaryResource: 0
+progression:
+  act1:
+    completed: true
+    completedQuests:
+    - slug: the-fallen-star
+      name: The Fallen Star
+    - slug: the-legacy-of-cain
+      name: The Legacy of Cain
+    - slug: a-shattered-crown
+      name: A Shattered Crown
+    - slug: reign-of-the-black-king
+      name: Reign of the Black King
+    - slug: sword-of-the-stranger
+      name: Sword of the Stranger
+    - slug: the-broken-blade
+      name: The Broken Blade
+    - slug: the-doom-in-wortham
+      name: The Doom in Wortham
+    - slug: trailing-the-coven
+      name: Trailing the Coven
+    - slug: the-imprisoned-angel
+      name: The Imprisoned Angel
+    - slug: return-to-new-tristram
+      name: Return to New Tristram
+  act2:
+    completed: false
+    completedQuests:
+    - slug: shadows-in-the-desert
+      name: Shadows in the Desert
+    - slug: the-road-to-alcarnus
+      name: The Road to Alcarnus
+    - slug: city-of-blood
+      name: City of Blood
+    - slug: a-royal-audience
+      name: A Royal Audience
+    - slug: unexpected-allies
+      name: Unexpected Allies
+    - slug: betrayer-of-the-horadrim
+      name: Betrayer of the Horadrim
+    - slug: blood-and-sand
+      name: Blood and Sand
+    - slug: the-black-soulstone
+      name: The Black Soulstone
+  act3:
+    completed: false
+    completedQuests: []
+  act4:
+    completed: false
+    completedQuests: []
+  act5:
+    completed: false
+    completedQuests: []
 dead: false
-life: 854
-damage: 128.324
-attack_speed: 1.100000023841858
-armor: 688
-strength: 248
-dexterity: 47
-vitality: 73
-intelligence: 53
-physical_resist: 5
-fire_resist: 5
-cold_resist: 5
-lightning_resist: 5
-poison_resist: 5
-arcane_resist: 5
-critical_damage: 1.5
-block_chance: 0.0
-block_amount_min: 0
-block_amount_max: 0
-damage_increase: 0.0
-critical_chance: 0.05000000075
-damage_reduction: 0.0
-thorns: 0.0
-life_steal: 0.0
-life_per_kill: 0.0
-gold_find: 0.15999999999999992
-magic_find: 0.27
-life_on_hit: 0.0
-primary_resource: 100
-secondary_resource: 0
-elite_kills: 187
+last-updated: 1384032561

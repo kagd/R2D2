@@ -1,39 +1,586 @@
 ---
+id: 36895554
 name: Teagan
-paragon_level: 256
-hero_id: 36895554
-level: 70
-hardcore: false
-gender: 1
 class: wizard
+gender: 1
+level: 70
+kills:
+  elites: 9755
+paragonLevel: 256
+hardcore: false
+seasonal: false
+seasonCreated: 0
+skills:
+  active:
+  - skill:
+      slug: magic-missile
+      name: Magic Missile
+      icon: wizard_magicmissile
+      level: 1
+      categorySlug: primary
+      tooltipUrl: skill/wizard/magic-missile
+      description: "This is a Signature spell. Signature spells are free to cast.\r\n\r\nLaunch
+        a missile of magic energy, dealing 230% weapon damage as Arcane."
+      simpleDescription: "Signature Spell\r\n\r\nCast a bolt of arcane energy towards
+        an enemy."
+      skillCalcId: a
+    rune:
+      slug: magic-missile-a
+      type: a
+      name: Charged Blast
+      level: 6
+      description: Increase the damage of Magic Missile to 325% weapon damage as Arcane.
+      simpleDescription: Increase the damage of Magic Missile.
+      tooltipParams: rune/magic-missile/a
+      skillCalcId: a
+      order: 0
+  - skill:
+      slug: meteor
+      name: Meteor
+      icon: wizard_meteor
+      level: 25
+      categorySlug: force
+      tooltipUrl: skill/wizard/meteor
+      description: "Cost: 40 Arcane Power\r\n\r\nSummon an immense Meteor that plummets
+        from the sky, crashing into enemies for 740% weapon damage as Fire. The ground
+        it hits is scorched with molten fire that deals 235% weapon damage as Fire
+        over 3 seconds."
+      simpleDescription: "Cost: 40 Arcane Power\r\n\r\nUnleash a massive Meteor that
+        scorches enemies caught in its blast."
+      skillCalcId: P
+    rune:
+      slug: meteor-d
+      type: d
+      name: Star Pact
+      level: 34
+      description: Expend all remaining Arcane Power. Each point of extra Arcane Power
+        spent increases the impact damage of Meteor by 20% weapon damage as Arcane.
+      simpleDescription: "Expend all remaining Arcane Power. Each point of extra Arcane
+        Power spent increases the impact damage of Meteor.\r\n\r\nMeteor's damage
+        turns into Arcane."
+      tooltipParams: rune/meteor/d
+      skillCalcId: Z
+      order: 1
+  - skill:
+      slug: teleport
+      name: Teleport
+      icon: wizard_teleport
+      level: 22
+      categorySlug: defensive
+      tooltipUrl: skill/wizard/teleport
+      description: "Cooldown: 11 seconds\r\n\r\nTeleport through the ether to the
+        selected location up to 50 yards away."
+      simpleDescription: "Cooldown: 11 seconds\r\n\r\nTeleport instantly to another
+        location."
+      skillCalcId: Q
+    rune:
+      slug: teleport-e
+      type: e
+      name: Wormhole
+      level: 31
+      description: After casting Teleport, you have 3 seconds to Teleport 1 additional
+        time.
+      simpleDescription: After casting Teleport, for a short duration you may cast
+        Teleport again.
+      tooltipParams: rune/teleport/e
+      skillCalcId: Z
+      order: 1
+  - skill:
+      slug: frost-nova
+      name: Frost Nova
+      icon: wizard_frostnova
+      level: 4
+      categorySlug: defensive
+      tooltipUrl: skill/wizard/frost-nova
+      description: "Cooldown: 11 seconds\r\n\r\nBlast nearby enemies with an explosion
+        of ice and freeze them for 2 seconds."
+      simpleDescription: "Cooldown: 11 seconds\r\n\r\nBlast nearby enemies and freeze
+        them in place."
+      skillCalcId: Y
+    rune:
+      slug: frost-nova-a
+      type: a
+      name: Bone Chill
+      level: 51
+      description: Enemies take 33% more damage while frozen or chilled by Frost Nova.
+      simpleDescription: Enemies take more damage while frozen or chilled by Frost
+        Nova.
+      tooltipParams: rune/frost-nova/a
+      skillCalcId: c
+      order: 4
+  - skill:
+      slug: familiar
+      name: Familiar
+      icon: wizard_familiar
+      level: 22
+      categorySlug: conjuration
+      tooltipUrl: skill/wizard/familiar
+      description: "Cost: 20 Arcane Power\r\n\r\nSummon a Familiar that attacks your
+        enemies for 240% weapon damage as Arcane. This companion cannot be targeted
+        or damaged by enemies. Lasts 10 minutes."
+      simpleDescription: "Cost: 20 Arcane Power\r\n\r\nSummon a mystical Familiar
+        companion. Your Familiar is immune to damage and assists you in combat."
+      skillCalcId: j
+    rune:
+      slug: familiar-b
+      type: b
+      name: Cannoneer
+      level: 57
+      description: The Familiar's projectiles explode on impact, dealing 240% weapon
+        damage as Arcane to all enemies within 6 yards.
+      simpleDescription: The Familiar's projectile attacks explode on impact.
+      tooltipParams: rune/familiar/b
+      skillCalcId: c
+      order: 4
+  - skill:
+      slug: archon
+      name: Archon
+      icon: wizard_archon
+      level: 30
+      categorySlug: mastery
+      tooltipUrl: skill/wizard/archon
+      description: "Cooldown: 120 seconds\r\n\r\nTransform into a being of pure arcane
+        energy for 20 seconds. While in Archon form, your normal abilities are replaced
+        by powerful Archon abilities and your damage, Armor and resistances are increased
+        by 20%.\r\n\r\nEach enemy killed while in Archon form increases your damage
+        by 6% for the remaining duration of Archon."
+      simpleDescription: "Cooldown: 120 seconds\r\n\r\nBecome a being of pure energy
+        and gain potent new abilities for 20 seconds."
+      skillCalcId: m
+    rune:
+      slug: archon-d
+      type: d
+      name: Pure Power
+      level: 46
+      description: "Decrease the cooldown of Archon to 100 seconds.\r\n\r\nArchon
+        abilities deal Lightning damage instead of Arcane."
+      simpleDescription: "Decrease the cooldown of Archon.\r\n\r\nArchon abilities
+        deal Lightning damage instead of Arcane."
+      tooltipParams: rune/archon/d
+      skillCalcId: b
+      order: 2
+  passive:
+  - skill:
+      slug: prodigy
+      name: Prodigy
+      icon: wizard_passive_prodigy
+      level: 20
+      tooltipUrl: skill/wizard/prodigy
+      description: "When you cast a Signature spell, you gain 5 Arcane Power.\r\n\r\nThe
+        following skills are Signature spells:\r\n Magic Missile\r\n Shock Pulse\r\n
+        Spectral Blade\r\n Electrocute"
+      flavor: '"Heavy steel armor may turn aside a blade, but let''s see how well
+        it works against lightning!" —Larra Stormlash''s infamous faux pas at the
+        Royal Westmarch Joust'
+      skillCalcId: c
+  - skill:
+      slug: audacity
+      name: Audacity
+      icon: x1_wizard_passive_audacity
+      level: 66
+      tooltipUrl: skill/wizard/audacity
+      description: You deal 30% additional damage to enemies within 15 yards.
+      flavor: '"Those who dare approach you do so at their own peril." —Valthek, High
+        Councilor of the Vizjerei'
+      skillCalcId: i
+  - skill:
+      slug: astral-presence
+      name: Astral Presence
+      icon: wizard_passive_astralpresence
+      level: 24
+      tooltipUrl: skill/wizard/astral-presence
+      description: Increase your maximum Arcane Power by 20 and Arcane Power regeneration
+        by 2.5 per second.
+      flavor: '"Feel the power in the veil that surrounds us—a thunder cloud ready
+        to burst... a volcano about to erupt. Harness it, and you will be invincible."
+        —Adria'
+      skillCalcId: X
+  - skill:
+      slug: evocation
+      name: Evocation
+      icon: wizard_passive_evocation
+      level: 13
+      tooltipUrl: skill/wizard/evocation
+      description: Reduce all cooldowns by 20%.
+      flavor: So long have you focused on twisting reality to your will that time
+        itself seeks to appease you.
+      skillCalcId: b
+items:
+  head:
+    id: Unique_Helm_Set_06_x1
+    name: Firebird's Plume
+    icon: unique_helm_set_06_x1_demonhunter_male
+    displayColor: green
+    tooltipParams: item/CogBCMWm6aYDEgcIBBW0LDOJHXKOHSEdcYt38B3mFdsNHVOrjiwdZiMGUB3zcAetMIsCOLUCQABQElgEYLUCaisKDAgAEP202o2BgIDADRIbCMHFp9IIEgcIBBVr9YtfMI8COABAAVgEkAEAgAFGpQFTq44srQFnPuzktQF_-U5duAHj9LfrBcABARiXzebsDlAEWAKgAZfN5uwOoAHXzvbhDqABit779gE
+    setItemsEquipped:
+    - Unique_Chest_Set_06_x1
+    - Unique_Shoulder_Set_06_x1
+    - Unique_Helm_Set_06_x1
+  torso:
+    id: Unique_Chest_Set_06_x1
+    name: Firebird's Breast
+    icon: unique_chest_set_06_x1_wizard_female
+    displayColor: green
+    tooltipParams: item/CuIBCN2q4KAHEgcIBBWFd28PHcStOVwdHaONxB3ANBlyHaLPFFYdcyMGUB2bhvbiMIsCON0CQABQElgEYN0CaisKDAgAELPMheSAgICgLBIbCIK_r7kOEgcIBBXWXbZ6MIsCOABAAVgEkAEAaisKDAgAELbMheSAgICgLBIbCLjLq6IPEgcIBBXWXbZ6MIsCOABAAVgEkAEAaisKDAgAELjMheSAgICgLBIbCNPz-8wCEgcIBBXWXbZ6MIsCOABAAVgEkAEAgAFGpQGbhvbirQGbhvbitQExIhlguAGQm87jBsABAhiK3vv2AVAEWAKgAZfN5uwOoAHXzvbhDqABit779gE
+    setItemsEquipped:
+    - Unique_Chest_Set_06_x1
+    - Unique_Shoulder_Set_06_x1
+    - Unique_Helm_Set_06_x1
+  feet:
+    id: Unique_Boots_Set_13_x1
+    name: Vyr's Swaggering Stance
+    icon: unique_boots_set_13_x1_wizard_male
+    displayColor: green
+    tooltipParams: item/Cl8IqLn8PBIHCAQVsxdH0B1yjh0hHfPVR7QdQ05EUR2izxRWHX7T9HUdm4b24jCLAjjEAkAAUBJYBGDEAoABRo0B--Smc6UBftP0da0Bxzb8L7UBoEWbf7gB1ZieOcABARiZocf7BVAEWAKgAZmhx_sFoAHkn-eUBqABuN2MrA8
+    transmogItem:
+      id: Unique_Boots_007_x1
+      name: Fire Walkers
+      icon: unique_boots_007_x1_demonhunter_male
+      displayColor: orange
+      tooltipParams: item/fire-walkers-27jncv
+    setItemsEquipped:
+    - Unique_Pants_Set_13_x1
+    - Unique_Gloves_Set_13_x1
+    - Unique_Boots_Set_13_x1
+  hands:
+    id: Unique_Gloves_Set_13_x1
+    name: Vyr's Grasping Gauntlets
+    icon: unique_gloves_set_13_x1_demonhunter_male
+    displayColor: green
+    tooltipParams: item/CmEIqbTfpQcSBwgEFVyXwXodrLzTUx1_jofMHZsGAMsd0p-eRB1-VrMuHfNwB60wiwI4qQNAAFASWARgqQOAAUaNAfsKwXqlAdKfnkStAZinjsC1AclbkqS4Ac_f_rUMwAENGLjdjKwPUARYAqABmaHH-wWgAeSf55QGoAG43YysDw
+    transmogItem:
+      id: Unique_Gloves_Set_12_x1
+      name: Pride of the Invoker
+      icon: unique_gloves_set_12_x1_demonhunter_male
+      displayColor: green
+      tooltipParams: item/pride-of-the-invoker
+      setItemsEquipped:
+      - Unique_Gloves_Set_12_x1
+    setItemsEquipped:
+    - Unique_Pants_Set_13_x1
+    - Unique_Gloves_Set_13_x1
+    - Unique_Boots_Set_13_x1
+  shoulders:
+    id: Unique_Shoulder_Set_06_x1
+    name: Firebird's Pinions
+    icon: unique_shoulder_set_06_x1_demonhunter_male
+    displayColor: green
+    tooltipParams: item/CloIquXIwwQSBwgEFVQs4YkdP_IJ2B1_jofMHaLPFFYdwDQZch10RaeJHZuG9uIwiwI4jgJAAFASWARgjgKAAUalAaLPFFatAUNORFG1AdL4yBW4AfL8pzLAAQIY18724Q5QBFgCoAGXzebsDqAB18724Q6gAYre-_YB
+    setItemsEquipped:
+    - Unique_Chest_Set_06_x1
+    - Unique_Shoulder_Set_06_x1
+    - Unique_Helm_Set_06_x1
+  legs:
+    id: Unique_Pants_Set_13_x1
+    name: Vyr's Fantastic Finery
+    icon: unique_pants_set_13_x1_wizard_male
+    displayColor: green
+    tooltipParams: item/CrUBCKXf1OUFEgcIBBXy50wxHdk_1J8dcYt38B07J28kHZzCk_cdj5DKUB2bhvbiMIsCOIUCQABQElgEYIUCaisKDAgAEMigquSCgIDANxIbCN6E6YgJEgcIBBXWXbZ6MIsCOABAAVgEkAEAaisKDAgAEL3socuCgICAFxIbCJDu55sKEgcIBBXXXbZ6MI8COABAAVgEkAEAgAFGpQGbhvbirQGbhvbitQGfktWluAG4hKXaBsABBhjkn-eUBlAEWAKgAZmhx_sFoAHkn-eUBqABuN2MrA8
+    setItemsEquipped:
+    - Unique_Pants_Set_13_x1
+    - Unique_Gloves_Set_13_x1
+    - Unique_Boots_Set_13_x1
+  bracers:
+    id: Unique_Bracer_104_x1
+    name: Trag'Oul Coils
+    icon: unique_bracer_104_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/ClYIu-yqxAwSBwgEFaFdXDkdm4b24h3Sn55EHTsnbyQdQ05EUR1xi3fwMIsCOOMCQABQElgEYOMCgAFGpQGbhvbirQGbhvbitQHbLMrLuAHihLOUDcABBRjC9uKVB1AEWAI
+  mainHand:
+    id: Unique_Sword_2H_011_x1
+    name: Blackguard
+    icon: unique_sword_2h_011_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/Co4BCJid4LIDEgcIBBU3GLTCHXKOHSEdhpD82h1LtflLHd7T9aIdzpwH8x2eT4PcMIsCOKwDQABQElgEYKwDaisKDAgAEPez6viAgIDAPhIbCIGRqIMPEgcIBBUjlq6YMI8COABAAVgEkAEAgAFGjQG2_6HCpQGGkPzarQFmIwZQtQE8Ai_yuAGLpd7kDsABAxiRn9_UB1AEWAI
+    transmogItem:
+      id: Unique_Sword_2H_001_x1
+      name: The Grandfather
+      icon: unique_sword_2h_001_x1_demonhunter_male
+      displayColor: orange
+      tooltipParams: item/the-grandfather
+  waist:
+    id: Unique_Belt_005_x1
+    name: Hellcat Waistguard
+    icon: unique_belt_005_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CloIxZ-NpAISBwgEFZmrjWkdP_IJ2B1_jofMHbUvKgMdm4b24h1DTkRRHX52VaEwiwI4xQJAAFASWARgxQKAAUalAZuG9uKtAZuG9uK1AcCnQtS4AYaU-RzAAQQYsq7tmA1QBFgC
+  rightFinger:
+    id: Unique_Ring_024_x1
+    name: Hellfire Ring
+    icon: unique_ring_024_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CoQBCOu0oZsEEgcIBBVj-0e5HYX2xh8dm4b24h1nPuzkHX52VaEdmKeOwB2s05k5MI8COLMDQABQElgEYLMDajAKDAgAEMDc7_WAgIDAFhIgCKe6684IEgcIBBULi6LBMIsCOABAAFASWASQAQDYASKlAWc-7OStAWYjBlC4AdWzt54LwAEDGLmSwOsIUARYAg
+  leftFinger:
+    id: Unique_Ring_107_x1
+    name: Ring of Royal Grandeur
+    icon: unique_ring_107_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CogBCLWwmqALEgcIBBUlmHq7HX-Oh8wdmKeOwB3Sn55EHX52VaEdm4b24jCLAjjdAkAAUBJYBGDdAmowCgwIABCAwreYgYCAwCUSIAi7rqS1ARIHCAQVKxe0wTCLAjgAQABQElgEkAEA2AEOgAFGpQHSn55ErQFmIwZQtQE2VV1EuAGN3ICZCcABDhi1n6vICFAEWAI
+  neck:
+    id: x1_Amulet_norm_unique_25
+    name: Hellfire Amulet
+    icon: x1_amulet_norm_unique_25_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/ClIIk-yx6gwSBwgEFYdQZC0dmVVVih3zcAetHb-5Yigd3Ne-BB2bBgDLHUu1-UswjwI4qwJAAFASWARgqwKlAdzXvgStAbDBCXK4AejQtLIGwAEEGI7CotYFUARYAg
+followers:
+  templar:
+    slug: templar
+    level: 70
+    items:
+      special:
+        id: Templar_Special_204
+        name: Resilient Trinket
+        icon: templar_special_204_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/CjgIkbTw9Q8SBwgEFeoLY0QdPaRQBx2NPIFMHbs01Jkdl1RTWCILCAAVrUQDABgEIAAwCTgAQABQDBjUr5jGCA
+      offHand:
+        id: Shield_207_104
+        name: Battle Parapet
+        icon: shield_207_104_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/CjwIi5H57wcSBwgEFWWbSewd5uWp8B1ApFAHHYQcnScdnykOiCILCAEVgUIDABgQIBgwCTiNBEAAUAxgjQQYtZKzuwI
+      rightFinger:
+        id: Ring_21
+        name: Death Loop
+        icon: ring_21_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/CnAImIffzAkSBwgEFTJVXUQdNFaN9B2GAmPqHQ-QCvwdRpPTiR12HvYNHRJW1e4iCwgAFar-AQAYLiAIMAk4mARAAFAQYJgEaigKDAgAELz7mKyDgIDgNxIYCPy857oIEgcIBBVk9YtfMA04AEABkAEAGOTU6sUI
+      leftFinger:
+        id: Unique_Ring_024_104
+        name: Hellfire Ring
+        icon: unique_ring_024_104_demonhunter_male
+        displayColor: orange
+        tooltipParams: item/CjgIrIfXJxIHCAQVzzlG4h3SXcJLHV0P5Ygd28ueaR1m3ArxHX6AuNQdW06AyTAPOJADQABQEmCQAxjhmM7bAw
+    stats:
+      goldFind: 3
+      magicFind: 0
+      experienceBonus: 0
+    skills:
+    - skill:
+        slug: intervene
+        name: Intervene
+        icon: templar_intervene
+        level: 5
+        tooltipUrl: skill/templar/intervene
+        description: "Cooldown: 10 seconds\r\n\r\nTaunt enemies within 10 yards of
+          you for 3 seconds when you are hit."
+        simpleDescription: "Cooldown: 10 seconds\r\n\r\nTaunt enemies near you when
+          you are hit."
+        skillCalcId: Z
+    - skill:
+        slug: loyalty
+        name: Loyalty
+        icon: templar_loyalty
+        level: 10
+        tooltipUrl: skill/templar/loyalty
+        description: Regenerates 6437 Life per second for you and the Templar.
+        simpleDescription: Provides Life regeneration for you and the Templar.
+        skillCalcId: b
+    - skill:
+        slug: charge
+        name: Charge
+        icon: templar_shieldcharge
+        level: 15
+        tooltipUrl: skill/templar/charge
+        description: "Cooldown: 10 seconds\r\n\r\nCharges a target, dealing 280% weapon
+          damage and stunning all enemies within 8 yards for 3 seconds."
+        simpleDescription: "Cooldown: 10 seconds\r\n\r\nCharges an enemy, dealing
+          damage and stunning nearby enemies."
+        skillCalcId: c
+    - skill:
+        slug: inspire
+        name: Inspire
+        icon: templar_inspire
+        level: 20
+        tooltipUrl: skill/templar/inspire
+        description: "Increases your resource generation.\r\n\r\nMana: 7 per second.\r\nHatred:
+          1 per second.\r\nWrath: 1.1 per second.\r\nArcane Power: 1.4 per second.\r\nFury:
+          10% generated.\r\nSpirit: 10% generated."
+        simpleDescription: Increases your resource generation.
+        skillCalcId: d
+  scoundrel:
+    slug: scoundrel
+    level: 70
+    items:
+      mainHand:
+        id: Crossbow_001
+        name: Light Crossbow of Slaying
+        icon: crossbow_001_demonhunter_male
+        displayColor: blue
+        tooltipParams: item/CiAIpaPVrAYSBwgEFYJTygodR5uKMjAJOO8EQABQBmDvBBiEztKsAQ
+    stats:
+      goldFind: 0
+      magicFind: 0
+      experienceBonus: 0
+    skills:
+    - {}
+    - {}
+    - {}
+    - {}
+  enchantress:
+    slug: enchantress
+    level: 70
+    items:
+      special:
+        id: Enchantress_Special_206
+        name: Adjunct's Serpent
+        icon: enchantress_special_206_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/ClYI-OHM6AISBwgEFTWjYi0d8nAHrR2aBgDLHcDchxsdww2c5R3pcC-7IgsIARVsQgMAGAAgEjCLAjgAQABQDlgEpQHycAetrQHycAetuAGSlsbdAsABBBjqjJXWBQ
+      mainHand:
+        id: Unique_Sword_2H_004_x1
+        name: Scourge
+        icon: unique_sword_2h_004_x1_demonhunter_male
+        displayColor: orange
+        tooltipParams: item/CoIBCJ7xw5EEEgcIBBXZpKPCHaEp3AUdnk-D3B2GkPzaHWYjBlAdblCQBTCLAjjqAkAAUBJYBGDqAmorCgwIABCUkr-mgYCAgAYSGwj_w43pBBIHCAQVafWLXzCPAjgAQAFYBJABAIABRqUBhpD82q0B3tP1orUBPAIv8rgBk6z2dMABAxjN7OLVBw
+      rightFinger:
+        id: Unique_Ring_001_x1
+        name: Band of Hollow Whispers
+        icon: unique_ring_001_x1_demonhunter_male
+        displayColor: orange
+        tooltipParams: item/ClYIpNTcqAESBwgEFT4lIrkd2T_Unx1DTkRRHSCNN1QddEWniR2bhvbiMIsCOJgDQABQElgEYJgDgAFGpQF0RaeJrQE7J28ktQE2VV1EuAHZotLcAcABARiD6-7tCA
+      leftFinger:
+        id: Unique_Ring_021_x1
+        name: Manald Heal
+        icon: unique_ring_021_x1_demonhunter_male
+        displayColor: orange
+        tooltipParams: item/ClsI3rXQnw0SBwgEFUBWRrkd2T_Unx07J28kHUNORFEdII03VB0Nv1KzHZuG9uIwiwI4ogNAAFASWARgogOAAUalATsnbyStAX52VaG1ATZVXUS4AYjOk_EJwAEEGP-mzesI
+      neck:
+        id: Unique_Amulet_105_x1
+        name: Golden Gorget of Leoric
+        icon: unique_amulet_105_x1_demonhunter_male
+        displayColor: orange
+        tooltipParams: item/CoMBCOWhsaAHEgcIBBWb-l1dHZc_ndoddEWniR07J28kHX5Wsy4d83AHrTCLAjiNA0AAUBJYBGCNA2orCgwIABDbmPjDgYCAwB0SGwjrt6qPDBIHCAQV1l22ejCPAjgAQAFYBJABAIABRqUBdEWnia0BZiMGULUBsMVEZLgBt5_A6wbAAQUYturv1Qs
+    stats:
+      goldFind: 14
+      magicFind: 0
+      experienceBonus: 23
+    skills:
+    - skill:
+        slug: charm
+        name: Charm
+        icon: enchantress_charm
+        level: 15
+        tooltipUrl: skill/enchantress/charm
+        description: "Cooldown: 18 seconds\r\n\r\nCharms an enemy to fight for you
+          for 8 seconds."
+        simpleDescription: "Cooldown: 18 seconds\r\n\r\nTemporarily Charms an enemy
+          to fight for you."
+        skillCalcId: a
+    - skill:
+        slug: missile-ward
+        name: Missile Ward
+        icon: enchantress_missileward
+        level: 20
+        tooltipUrl: skill/enchantress/missile-ward
+        description: Buffs you and the Enchantress, reducing damage from ranged attacks
+          by 6%.
+        simpleDescription: Reduces damage from ranged attacks for you and the Enchantress.
+        skillCalcId: b
+    - skill:
+        slug: erosion
+        name: Erosion
+        icon: enchantress_scorchedearth
+        level: 25
+        tooltipUrl: skill/enchantress/erosion
+        description: "Cooldown: 15 seconds\r\n\r\nConjures a pool of energy that deals
+          330% weapon damage as Arcane over 5 seconds. Affected enemies will also
+          take 3% increased damage."
+        simpleDescription: "Cooldown: 15 seconds\r\n\r\nConjures a pool of energy
+          that deals damage and causes affected enemies to take additional damage."
+        skillCalcId: X
+    - skill:
+        slug: focused-mind
+        name: Focused Mind
+        icon: enchantress_focusedmind
+        level: 30
+        tooltipUrl: skill/enchantress/focused-mind
+        description: A 40 yard aura that increases attack speed for you and the Enchantress
+          by 3%.
+        simpleDescription: An aura that increases attack speed for you and the Enchantress.
+        skillCalcId: d
+legendaryPowers: []
+stats:
+  life: 452886
+  damage: 721372.0
+  toughness: 6004200.0
+  healing: 351702.0
+  attackSpeed: 1.149999976158142
+  armor: 5028
+  strength: 77
+  dexterity: 77
+  vitality: 3402
+  intelligence: 8891
+  physicalResist: 1031
+  fireResist: 1031
+  coldResist: 1190
+  lightningResist: 1636
+  poisonResist: 1186
+  arcaneResist: 1031
+  critDamage: 5.15
+  blockChance: 0.0
+  blockAmountMin: 0
+  blockAmountMax: 0
+  damageIncrease: 0.0
+  critChance: 0.19000000075
+  damageReduction: 0.0
+  thorns: 4673.0
+  lifeSteal: 0.0
+  lifePerKill: 4648.0
+  goldFind: 0.69
+  magicFind: 0.0
+  lifeOnHit: 8397.0
+  primaryResource: 120
+  secondaryResource: 0
+progression:
+  act1:
+    completed: true
+    completedQuests:
+    - slug: the-fallen-star
+      name: The Fallen Star
+    - slug: the-legacy-of-cain
+      name: The Legacy of Cain
+    - slug: a-shattered-crown
+      name: A Shattered Crown
+    - slug: reign-of-the-black-king
+      name: Reign of the Black King
+    - slug: sword-of-the-stranger
+      name: Sword of the Stranger
+    - slug: the-broken-blade
+      name: The Broken Blade
+    - slug: the-doom-in-wortham
+      name: The Doom in Wortham
+    - slug: trailing-the-coven
+      name: Trailing the Coven
+    - slug: the-imprisoned-angel
+      name: The Imprisoned Angel
+    - slug: return-to-new-tristram
+      name: Return to New Tristram
+  act2:
+    completed: false
+    completedQuests:
+    - slug: shadows-in-the-desert
+      name: Shadows in the Desert
+    - slug: the-road-to-alcarnus
+      name: The Road to Alcarnus
+  act3:
+    completed: false
+    completedQuests: []
+  act4:
+    completed: false
+    completedQuests: []
+  act5:
+    completed: true
+    completedQuests:
+    - slug: the-witch
+      name: The Witch
+    - slug: the-pandemonium-gate
+      name: The Pandemonium Gate
+    - slug: the-battlefields-of-eternity
+      name: The Battlefields of Eternity
+    - slug: breaching-the-fortress
+      name: Breaching the Fortress
+    - slug: angel-of-death
+      name: Angel of Death
 dead: false
-life: 452886
-damage: 721372.0
-attack_speed: 1.149999976158142
-armor: 5028
-strength: 77
-dexterity: 77
-vitality: 3402
-intelligence: 8891
-physical_resist: 1031
-fire_resist: 1031
-cold_resist: 1190
-lightning_resist: 1636
-poison_resist: 1186
-arcane_resist: 1031
-critical_damage: 5.15
-block_chance: 0.0
-block_amount_min: 0
-block_amount_max: 0
-damage_increase: 0.0
-critical_chance: 0.19000000075
-damage_reduction: 0.0
-thorns: 4673.0
-life_steal: 0.0
-life_per_kill: 4648.0
-gold_find: 0.69
-magic_find: 0.0
-life_on_hit: 8397.0
-primary_resource: 120
-secondary_resource: 0
-elite_kills: 9755
+last-updated: 1440128788

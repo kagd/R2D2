@@ -1,39 +1,679 @@
 ---
+id: 52401495
 name: Volera
-paragon_level: 256
-hero_id: 52401495
-level: 70
-hardcore: false
-gender: 0
 class: demon-hunter
+gender: 0
+level: 70
+kills:
+  elites: 2729
+paragonLevel: 256
+hardcore: false
+seasonal: false
+seasonCreated: 1
+skills:
+  active:
+  - skill:
+      slug: hungering-arrow
+      name: Hungering Arrow
+      icon: demonhunter_hungeringarrow
+      level: 1
+      categorySlug: primary
+      tooltipUrl: skill/demon-hunter/hungering-arrow
+      description: "Generate: 3 Hatred\r\n\r\nFire a magically imbued arrow that seeks
+        out enemies for 155% weapon damage and has a 35% chance to pierce through
+        them."
+      simpleDescription: "Generate: 3 Hatred\r\n\r\nFire a piercing arrow that seeks
+        additional enemies."
+      skillCalcId: a
+    rune:
+      slug: hungering-arrow-d
+      type: d
+      name: Puncturing Arrow
+      level: 6
+      description: Increase the chance for the arrow to pierce to 50%.
+      simpleDescription: Increase the pierce chance.
+      tooltipParams: rune/hungering-arrow/d
+      skillCalcId: a
+      order: 0
+  - skill:
+      slug: elemental-arrow
+      name: Elemental Arrow
+      icon: demonhunter_elementalarrow
+      level: 20
+      categorySlug: secondary
+      tooltipUrl: skill/demon-hunter/elemental-arrow
+      description: "Cost: 10 Hatred\r\n\r\nShoot a fire arrow that deals 300% weapon
+        damage as Fire to all enemies it passes through."
+      simpleDescription: "Cost: 10 Hatred\r\n\r\nUnleash a fiery arrow that pierces
+        through enemies."
+      skillCalcId: R
+    rune:
+      slug: elemental-arrow-c
+      type: c
+      name: Immolation Arrow
+      level: 36
+      description: Shoot a fiery arrow that hits an enemy for 300% weapon damage as
+        Fire and explodes, immolating the ground for 315% weapon damage as Fire over
+        2 seconds to enemies within 10 yards.
+      simpleDescription: Shoot a fiery arrow that explodes.
+      tooltipParams: rune/elemental-arrow/c
+      skillCalcId: b
+      order: 2
+  - skill:
+      slug: vault
+      name: Vault
+      icon: demonhunter_vault
+      level: 9
+      categorySlug: hunting
+      tooltipUrl: skill/demon-hunter/vault
+      description: "Cost: 8 Discipline\r\n\r\nTumble acrobatically 35 yards."
+      simpleDescription: "Cost: 8 Discipline\r\n\r\nTumble acrobatically to avoid
+        attacks."
+      skillCalcId: d
+    rune:
+      slug: vault-a
+      type: a
+      name: Trail of Cinders
+      level: 49
+      description: Leave a trail of fire in your wake that deals 300% weapon damage
+        as Fire over 3 seconds.
+      simpleDescription: Leave a trail of fire in your wake.
+      tooltipParams: rune/vault/a
+      skillCalcId: c
+      order: 4
+  - skill:
+      slug: companion
+      name: Companion
+      icon: x1_demonhunter_companion
+      level: 17
+      categorySlug: hunting
+      tooltipUrl: skill/demon-hunter/companion
+      description: "Cooldown: 30 seconds\r\n\r\nActive: Your raven deals an additional
+        500% damage on its next attack.\r\n\r\nPassive: Summons a raven companion
+        that pecks at enemies for 100% of your weapon damage as Physical."
+      simpleDescription: "Cooldown: 30 seconds\r\n\r\nActive: Your raven deals additional
+        damage on its next attack.\r\n\r\nPassive: Summons a raven companion from
+        the shadows."
+      skillCalcId: S
+    rune:
+      slug: companion-c
+      type: c
+      name: Wolf Companion
+      level: 59
+      description: "Active: Your wolf howls, granting you and your allies within 60
+        yards 30% increased damage for 10 seconds.\r\n\r\nPassive: Summons a wolf
+        companion that attacks enemies in front of him for 100% of your weapon damage
+        as Physical."
+      simpleDescription: "Active: Your wolf howls, granting you and your allies increased
+        damage for a short duration.\r\n\r\nPassive: Summons a wolf companion that
+        fights alongside you."
+      tooltipParams: rune/companion/c
+      skillCalcId: c
+      order: 4
+  - skill:
+      slug: sentry
+      name: Sentry
+      icon: demonhunter_sentry
+      level: 25
+      categorySlug: devices
+      tooltipUrl: skill/demon-hunter/sentry
+      description: "Cost: 20 Hatred\r\n\r\nSummon a turret that fires at nearby enemies
+        for 280% weapon damage. Lasts 30 seconds.\r\n\r\nYou may have 2 turrets active
+        at a time.\r\n\r\nYou gain a charge every 8 seconds and can have up to 2 charges
+        stored at a time."
+      simpleDescription: "Cost: 20 Hatred\r\n\r\nSummon a turret that automatically
+        attacks nearby enemies.\r\n\r\nYou gain a charge every 8 seconds and can have
+        up to 2 charges stored at a time."
+      skillCalcId: k
+    rune:
+      slug: sentry-c
+      type: c
+      name: Spitfire Turret
+      level: 28
+      description: The turret will also fire homing rockets at random nearby enemies
+        for 120% weapon damage as Fire.
+      simpleDescription: The turret fires homing rockets at random enemies.
+      tooltipParams: rune/sentry/c
+      skillCalcId: a
+      order: 0
+  - skill:
+      slug: rain-of-vengeance
+      name: Rain of Vengeance
+      icon: demonhunter_rainofvengeance
+      level: 30
+      categorySlug: archery
+      tooltipUrl: skill/demon-hunter/rain-of-vengeance
+      description: "Cooldown: 30 seconds\r\n\r\nFire a massive volley of arrows at
+        a large area. Arrows fall from the sky dealing 1500% weapon damage over 5
+        seconds to all enemies in the area."
+      simpleDescription: "Cooldown: 30 seconds\r\n\r\nUnleash a torrent of arrows
+        from the sky."
+      skillCalcId: l
+    rune:
+      slug: rain-of-vengeance-e
+      type: e
+      name: Stampede
+      level: 47
+      description: Summon a wave of 10 Shadow Beasts to tear across the ground, knocking
+        back enemies and dealing 4600% total weapon damage as Fire over 3 seconds.
+      simpleDescription: Summon Shadow Beasts that swoop along the ground and damage
+        enemies they hit.
+      tooltipParams: rune/rain-of-vengeance/e
+      skillCalcId: b
+      order: 2
+  passive:
+  - skill:
+      slug: blood-vengeance
+      name: Blood Vengeance
+      icon: demonhunter_passive_vengeance
+      level: 13
+      tooltipUrl: skill/demon-hunter/blood-vengeance
+      description: Your maximum Hatred is increased by 25. In addition, gain 30 Hatred
+        and 3 Discipline when you are healed by a health globe.
+      flavor: '"If it bleeds you can kill it. Kill this one slowly." —Greyscarr, Veteran
+        Demon Hunter'
+      skillCalcId: b
+  - skill:
+      slug: sharpshooter
+      name: Sharpshooter
+      icon: demonhunter_passive_sharpshooter
+      level: 50
+      tooltipUrl: skill/demon-hunter/sharpshooter
+      description: Gain 4% Critical Hit Chance every second. This bonus is reset 1
+        seconds after you successfully critically hit.
+      flavor: '"Every creature has a vulnerability. Find it, and put an arrow in it."
+        —Greyscarr, Veteran Demon Hunter'
+      skillCalcId: T
+  - skill:
+      slug: archery
+      name: Archery
+      icon: demonhunter_passive_archery
+      level: 30
+      tooltipUrl: skill/demon-hunter/archery
+      description: "Gain a bonus based on your weapon type:\r\nBow: 8% increased damage\r\nCrossbow:
+        50% Critical Hit Damage\r\nHand Crossbow: 5% Critical Hit Chance\r\n2nd Hand
+        Crossbow: 1 Hatred per Second"
+      flavor: '"Feel the weight of the crossbow in your hand. Now... the wind, the
+        distance, the target''s speed. Good. Now try it with blood in your eyes and
+        a demon at your throat." —Greyscarr, Veteran Demon Hunter'
+      skillCalcId: e
+  - skill:
+      slug: awareness
+      name: Awareness
+      icon: x1_demonhunter_passive_awareness
+      level: 66
+      tooltipUrl: skill/demon-hunter/awareness
+      description: "When you receive fatal damage, you instead vanish for 2 seconds
+        and regenerate 50% of maximum Life.\r\n\r\nThis effect may occur once every
+        60 seconds."
+      flavor: '"Everything is a test. Study your surroundings well, and you will pass."
+        —Josen, Master Hunter'
+      skillCalcId: R
+items:
+  head:
+    id: P2_Unique_Helm_001
+    name: Broken Crown
+    icon: p2_unique_helm_001_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CosBCO_3uowBEgcIBBVNJKLBHaEp3AUd6psc2h2bBgDLHcn6vKAdZiMGUDCLEjiXA0AASAFQElgEYJcDaisKDAgAEMDjst-AgIDANBIbCJCkpoIOEgcIBBVCLTepMI8SOABAAVgEkAEBgAFGjQE59U5dpQHqmxzarQF1WABRtQF_-U5duAHh2cjzDsABAhjl7u7lB1AAWAA
+    dyeColor:
+      item:
+        id: Dye_20
+        name: Abyssal Dye
+        icon: dye_20_demonhunter_male
+        displayColor: white
+        tooltipParams: item/abyssal-dye
+    transmogItem:
+      id: Helm_103
+      name: Klappvisier
+      icon: helm_103_demonhunter_male
+      displayColor: white
+      tooltipParams: item/klappvisier
+  torso:
+    id: Unique_Cloak_005_x1
+    name: Beckon Sail
+    icon: unique_cloak_005_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/Ct8BCO_j7cwNEgcIBBW8_zcNHQFgLbEdos8UVh0X75puHXMjBlAd8dNq1TCLEjjfAkAASAFQElgEYN8CaisKDAgAEOPE2e-BgIDALRIbCLC486AKEgcIBBVCLTepMIsSOABAAVgEkAEAaisKDAgAEOTE2e-BgIDALRIbCJDsha4KEgcIBBVCLTepMIsSOABAAVgEkAEAaisKDAgAEOjE2e-BgIDALRIbCO7a8NgIEgcIBBVCLTepMIsSOABAAVgEkAEAgAFGpQEX75purQEX75putQEBcG8CuAGr7sbZDcABBRj4_r_TAVAAWAA
+    dyeColor:
+      item:
+        id: Dye_20
+        name: Abyssal Dye
+        icon: dye_20_demonhunter_male
+        displayColor: white
+        tooltipParams: item/abyssal-dye
+  feet:
+    id: Unique_Boots_Set_07_x1
+    name: Marauder's Treads
+    icon: unique_boots_set_07_x1_demonhunter_male
+    displayColor: green
+    tooltipParams: item/CmMI-uPnsgoSBwgEFbYwN9AdrLzTUx1_jofMHevi5AUddVgAUR1DTkRRHfHTatUwixI4hgJAAEgBUBJYBGCGAoABRo0B--Smc6UBf46HzK0BHaONxLUBoEWbf7gB4fWnxQvAAQIYk73G_AVQAFgAoAGVnfLhDqABk73G_AWgAeqD6JMG
+    dyeColor:
+      item:
+        id: Dye_20
+        name: Abyssal Dye
+        icon: dye_20_demonhunter_male
+        displayColor: white
+        tooltipParams: item/abyssal-dye
+    transmogItem:
+      id: Unique_Boots_007_x1
+      name: Fire Walkers
+      icon: unique_boots_007_x1_demonhunter_male
+      displayColor: orange
+      tooltipParams: item/fire-walkers-27jncv
+    setItemsEquipped:
+    - Unique_Pants_Set_07_x1
+    - Unique_Shoulder_Set_07_x1
+    - Unique_Boots_Set_07_x1
+  hands:
+    id: Unique_Gloves_011_x1
+    name: Gladiator Gauntlets
+    icon: unique_gloves_011_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CkII28r63g8SBwgEFX8rWyIdOLLA1R2bBgDLHZinjsAdflazLh3J-rygMIsSOJsDQABIAVASWARgmwOAAUa1AclbkqQY_q3ZpQRQAFgA
+    dyeColor:
+      item:
+        id: Dye_20
+        name: Abyssal Dye
+        icon: dye_20_demonhunter_male
+        displayColor: white
+        tooltipParams: item/abyssal-dye
+  shoulders:
+    id: Unique_Shoulder_Set_07_x1
+    name: Marauder's Spines
+    icon: unique_shoulder_set_07_x1_demonhunter_male
+    displayColor: green
+    tooltipParams: item/Ck0IhLzxvwcSBwgEFbW44Ykd8dNq1R10RaeJHRfvmm4dQ05EUR2s05k5HX-Oh8wwixI4iAJAAEgBUBJYBGCIAoABRo0BFAswi7UB0vjIFRiVnfLhDlAAWACgAZWd8uEOoAGTvcb8BaAB6oPokwY
+    dyeColor:
+      item:
+        id: Dye_20
+        name: Abyssal Dye
+        icon: dye_20_demonhunter_male
+        displayColor: white
+        tooltipParams: item/abyssal-dye
+    transmogItem:
+      id: Unique_Shoulder_001_x1
+      name: Homing Pads
+      icon: unique_shoulder_001_x1_demonhunter_male
+      displayColor: orange
+      tooltipParams: item/homing-pads
+    setItemsEquipped:
+    - Unique_Pants_Set_07_x1
+    - Unique_Shoulder_Set_07_x1
+    - Unique_Boots_Set_07_x1
+  legs:
+    id: Unique_Pants_Set_07_x1
+    name: Marauder's Encasement
+    icon: unique_pants_set_07_x1_demonhunter_male
+    displayColor: green
+    tooltipParams: item/CrUBCNKkorgKEgcIBBX1AD0xHay801MdcYt38B07J28kHdhZPmcdj5DKUB3x02rVMIsSOKYDQABQElgEYKYDaisKDAgAELXG2e-BgIDALRIbCMLHrN0DEgcIBBVCLTepMIsSOABAAVgEkAEAaisKDAgAEMfC2e-BgIDALRIbCPGi3KcFEgcIBBVCLTepMI8SOABAAVgEkAEAgAFGpQHYWT5nrQHFRGRTtQGfktWluAG3hfCOBsABBRjqg-iTBlAAWACgAZWd8uEOoAGTvcb8BaAB6oPokwY
+    setItemsEquipped:
+    - Unique_Pants_Set_07_x1
+    - Unique_Shoulder_Set_07_x1
+    - Unique_Boots_Set_07_x1
+  bracers:
+    id: Unique_Bracer_Set_02_x1
+    name: Krelm's Buff Bracers
+    icon: unique_bracer_set_02_x1_demonhunter_male
+    displayColor: green
+    tooltipParams: item/ClYI0qDa0Q4SBwgEFfk2ZGod8dNq1R06ddqMHeYV2w0d3Ne-BB1yjh0hMIsSOOYCQABQElgEYOYCgAFGpQHc174ErQFADVULtQHbLMrLuAHy797pAsABChjy26GmDVAAWACgAfLboaYN
+    setItemsEquipped:
+    - Unique_Bracer_Set_02_x1
+  mainHand:
+    id: Unique_Bow_103_x1
+    name: Leonine Bow of Hashir
+    icon: unique_bow_103_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CokBCKKLw9sLEgcIBBUZgDB3HXKOHSEd0O5oMR1mIwZQHdGwUMcdyfq8oDCLAji-AkAAUBJYBGC-AmorCgwIABC06bLfgICAwDQSGwjOtqDiBRIHCAQVQi03qTCLEjgAQAFYBJABAYABRo0BXRXedKUB0O5oMa0BFplnO7UB_DpWg7gBhL7qjw7AAQEYsoCE8w5QAFgA
+    transmogItem:
+      id: Unique_Bow_008_x1
+      name: The Raven's Wing
+      icon: unique_bow_008_x1_demonhunter_male
+      displayColor: orange
+      tooltipParams: item/the-ravens-wing
+  offHand:
+    id: Unique_Quiver_002_x1
+    name: Sin Seekers
+    icon: unique_quiver_002_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/ClsI2aGElQcSBwgEFWsyIOgdgGZcRh0_8gnYHU3k0nIdmwYAyx3J-rygHX5Wsy4wiwI4uQJAAFASWARguQKAAUalAU3k0nKtAcsN6RO1AVTqvlu4AY_c1J0CwAEGGKm2_v0CUABYAA
+  waist:
+    id: Unique_Belt_005_x1
+    name: Hellcat Waistguard
+    icon: unique_belt_005_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CkUIz8WUxw0SBwgEFZmrjWkdrBmWlh3WPL1JHbUvKgMdsB4OUB0CmefLHX52VaEwiwI4nwNAAFASWARgnwOAAUC1Ab6nQtQYsq7tmA1QAFgA
+  rightFinger:
+    id: Unique_Ring_019_x1
+    name: Stone of Jordan
+    icon: unique_ring_019_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CocBCOP_5bkNEgcIBBXHoDi5Hay801Mdf46HzB10RaeJHdzXvgQd8dNq1TCLEjijAkAAUBJYBGCjAmowCgwIABCxw7P5gICAgA4SIAjw9eSgBRIHCAQVbBejwTCLAjgAQABQElgEkAEA2AEGgAFGpQF0RaeJrQFmIwZQtQE2VV1EuAGNoO1uwAEBGPH8uuwIUABYAA
+  leftFinger:
+    id: Unique_Ring_107_x1
+    name: Ring of Royal Grandeur
+    icon: unique_ring_107_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/ClUInIagngcSBwgEFSWYersdAWAtsR2Yp47AHdKfnkQdfnZVoR2bhvbiMIsSOKACQABQElgEYKACgAFGpQGYp47ArQGYp47AtQE2VV1EuAGkrsxPwAEHGLWfq8gIUABYAA
+  neck:
+    id: x1_Amulet_norm_unique_25
+    name: Hellfire Amulet
+    icon: x1_amulet_norm_unique_25_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/Cn8IpKLugA4SBwgEFYdQZC0d4jwWqx1mIwZQHcn6vKAdaklp6h2wwQlyHazTmTkwj1I4gAJAAFASWARggAJqKwoMCAAQk8f29YCAgMAWEhsIqp7n0w8SBwgEFUItN6kwjwI4AEABWASQAQClAWpJaeqtAX52VaG4AdGFlcIPwAEIGI7CotYFUABYAA
+followers:
+  templar:
+    slug: templar
+    level: 70
+    items:
+      mainHand:
+        id: Dagger_107
+        name: Gash Lux
+        icon: dagger_107_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/CkIIzq6V1g8SBwgEFUF6T7Id423MBB10KNqwHc7uaDEdlQYAyx0Jby-7IgsIARWKQgMAGCIgFjCJAjj0BEAAUA5g9AQY_ZaE2wk
+      offHand:
+        id: Shield_002
+        name: Targe Shield
+        icon: shield_002_demonhunter_male
+        displayColor: white
+        tooltipParams: item/ChwIuOvogQMSBwgEFYoDO2wwiQI4ngVAAFAEYJ4FGJSO2MMN
+      rightFinger:
+        id: Ring_19
+        name: Hell Ring
+        icon: ring_19_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/Cj0I75rJtQMSBwgEFRlVXUQd5ZLcCB0URQDiHT0WJgAdRbX5SyILCAAVyf4BABgMIBwwiQI4-wNAAFAMYPsDGLLU6sUI
+      leftFinger:
+        id: Ring_18
+        name: Terrible Vow
+        icon: ring_18_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/CkIIs52amAYSBwgEFRhVXUQdZiMGUB09FiYAHTR12owdn8BhjR1De8bdIgsIABWr_gEAGBogGDCJAji3A0AAUA5gtwMYsNTqxQg
+      neck:
+        id: Amulet08
+        name: Eminence Guide
+        icon: amulet08_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/CkEI38LjJxIHCAQVkMVEZB3C-rygHYnmpbMdPg1VCx1FtflLHdlceV0iCwgBFXFCAwAYCCAaMIkCOIADQABQDmCzAxiglqbEDA
+    stats:
+      goldFind: 0
+      magicFind: 0
+      experienceBonus: 13
+    skills:
+    - skill:
+        slug: intervene
+        name: Intervene
+        icon: templar_intervene
+        level: 5
+        tooltipUrl: skill/templar/intervene
+        description: "Cooldown: 10 seconds\r\n\r\nTaunt enemies within 10 yards of
+          you for 3 seconds when you are hit."
+        simpleDescription: "Cooldown: 10 seconds\r\n\r\nTaunt enemies near you when
+          you are hit."
+        skillCalcId: Z
+    - skill:
+        slug: intimidate
+        name: Intimidate
+        icon: templar_intimidate
+        level: 10
+        tooltipUrl: skill/templar/intimidate
+        description: Enemies that hit or are hit by the Templar are slowed by 80%
+          for 3 seconds.
+        simpleDescription: Enemies that hit or are hit by the Templar are slowed.
+        skillCalcId: Y
+    - skill:
+        slug: charge
+        name: Charge
+        icon: templar_shieldcharge
+        level: 15
+        tooltipUrl: skill/templar/charge
+        description: "Cooldown: 10 seconds\r\n\r\nCharges a target, dealing 280% weapon
+          damage and stunning all enemies within 8 yards for 3 seconds."
+        simpleDescription: "Cooldown: 10 seconds\r\n\r\nCharges an enemy, dealing
+          damage and stunning nearby enemies."
+        skillCalcId: c
+    - skill:
+        slug: inspire
+        name: Inspire
+        icon: templar_inspire
+        level: 20
+        tooltipUrl: skill/templar/inspire
+        description: "Increases your resource generation.\r\n\r\nMana: 7 per second.\r\nHatred:
+          1 per second.\r\nWrath: 1.1 per second.\r\nArcane Power: 1.4 per second.\r\nFury:
+          10% generated.\r\nSpirit: 10% generated."
+        simpleDescription: Increases your resource generation.
+        skillCalcId: d
+  scoundrel:
+    slug: scoundrel
+    level: 70
+    items:
+      special:
+        id: Scoundrel_Special_206
+        name: Squire's Conclave
+        icon: scoundrel_special_206_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/Cj4I5_myswsSBwgEFaYBTPIdkpTcCB3I-rygHZoGAMsdaUlp6h3pcC-7IgsIARWKQgMAGAwgFjCJEjgAQABQEBiz-Z_bAQ
+      mainHand:
+        id: Unique_XBow_001_x1
+        name: Demon Machine
+        icon: unique_xbow_001_x1_demonhunter_male
+        displayColor: orange
+        tooltipParams: item/CkAIv-aNgQYSBwgEFe4rnvUd1b3OjR0oEzfnHZsGAMsdyfq8oB3RsFDHMIsSOL8CQABQElgEYL8CgAFGtQFGYMoKGKPQjqYB
+      rightFinger:
+        id: Ring_25
+        name: Glamour Demise
+        icon: ring_25_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/CkcIjIeI7Q4SBwgEFTZVXUQdkepBvx2wHg5QHajWdfwdkpTcCB1rB3fOHelwL7siCwgBFWxCAwAYGiAAMIkCOOUCQABQEGD8Ahjs1OrFCA
+      leftFinger:
+        id: Unique_Ring_107_x1
+        name: Ring of Royal Grandeur
+        icon: unique_ring_107_x1_demonhunter_male
+        displayColor: orange
+        tooltipParams: item/ClYIoeyypwESBwgEFSWYersdrLzTUx07J28kHdKfnkQdfnZVoR3x02rVMIsSOKEDQABQElgEYKEDgAFGpQE7J28krQHmFdsNtQE2VV1EuAHT04rlCMABARi1n6vICA
+      neck:
+        id: Unique_Amulet_009_x1
+        name: Rondal's Locket
+        icon: unique_amulet_009_x1_demonhunter_male
+        displayColor: orange
+        tooltipParams: item/ClYI_cmA8QISBwgEFX4DC1sdaklp6h2bBgDLHT51eQUdrNOZOR3J-rygMIsSOP0BQABQElgEYP0BgAFGpQE-dXkFrQGL8XpCtQGwxURkuAHM1cL6DsABARj8jdiwCw
+    stats:
+      goldFind: 0
+      magicFind: 0
+      experienceBonus: 51
+    skills:
+    - skill:
+        slug: crippling-shot
+        name: Crippling Shot
+        icon: scoundrel_cripplingshot
+        level: 5
+        tooltipUrl: skill/scoundrel/crippling-shot
+        description: "Cooldown: 4 seconds\r\n\r\nRanged attack that deals 140% weapon
+          damage and slows enemies hit by 80% for 4 seconds."
+        simpleDescription: "Cooldown: 4 seconds\r\n\r\nRanged attack that slows enemies."
+        skillCalcId: a
+    - skill:
+        slug: vanish
+        name: Vanish
+        icon: scoundrel_vanish
+        level: 10
+        tooltipUrl: skill/scoundrel/vanish
+        description: "Cooldown: 30 seconds\r\n\r\nThe Scoundrel vanishes in a cloud
+          of smoke when injured, reappearing after 4 seconds. While vanished, he will
+          heal himself for 268211 Life."
+        simpleDescription: "Cooldown: 30 seconds\r\n\r\nThe Scoundrel temporarily
+          vanishes when in danger."
+        skillCalcId: Y
+    - skill:
+        slug: powered-shot
+        name: Powered Shot
+        icon: scoundrel_powershot
+        level: 15
+        tooltipUrl: skill/scoundrel/powered-shot
+        description: "Cooldown: 8 seconds\r\n\r\nRanged attack that explodes on impact,
+          dealing 310% weapon damage as Arcane to enemies within 10 yards and has
+          a 100% chance to Stun enemies for 2 seconds."
+        simpleDescription: "Cooldown: 8 seconds\r\n\r\nDeals damage in an area that
+          has a chance to Stun enemies."
+        skillCalcId: c
+    - skill:
+        slug: anatomy
+        name: Anatomy
+        icon: scoundrel_anatomy
+        level: 20
+        tooltipUrl: skill/scoundrel/anatomy
+        description: Increases Critical Hit Chance by 1.8% for you and the Scoundrel.
+        simpleDescription: Increases Critical Hit Chance for you and the Scoundrel.
+        skillCalcId: W
+  enchantress:
+    slug: enchantress
+    level: 70
+    items:
+      mainHand:
+        id: Staff_002
+        name: Long Staff of Focus
+        icon: staff_002_demonhunter_male
+        displayColor: blue
+        tooltipParams: item/CiEI9dGg7A4SBwgEFaUc5YEdXFCqBzCJAjiJBUAAUAZgiQUYtY3X4Q8
+    stats:
+      goldFind: 0
+      magicFind: 0
+      experienceBonus: 0
+    skills:
+    - {}
+    - {}
+    - {}
+    - {}
+legendaryPowers:
+- 
+- 
+- 
+stats:
+  life: 353016
+  damage: 652460.0
+  toughness: 4641340.0
+  healing: 708376.0
+  attackSpeed: 1.4839999747276307
+  armor: 13130
+  strength: 77
+  dexterity: 8587
+  vitality: 3527
+  intelligence: 496
+  physicalResist: 306
+  fireResist: 446
+  coldResist: 308
+  lightningResist: 443
+  poisonResist: 148
+  arcaneResist: 258
+  critDamage: 4.25
+  blockChance: 0.0
+  blockAmountMin: 0
+  blockAmountMax: 0
+  damageIncrease: 0.0
+  critChance: 0.30500000075
+  damageReduction: 0.0
+  thorns: 4901.0
+  lifeSteal: 0.0
+  lifePerKill: 0.0
+  goldFind: 1.0499999999999998
+  magicFind: 0.0
+  lifeOnHit: 8663.0
+  primaryResource: 150
+  secondaryResource: 41
+progression:
+  act1:
+    completed: true
+    completedQuests:
+    - slug: the-fallen-star
+      name: The Fallen Star
+    - slug: the-legacy-of-cain
+      name: The Legacy of Cain
+    - slug: a-shattered-crown
+      name: A Shattered Crown
+    - slug: reign-of-the-black-king
+      name: Reign of the Black King
+    - slug: sword-of-the-stranger
+      name: Sword of the Stranger
+    - slug: the-broken-blade
+      name: The Broken Blade
+    - slug: the-doom-in-wortham
+      name: The Doom in Wortham
+    - slug: trailing-the-coven
+      name: Trailing the Coven
+    - slug: the-imprisoned-angel
+      name: The Imprisoned Angel
+    - slug: return-to-new-tristram
+      name: Return to New Tristram
+  act2:
+    completed: true
+    completedQuests:
+    - slug: shadows-in-the-desert
+      name: Shadows in the Desert
+    - slug: the-road-to-alcarnus
+      name: The Road to Alcarnus
+    - slug: city-of-blood
+      name: City of Blood
+    - slug: a-royal-audience
+      name: A Royal Audience
+    - slug: unexpected-allies
+      name: Unexpected Allies
+    - slug: betrayer-of-the-horadrim
+      name: Betrayer of the Horadrim
+    - slug: blood-and-sand
+      name: Blood and Sand
+    - slug: the-black-soulstone
+      name: The Black Soulstone
+    - slug: the-scouring-of-caldeum
+      name: The Scouring of Caldeum
+    - slug: lord-of-lies
+      name: Lord of Lies
+  act3:
+    completed: true
+    completedQuests:
+    - slug: the-siege-of-bastions-keep
+      name: The Siege of Bastion's Keep
+    - slug: turning-the-tide
+      name: Turning the Tide
+    - slug: the-breached-keep
+      name: The Breached Keep
+    - slug: tremors-in-the-stone
+      name: Tremors in the Stone
+    - slug: machines-of-war
+      name: Machines of War
+    - slug: siegebreaker
+      name: Siegebreaker
+    - slug: heart-of-sin
+      name: Heart of Sin
+  act4:
+    completed: true
+    completedQuests:
+    - slug: fall-of-the-high-heavens
+      name: Fall of the High Heavens
+    - slug: the-light-of-hope
+      name: The Light of Hope
+    - slug: beneath-the-spire
+      name: Beneath the Spire
+    - slug: prime-evil
+      name: Prime Evil
+  act5:
+    completed: true
+    completedQuests:
+    - slug: the-fall-of-westmarch
+      name: The Fall of Westmarch
+    - slug: souls-of-the-dead
+      name: Souls of the Dead
+    - slug: the-harbinger
+      name: The Harbinger
+    - slug: the-witch
+      name: The Witch
+    - slug: the-pandemonium-gate
+      name: The Pandemonium Gate
+    - slug: the-battlefields-of-eternity
+      name: The Battlefields of Eternity
+    - slug: breaching-the-fortress
+      name: Breaching the Fortress
+    - slug: angel-of-death
+      name: Angel of Death
 dead: false
-life: 353016
-damage: 652460.0
-attack_speed: 1.4839999747276307
-armor: 13130
-strength: 77
-dexterity: 8587
-vitality: 3527
-intelligence: 496
-physical_resist: 306
-fire_resist: 446
-cold_resist: 308
-lightning_resist: 443
-poison_resist: 148
-arcane_resist: 258
-critical_damage: 4.25
-block_chance: 0.0
-block_amount_min: 0
-block_amount_max: 0
-damage_increase: 0.0
-critical_chance: 0.30500000075
-damage_reduction: 0.0
-thorns: 4901.0
-life_steal: 0.0
-life_per_kill: 0.0
-gold_find: 1.0499999999999998
-magic_find: 0.0
-life_on_hit: 8663.0
-primary_resource: 150
-secondary_resource: 41
-elite_kills: 2729
+last-updated: 1442032837

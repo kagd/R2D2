@@ -1,39 +1,502 @@
 ---
+id: 67233546
 name: DontDie
-paragon_level: 74
-hero_id: 67233546
-level: 70
-hardcore: true
-gender: 0
 class: monk
+gender: 0
+level: 70
+kills:
+  elites: 1203
+paragonLevel: 74
+hardcore: true
+seasonal: true
+seasonCreated: 4
+skills:
+  active:
+  - skill:
+      slug: way-of-the-hundred-fists
+      name: Way of the Hundred Fists
+      icon: monk_wayofthehundredfists
+      level: 15
+      categorySlug: primary
+      tooltipUrl: skill/monk/way-of-the-hundred-fists
+      description: "Generate: 12 Spirit per attack\r\n\r\nUnleash a rapid series of
+        punches that strike enemies for 190% weapon damage as Physical."
+      simpleDescription: "Generate: 12 Spirit per attack\r\n\r\nStrike groups of enemies
+        with a series of devastating punches."
+      skillCalcId: U
+    rune:
+      slug: way-of-the-hundred-fists-e
+      type: e
+      name: Windforce Flurry
+      level: 60
+      description: "Every third hit also generates a wave of wind that deals 500%
+        weapon damage as Cold to enemies directly ahead of you.\r\n\r\nWay of the
+        Hundred Fists's damage turns into Cold."
+      simpleDescription: "Every third hit also generates a wave of wind that damages
+        enemies in its path.\r\n\r\nWay of the Hundred Fists's damage turns into Cold."
+      tooltipParams: rune/way-of-the-hundred-fists/e
+      skillCalcId: c
+      order: 4
+  - skill:
+      slug: tempest-rush
+      name: Tempest Rush
+      icon: monk_tempestrush
+      level: 5
+      categorySlug: secondary
+      tooltipUrl: skill/monk/tempest-rush
+      description: "Cost: 30 Spirit\r\n\r\nCharge directly through your enemies, dealing
+        390% weapon damage while running."
+      simpleDescription: "Cost: 30 Spirit\r\n\r\nCharge through your enemies, dealing
+        damage to everything in your path."
+      skillCalcId: c
+    rune:
+      slug: tempest-rush-e
+      type: e
+      name: Flurry
+      level: 33
+      description: "After you stop channeling Tempest Rush, you cause an icy blast
+        to all enemies within 15 yards. The damage of the explosion increases by 90%
+        weapon damage as Cold while channeling.\r\n\r\nTempest Rush's damage turns
+        into Cold."
+      simpleDescription: "After you stop channeling Tempest Rush, you cause an icy
+        blast that is more powerful the longer you channel.\r\n\r\nTempest Rush's
+        damage turns into Cold."
+      tooltipParams: rune/tempest-rush/e
+      skillCalcId: b
+      order: 2
+  - skill:
+      slug: blinding-flash
+      name: Blinding Flash
+      icon: monk_blindingflash
+      level: 4
+      categorySlug: defensive
+      tooltipUrl: skill/monk/blinding-flash
+      description: "Cooldown: 15 seconds\r\n\r\nCreate a flash of light that blinds
+        all enemies within 20 yards for 3 seconds. Elite enemies recover faster, but
+        suffer a 30% chance to miss with attacks."
+      simpleDescription: "Cooldown: 15 seconds\r\n\r\nBlind all nearby enemies for
+        3 seconds."
+      skillCalcId: Y
+    rune:
+      slug: blinding-flash-b
+      type: b
+      name: Replenishing Light
+      level: 28
+      description: Each enemy you Blind restores 10 Spirit.
+      simpleDescription: Each enemy you Blind restores Spirit.
+      tooltipParams: rune/blinding-flash/b
+      skillCalcId: b
+      order: 2
+  - skill:
+      slug: dashing-strike
+      name: Dashing Strike
+      icon: x1_monk_dashingstrike
+      level: 9
+      categorySlug: techniques
+      tooltipUrl: skill/monk/dashing-strike
+      description: "Cost: 1 Charge\r\n\r\nQuickly dash up to 50 yards, striking enemies
+        along the way for 370% weapon damage as Physical.\r\n\r\nYou gain a charge
+        every 8 seconds and can have up to 2 charges stored at a time."
+      simpleDescription: "Cost: 1 Charge\r\n\r\nQuickly dash and strike enemies.\r\n\r\nYou
+        gain a charge every 8 seconds and can have up to 2 charges stored at a time."
+      skillCalcId: d
+    rune:
+      slug: dashing-strike-e
+      type: e
+      name: Radiance
+      level: 39
+      description: "Gain 15% increased attack speed for 4 seconds after using Dashing
+        Strike.\r\n\r\nDashing Strike's damage turns into Fire."
+      simpleDescription: "Gain increased attack speed after using Dashing Strike.\r\n\r\nDashing
+        Strike's damage turns into Fire."
+      tooltipParams: rune/dashing-strike/e
+      skillCalcId: Y
+      order: 3
+  - skill:
+      slug: mystic-ally
+      name: Mystic Ally
+      icon: x1_monk_mystically_v2
+      level: 22
+      categorySlug: focus
+      tooltipUrl: skill/monk/mystic-ally
+      description: "Cooldown: 30 seconds\r\n\r\nActive: Your mystic ally has its damage
+        increased by 50% for 10 seconds.\r\n\r\nPassive: A mystic ally fights by your
+        side. The ally deals 130% of your weapon damage as Physical per swing. When
+        the ally dies, it is reborn after 5 seconds."
+      simpleDescription: "Cooldown: 30 seconds\r\n\r\nActive: Your mystic ally has
+        its damage increased for a short duration.\r\n\r\nPassive: A mystic ally fights
+        by your side."
+      skillCalcId: j
+    rune:
+      slug: mystic-ally-d
+      type: d
+      name: Air Ally
+      level: 39
+      description: "Active: You gain 100 Spirit.\r\n\r\nPassive: A mystic ally fights
+        by your side that increases your Spirit Regeneration by 4."
+      simpleDescription: "Active: You gain a burst of Spirit.\r\n\r\nPassive: A mystic
+        ally fights by your side that increases your Spirit Regeneration."
+      tooltipParams: rune/mystic-ally/d
+      skillCalcId: b
+      order: 2
+  - skill:
+      slug: mantra-of-healing
+      name: Mantra of Healing
+      icon: x1_monk_mantraofhealing_v2
+      level: 26
+      categorySlug: mantras
+      tooltipUrl: skill/monk/mantra-of-healing
+      description: "Cost: 50 Spirit\r\n\r\nActive: Shroud you and your allies with
+        a mystical shield that absorbs up to 62064 damage for 3 seconds. Absorb amount
+        is increased by 15% of your Health Globe Healing Bonus.\r\n\r\nPassive: You
+        and your allies within 60 yards gain 10728 increased Life regeneration. The
+        heal amount is increased by 30% of your Life per Second.\r\n\r\nOnly one Mantra
+        may be active at a time."
+      simpleDescription: "Cost: 50 Spirit\r\n\r\nActive: Shroud you and your allies
+        with a mystical shield that absorbs damage.\r\n\r\nPassive: You and nearby
+        allies gain increased Life regeneration.\r\n\r\nOnly one Mantra may be active
+        at a time."
+      skillCalcId: Q
+    rune:
+      slug: mantra-of-healing-b
+      type: b
+      name: Boon of Inspiration
+      level: 42
+      description: "Passive: Mantra of Healing also heals 3576 Life when hitting an
+        enemy.\r\n\r\nHeal amount is increased by 20% of your Life per Hit."
+      simpleDescription: 'Passive: Mantra of Healing also restores Life when hitting
+        an enemy.'
+      tooltipParams: rune/mantra-of-healing/b
+      skillCalcId: b
+      order: 2
+  passive:
+  - skill:
+      slug: near-death-experience
+      name: Near Death Experience
+      icon: monk_passive_neardeathexperience
+      level: 58
+      tooltipUrl: skill/monk/near-death-experience
+      description: "When receiving fatal damage, you instead restore 35% Life and
+        35% Spirit and are immune to damage and control impairing effects for 2 seconds.\r\n\r\nThis
+        effect may occur once every 60 seconds."
+      flavor: '"We do not see what has been done, we only see what remains to be done."
+        —Mantra of the Monks of Ivgorod'
+      skillCalcId: h
+  - skill:
+      slug: exalted-soul
+      name: Exalted Soul
+      icon: monk_passive_exaltedsoul
+      level: 13
+      tooltipUrl: skill/monk/exalted-soul
+      description: "Increase maximum Spirit by 50 and increase Spirit Regeneration
+        by 4 per second.\r\n\r\nSpirit fuels your defensive and offensive abilities."
+      flavor: '"Endeavor to be one with the hidden truth and you will soar beyond
+        the sky." —Waykeeper Tzo Krin'
+      skillCalcId: b
+  - skill:
+      slug: unity
+      name: Unity
+      icon: x1_monk_passive_unity
+      level: 64
+      tooltipUrl: skill/monk/unity
+      description: Each ally affected by your Mantras increases your damage by 5%,
+        up to a maximum of 20%, and has 5% increased damage.
+      flavor: '"I thought I was done for, trampled into the snow. Suddenly I felt
+        her hand on my shoulder. The warmth returned to my bones, and together we
+        repelled the beasts." —Legends of the North'
+      skillCalcId: S
+  - skill:
+      slug: the-guardians-path
+      name: The Guardian's Path
+      icon: monk_passive_theguardianspath
+      level: 24
+      tooltipUrl: skill/monk/the-guardians-path
+      description: While dual-wielding, you gain a 35% chance to dodge incoming attacks.
+        While using a two-handed weapon, all Spirit generation is increased by 15%.
+      flavor: '"No weapon can overcome the weakness of an undisciplined mind. They
+        can only serve as an extension of the self." —Waykeeper Tzo Krin '
+      skillCalcId: d
+items:
+  head:
+    id: Unique_Helm_102_x1
+    name: Deathseer's Cowl
+    icon: unique_helm_102_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CogBCP2k32MSBwgEFXacQBYdrLzTUx2f3F35HZsGAMsdZiMGUB3J-rygMItSOOMBQABQElgEYKUCaisKDAgAEMrhgcOGgIDgGBIbCMvsnKYCEgcIBBVynb88MI9SOABAAVgEkAEEgAFGjQEZvoXxpQGf3F35rQHSn55EtQF_-U5duAG7r_-dDMABBBjs8YTkAlAIWAA
+    transmogItem:
+      id: SpiritStone_204
+      name: Star Crown
+      icon: spiritstone_204_demonhunter_male
+      displayColor: white
+      tooltipParams: item/star-crown
+  torso:
+    id: Unique_Chest_001_x1
+    name: Goldskin
+    icon: unique_chest_001_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CpUBCJ3Uw6YKEgcIBBXlu2lOHY-QylAdQ05EUR07J28kHfHTatUwi1I4uwJAAFASWARg_QJqKwoMCAAQsJf9k4SAgIAoEhsI0vDNigMSBwgEFSotN6kwj1I4AEABWASQAQRqKwoMCAAQwJf9k4SAgIAoEhsIwtWnwQQSBwgEFSktN6kwi1I4AEABWASQAQSAAUa1ATEiGWAYyu_N5glQCFgA
+  feet:
+    id: Unique_Boots_007_p2
+    name: Fire Walkers
+    icon: unique_boots_007_p2_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CkAIyIKmqw8SBwgEFfTjpnMdRXvG3R0gjTdUHUNORFEd8dNq1R3r4uQFMItSOIkDQABQElgEYJQDgAFGtQGgRZt_GOiPt7oOUAhYAA
+  hands:
+    id: Gloves_208
+    name: Polar Hands
+    icon: gloves_208_monk_male
+    displayColor: yellow
+    tooltipParams: item/CkkIs_7EyAkSBwgEFclbkqQdyPq8oB2o1nX8HZoGAMsdOXXajB3WPL1JHW3NiR4iCwgAFan-AQAYDiAiMIlSOKIEQABIDFAQYOsEGO2Q7bYLUAhYAA
+    dyeColor:
+      item:
+        id: Dye_03
+        name: Winter Dye
+        icon: dye_03_demonhunter_male
+        displayColor: white
+        tooltipParams: item/winter-dye
+  shoulders:
+    id: Unique_Shoulder_103_x1
+    name: Pauldrons of the Skeleton King
+    icon: unique_shoulder_103_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CkAI8cSp4QYSBwgEFXdMho0dHaONxB1nPuzkHSCNN1QdQ05EUR3x02rVMItSOP8BQABQElgEYMECgAFGtQHS-MgVGJHOzacOUAhYAA
+  legs:
+    id: Unique_Pants_013_x1
+    name: Blackthorne's Jousting Mail
+    icon: unique_pants_013_x1_demonhunter_male
+    displayColor: green
+    tooltipParams: item/CrMBCIb-lsEHEgcIBBWXbOnRHUV7xt0dcYt38B1a8tLEHUNORFEdqSA2uh2PkMpQMItSOPgBQABQElgEYLoCaisKDAgAEIm0muSBgICgNxIbCJyvn8wHEgcIBBUqLTepMI9SOABAAVgEkAEEaikKDAgAENm12JiBgICAPxIZCK_v7JIFEgcIBBUpLTepMI9SOABAAZABBIABRqUBWvLSxK0BfzYxV7UBn5LVpbgBntaxlA3AAQMY0c204QVQCFgAoAHRzbThBaABuNvbsQs
+    setItemsEquipped:
+    - Unique_Amulet_016_x1
+    - Unique_Pants_013_x1
+  bracers:
+    id: Unique_Bracer_106_x1
+    name: Nemesis Bracers
+    icon: unique_bracer_106_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CkAI7rLhlwcSBwgEFWN2XTkdf46HzB1DTkRRHeYV2w0dVvxoEB3x02rVMItSOJgCQABQElgEYNoCgAFGtQHbLMrLGMbZ65UHUAhYAA
+  mainHand:
+    id: Unique_Axe_2H_011_x1
+    name: Messerschmidt's Reaver
+    icon: unique_axe_2h_011_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CksI_tGdjgYSBwgEFaaLWKMdco4dIR2MHL6WHZ5Pg9wd9Mvz4x3ctIr7HfyspHQwi1I42AFAAFASWARgmgKAAUaNAclB5re1AYtZXGUYs9G7ygtQCFgA
+    transmogItem:
+      id: Unique_Staff_008_x1
+      name: Autumn's Call
+      icon: unique_staff_008_x1_demonhunter_male
+      displayColor: orange
+      tooltipParams: item/autumns-call
+  waist:
+    id: Unique_Belt_005_x1
+    name: Hellcat Waistguard
+    icon: unique_belt_005_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CkUI-LLZvgsSBwgEFZmrjWkd2T_Unx0do43EHWc-7OQd8dNq1R1DTkRRHX52VaEwi1I4sgJAAFASWARg9AKAAUa1AcCnQtQYsq7tmA1QCFgA
+  rightFinger:
+    id: Unique_Ring_Set_001_x1
+    name: Focus
+    icon: unique_ring_set_001_x1_demonhunter_male
+    displayColor: green
+    tooltipParams: item/CnYI-eLsXBIHCAQViajndR1LtflLHdk_1J8dQ05EUR07J28kHfHTatUdZiMGUDCLUjjvAUAAUBJYBGCxAmowCgwIABD84fyThICAgCgSIAjcvPKCCBIHCAQVh1mgwTCLUjgAQABQElgEkAEE2AEKgAFGtQE2VV1EGJKivd4OUAhYAKABkqK93g4
+    setItemsEquipped:
+    - Unique_Ring_Set_001_x1
+  leftFinger:
+    id: Unique_Ring_017_p2
+    name: Oculus Ring
+    icon: unique_ring_017_p2_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CjYIyMb-3wkSBwgEFf6GN7kdOydvJB3x02rVHdk_1J8wi1I4-gJAAFASWARgvAOAAUa1ATZVXUQYg-TD7AhQCFgA
+  neck:
+    id: Unique_Amulet_016_x1
+    name: Blackthorne's Duncraig Cross
+    icon: unique_amulet_016_x1_demonhunter_male
+    displayColor: green
+    tooltipParams: item/CkUIua2Y3w0SBwgEFdx2G1sdyfq8oB1-VrMuHTsnbyQdVvxoEB1LtflLHcStOVwwi1I45wJAAFASWARgqQOAAUa1AbDFRGQYuNvbsQtQCFgAoAHRzbThBaABuNvbsQs
+    setItemsEquipped:
+    - Unique_Amulet_016_x1
+    - Unique_Pants_013_x1
+followers:
+  templar:
+    slug: templar
+    level: 70
+    items:
+      special:
+        id: Templar_Special_206
+        name: Cured Gain
+        icon: templar_special_206_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/Cj4IusG7hgwSBwgEFewLY0QdIJ3kBB2aBgDLHYCBxsQdsOTqER3DDZzlIgsIABXH_gEAGAwgHDCJUjgAQABQDhjYr5jGCA
+      mainHand:
+        id: Sword_1H_302
+        name: Giant Wedge
+        icon: sword_1h_302_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/CkII86CzxAQSBwgEFZvZ2e8dbJJXwh1mIwZQHYCBxsQdlbwLex3pcC-7IgsIABXM_gEAGCIgODCJUjjrBEAAUA5g6wQYyZmxggI
+      offHand:
+        id: Shield_208
+        name: Tournament Perception
+        icon: shield_208_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/CkII-LS3oQgSBwgEFRIMO2wdkpTcCB2AgcbEHXcHxPQdTD8Y9h3pcC-7IgsIARVmaQUAGAYgFjCJUjiGBUAAUA5ghgUYpLDYww0
+      rightFinger:
+        id: Ring_25
+        name: Glamour Salvation
+        icon: ring_25_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/CkIIwO_jwQUSBwgEFTZVXUQdApnnyx2Wr7nsHc95baUdmIp3Gh3WPL1JIgsIARWKQgMAGCYgADCJUjiIBEAAUA5giAQY7NTqxQg
+      leftFinger:
+        id: Ring_25
+        name: Reckless Faze
+        icon: ring_25_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/Cj0I0pfbtQUSBwgEFTZVXUQdApnnyx2dB5UkHZavuewdq9OZOSILCAAVuP4BABgYIBIwiVI4ogNAAFAMYKIDGOzU6sUI
+      neck:
+        id: Unique_Amulet_014_x1
+        name: Eye of Etlich
+        icon: unique_amulet_014_x1_demonhunter_male
+        displayColor: orange
+        tooltipParams: item/CkUIuI7dnQYSBwgEFRpeGlsdZTrU4B1W_GgQHRAvyiodOnXajB3J-rygHUu1-Uswi1I4hANAAFASWARghAOAAUa1AbDFRGQYtPjSsQs
+    stats:
+      goldFind: 6
+      magicFind: 0
+      experienceBonus: 48
+    skills:
+    - skill:
+        slug: heal
+        name: Heal
+        icon: templar_heal_110
+        level: 5
+        tooltipUrl: skill/templar/heal
+        description: "Cooldown: 30 seconds\r\n\r\nHeals you and the Templar for 193112
+          Life."
+        simpleDescription: "Cooldown: 30 seconds\r\n\r\nHeals you and the Templar."
+        skillCalcId: a
+    - skill:
+        slug: loyalty
+        name: Loyalty
+        icon: templar_loyalty
+        level: 10
+        tooltipUrl: skill/templar/loyalty
+        description: Regenerates 6437 Life per second for you and the Templar.
+        simpleDescription: Provides Life regeneration for you and the Templar.
+        skillCalcId: b
+    - skill:
+        slug: charge
+        name: Charge
+        icon: templar_shieldcharge
+        level: 15
+        tooltipUrl: skill/templar/charge
+        description: "Cooldown: 10 seconds\r\n\r\nCharges a target, dealing 280% weapon
+          damage and stunning all enemies within 8 yards for 3 seconds."
+        simpleDescription: "Cooldown: 10 seconds\r\n\r\nCharges an enemy, dealing
+          damage and stunning nearby enemies."
+        skillCalcId: c
+    - skill:
+        slug: inspire
+        name: Inspire
+        icon: templar_inspire
+        level: 20
+        tooltipUrl: skill/templar/inspire
+        description: "Increases your resource generation.\r\n\r\nMana: 7 per second.\r\nHatred:
+          1 per second.\r\nWrath: 1.1 per second.\r\nArcane Power: 1.4 per second.\r\nFury:
+          10% generated.\r\nSpirit: 10% generated."
+        simpleDescription: Increases your resource generation.
+        skillCalcId: d
+  enchantress:
+    slug: enchantress
+    level: 70
+    items:
+      mainHand:
+        id: Staff_002
+        name: Long Staff of Focus
+        icon: staff_002_demonhunter_male
+        displayColor: blue
+        tooltipParams: item/CiEIxZSPvQMSBwgEFaUc5YEdXFCqBzCJUjjHBEAAUAZgxwQYtY3X4Q8
+    stats:
+      goldFind: 0
+      magicFind: 0
+      experienceBonus: 0
+    skills:
+    - {}
+    - {}
+    - {}
+    - {}
+legendaryPowers:
+- id: Unique_Mace_2H_104_x1
+  name: Soulsmasher
+  icon: unique_mace_2h_104_x1_demonhunter_male
+  displayColor: orange
+  tooltipParams: item/soulsmasher
+- id: Unique_Helm_002_p3
+  name: Leoric's Crown
+  icon: unique_helm_002_p3_demonhunter_male
+  displayColor: orange
+  tooltipParams: item/leorics-crown-mCg1x
+- id: P2_Unique_Ring_04
+  name: Convention of Elements
+  icon: p2_unique_ring_04_demonhunter_male
+  displayColor: orange
+  tooltipParams: item/convention-of-elements
+stats:
+  life: 615145
+  damage: 367276.0
+  toughness: 8756810.0
+  healing: 333958.0
+  attackSpeed: 1.100000023841858
+  armor: 13307
+  strength: 572
+  dexterity: 7194
+  vitality: 4921
+  intelligence: 77
+  physicalResist: 393
+  fireResist: 393
+  coldResist: 846
+  lightningResist: 548
+  poisonResist: 393
+  arcaneResist: 688
+  critDamage: 1.91
+  blockChance: 0.0
+  blockAmountMin: 0
+  blockAmountMax: 0
+  damageIncrease: 0.0
+  critChance: 0.18500000075
+  damageReduction: 0.0
+  thorns: 5379.0
+  lifeSteal: 0.0
+  lifePerKill: 29025.0
+  goldFind: 1.31
+  magicFind: 0.0
+  lifeOnHit: 8164.0
+  primaryResource: 350
+  secondaryResource: 0
+progression:
+  act1:
+    completed: false
+    completedQuests:
+    - slug: the-fallen-star
+      name: The Fallen Star
+    - slug: the-legacy-of-cain
+      name: The Legacy of Cain
+    - slug: a-shattered-crown
+      name: A Shattered Crown
+    - slug: reign-of-the-black-king
+      name: Reign of the Black King
+    - slug: sword-of-the-stranger
+      name: Sword of the Stranger
+    - slug: the-broken-blade
+      name: The Broken Blade
+  act2:
+    completed: false
+    completedQuests: []
+  act3:
+    completed: false
+    completedQuests: []
+  act4:
+    completed: false
+    completedQuests: []
+  act5:
+    completed: false
+    completedQuests: []
 dead: false
-life: 615145
-damage: 367276.0
-attack_speed: 1.100000023841858
-armor: 13307
-strength: 572
-dexterity: 7194
-vitality: 4921
-intelligence: 77
-physical_resist: 393
-fire_resist: 393
-cold_resist: 846
-lightning_resist: 548
-poison_resist: 393
-arcane_resist: 688
-critical_damage: 1.91
-block_chance: 0.0
-block_amount_min: 0
-block_amount_max: 0
-damage_increase: 0.0
-critical_chance: 0.18500000075
-damage_reduction: 0.0
-thorns: 5379.0
-life_steal: 0.0
-life_per_kill: 29025.0
-gold_find: 1.31
-magic_find: 0.0
-life_on_hit: 8164.0
-primary_resource: 350
-secondary_resource: 0
-elite_kills: 1203
+last-updated: 1443590235

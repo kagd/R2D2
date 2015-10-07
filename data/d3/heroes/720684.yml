@@ -1,39 +1,625 @@
 ---
+id: 720684
 name: Balrog
-paragon_level: 256
-hero_id: 720684
-level: 70
-hardcore: false
-gender: 0
 class: barbarian
+gender: 0
+level: 70
+kills:
+  elites: 8443
+paragonLevel: 256
+hardcore: false
+seasonal: false
+seasonCreated: 0
+skills:
+  active:
+  - skill:
+      slug: bash
+      name: Bash
+      icon: barbarian_bash
+      level: 1
+      categorySlug: primary
+      tooltipUrl: skill/barbarian/bash
+      description: "Generate: 6 Fury per attack\r\n\r\nBrutally smash an enemy for
+        320% weapon damage."
+      simpleDescription: "Generate: 6 Fury per attack\r\n\r\nBrutally strike a single
+        enemy."
+      skillCalcId: a
+    rune:
+      slug: bash-d
+      type: d
+      name: Instigation
+      level: 44
+      description: "Increase Fury generated to 9.\r\n\r\nBash's damage turns into
+        Fire."
+      simpleDescription: Increase Fury generated with each attack.
+      tooltipParams: rune/bash/d
+      skillCalcId: Y
+      order: 3
+  - skill:
+      slug: rend
+      name: Rend
+      icon: barbarian_rend
+      level: 5
+      categorySlug: secondary
+      tooltipUrl: skill/barbarian/rend
+      description: "Cost: 20 Fury\r\n\r\nA sweeping strike causes all enemies within
+        12 yards to Bleed for 1100% weapon damage as Physical over 5 seconds."
+      simpleDescription: "Cost: 20 Fury\r\n\r\nWound nearby enemies and cause them
+        to Bleed for 5 seconds."
+      skillCalcId: c
+    rune:
+      slug: rend-e
+      type: e
+      name: Bloodbath
+      level: 56
+      description: Enemies killed while bleeding cause all enemies within 10 yards
+        to begin bleeding for 1100% weapon damage as Physical over 5 seconds.
+      simpleDescription: Killing enemies with Rend causes nearby enemies to Bleed.
+      tooltipParams: rune/rend/e
+      skillCalcId: c
+      order: 4
+  - skill:
+      slug: sprint
+      name: Sprint
+      icon: barbarian_sprint
+      level: 16
+      categorySlug: defensive
+      tooltipUrl: skill/barbarian/sprint
+      description: "Cost: 20 Fury\r\n\r\nIncrease movement speed by 30% for 3 seconds."
+      simpleDescription: "Cost: 20 Fury\r\n\r\nRun furiously fast for 3 seconds."
+      skillCalcId: U
+    rune:
+      slug: sprint-e
+      type: e
+      name: Gangway
+      level: 46
+      description: Slams through enemies, knocking them back and dealing 25% weapon
+        damage.
+      simpleDescription: Slam through enemies in your path causing Knockback.
+      tooltipParams: rune/sprint/e
+      skillCalcId: Y
+      order: 3
+  - skill:
+      slug: battle-rage
+      name: Battle Rage
+      icon: barbarian_battlerage
+      level: 22
+      categorySlug: tactics
+      tooltipUrl: skill/barbarian/battle-rage
+      description: "Cost: 20 Fury\r\n\r\nEnter a rage which increases your damage
+        by 10% and Critical Hit Chance by 3%. Lasts 120 seconds."
+      simpleDescription: "Cost: 20 Fury\r\n\r\nUnleash your inner rage, increasing
+        your damage and Critical Hit Chance. Lasts 120 seconds."
+      skillCalcId: R
+    rune:
+      slug: battle-rage-d
+      type: d
+      name: Into the Fray
+      level: 46
+      description: Gain 1% Critical Hit Chance for each enemy within 10 yards while
+        under the effects of Battle Rage.
+      simpleDescription: Gain increased Critical Hit Chance when surrounded by enemies.
+      tooltipParams: rune/battle-rage/d
+      skillCalcId: Y
+      order: 3
+  - skill:
+      slug: war-cry
+      name: War Cry
+      icon: x1_barbarian_warcry_v2
+      level: 28
+      categorySlug: tactics
+      tooltipUrl: skill/barbarian/war-cry
+      description: "Generate: 20 Fury\r\nCooldown: 20 seconds\r\n\r\nUnleash a rallying
+        cry to increase Armor for you and all allies within 100 yards by 20% for 60
+        seconds."
+      simpleDescription: "Generate: 20 Fury\r\nCooldown: 20 seconds\r\n\r\nA rallying
+        cry increases Armor for you and your allies for 60 seconds."
+      skillCalcId: k
+    rune:
+      slug: war-cry-a
+      type: a
+      name: Hardened Wrath
+      level: 32
+      description: Increase the Armor bonus to 40%.
+      simpleDescription: Increase the Armor bonus of War Cry.
+      tooltipParams: rune/war-cry/a
+      skillCalcId: a
+      order: 0
+  - skill:
+      slug: call-of-the-ancients
+      name: Call of the Ancients
+      icon: barbarian_calloftheancients
+      level: 25
+      categorySlug: rage
+      tooltipUrl: skill/barbarian/call-of-the-ancients
+      description: "Cooldown: 120 seconds\r\n\r\nSummon the ancient Barbarians Talic,
+        Korlic, and Madawc to fight alongside you for 20 seconds. Each deals 270%
+        weapon damage per swing in addition to bonus abilities.\r\n\r\n Talic wields
+        a sword and shield and uses Whirlwind and Leap Attack.\r\n Korlic wields a
+        massive polearm and uses Cleave and Furious Charge.\r\n Madawc dual-wields
+        axes and uses Weapon Throw and Seismic Slam."
+      simpleDescription: "Cooldown: 120 seconds\r\n\r\nSummon three ancestral heroes
+        to fight alongside you for 20 seconds."
+      skillCalcId: j
+    rune:
+      slug: call-of-the-ancients-b
+      type: b
+      name: The Council Rises
+      level: 31
+      description: The Ancients deal 540% weapon damage as Fire with each attack.
+      simpleDescription: The Ancients deal increased damage.
+      tooltipParams: rune/call-of-the-ancients/b
+      skillCalcId: a
+      order: 0
+  passive:
+  - skill:
+      slug: brawler
+      name: Brawler
+      icon: barbarian_passive_brawler
+      level: 45
+      tooltipUrl: skill/barbarian/brawler
+      description: As long as there are 3 enemies within 12 yards, all of your damage
+        is increased by 20%.
+      flavor: '"I have two blades, one for each of you." —Blademaster Kharne'
+      skillCalcId: g
+  - skill:
+      slug: animosity
+      name: Animosity
+      icon: barbarian_passive_animosity
+      level: 27
+      tooltipUrl: skill/barbarian/animosity
+      description: "Increase all Fury generation by 10%.\r\nIncrease maximum Fury
+        by 20.\r\n\r\nFury is used to fuel your most powerful attacks."
+      flavor: '"While most orders teach the merits of calming the seas of the soul,
+        the guardians of Arreat have embraced the raging inner storm." —Chronicler
+        Arlavoc'
+      skillCalcId: W
+  - skill:
+      slug: ruthless
+      name: Ruthless
+      icon: barbarian_passive_ruthless
+      level: 10
+      tooltipUrl: skill/barbarian/ruthless
+      description: You deal 40% additional damage to enemies below 30% health.
+      flavor: The clans each paint their warriors in their own unique way. Some celebrate
+        the mountain, others honor the fire, but the Targos clan worships the purifying
+        virtue of pain.
+      skillCalcId: Z
+  - skill:
+      slug: rampage
+      name: Rampage
+      icon: x1_barbarian_passive_rampage
+      level: 68
+      tooltipUrl: skill/barbarian/rampage
+      description: Increase Strength by 1% for 8 seconds after killing or assisting
+        in killing an enemy. This effect stacks up to 25 times.
+      flavor: '"The battle was never ending, sapping our minds and bodies to the point
+        of exhaustion. But they thrived amidst the carnage, every killing blow renewing
+        their bloodlust. They couldn''t be stopped." —Sergeant Peshkov on the Siege
+        of the Barbarians, 1123 Anno Kehjistani '
+      skillCalcId: j
+items:
+  head:
+    id: Unique_Helm_002_p1
+    name: Leoric's Crown
+    icon: unique_helm_002_p1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CoIBCIyMwYYEEgcIBBXNcusTHUu1-Usd5hXbDR2bBgDLHYGBxsQdZiMGUDCLAjigA0AAUBJYBGCgA2oqCgwIABCim5TLgICAgDwSGgid3t4aEgcIBBXWXbZ6MI8COABAAVgEkAEAgAFGpQGBgcbErQGBgcbEtQF_-U5duAGlnMy6BcABAxiay9u-AlACWAA
+  torso:
+    id: Unique_Chest_013_x1
+    name: Immortal King's Eternal Reign
+    icon: unique_chest_013_x1_demonhunter_male
+    displayColor: green
+    tooltipParams: item/CuEBCLqG9uQGEgcIBBUo7XxOHakgNrodcyMGUB14oFykHSCNN1QdAWAtsR1yjh0hMIsCOMYCQABQElgEYMYCaisKDAgAENX7jc6BgICALhIbCLSZyocFEgcIBBVq9YtfMI8COABAAVgEkAEAaisKDAgAEKy0uvSAgIDgFhIbCIyr9-cPEgcIBBVq9YtfMIsCOABAAVgEkAEAaisKDAgAELfHxrOBgICAFRIbCOia__gDEgcIBBVq9YtfMIsCOABAAVgEkAEAgAFGpQF4oFykrQFDTkRRtQExIhlguAG6vaIfwAEKGNC05-cJUAJYAKAB0LTn5wk
+    setItemsEquipped:
+    - Unique_Chest_013_x1
+  feet:
+    id: Unique_Boots_001_x1
+    name: Boj Anglers
+    icon: unique_boots_001_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/ClsIuvax_A4SBwgEFbWao3MdcYt38B2svNNTHTsnbyQdQ05EUR0J0QNIHakgNrowiwI49gJAAFASWARg9gKAAUalAQnRA0itAevi5AW1AaBFm3-4AYPk4JQEwAEBGOrqnLoOUAJYAA
+  hands:
+    id: Unique_Gloves_007_x1
+    name: Stone Gauntlets
+    icon: unique_gloves_007_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/ClYIntz77gsSBwgEFURdTCIdRXvG3R3Sn55EHX52VaEdmwYAyx2BgcbEMIsCOPICQABQElgEYPICgAFGpQGbBgDLrQGYp47AtQHJW5KkuAHwpfjZCsABBBiI9eKkBFACWAA
+  shoulders:
+    id: Unique_Shoulder_102_x1
+    name: Spaulders of Zakara
+    icon: unique_shoulder_102_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CkAIheLT4wMSBwgEFRbAhY0dqSA2uh2zUeUSHbi8IHodQ05EUR0do43EMIsCONUCQABQElgEYNUCgAFGtQHS-MgVGNP_0acOUAJYAA
+  legs:
+    id: Unique_Pants_002_x1
+    name: Hammer Jammers
+    icon: unique_pants_002_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CrUBCLOIrZ4FEgcIBBW1x9bRHT_yCdgdqSA2uh3r4uQFHTid5AQdCnCRKR2PkMpQMIsCOJMCQABQElgEYJMCaisKDAgAEIb9jc6BgICALhIbCICgopkKEgcIBBVq9YtfMIsCOABAAVgEkAEAaisKDAgAEIz9jc6BgICALhIbCL6M48UMEgcIBBVq9YtfMIsCOABAAVgEkAEAgAFGpQGpIDa6rQGpIDa6tQGfktWluAHcsfiICsABARiV4cniBVACWAA
+  bracers:
+    id: Unique_Bracer_107_x1
+    name: Custerian Wristguards
+    icon: unique_bracer_107_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/ClYI25CMnggSBwgEFcQCXjkdII03VB1DTkRRHakgNrod5hXbDR0_8gnYMIsCOJMCQABQElgEYJMCgAFGpQGpIDa6rQGpIDa6tQHbLMrLuAGj5ZqWAsABAhiIi_CVB1ACWAA
+  mainHand:
+    id: Unique_Polearm_004_x1
+    name: Standoff
+    icon: unique_polearm_004_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CogBCKS6hqYJEgcIBBXhfIKJHdW9zo0dco4dIR2eT4PcHWYjBlAdGNVJeR2sryhiMIsCOKgDQABQElgEYKgDaisKDAgAEMz5jc6BgICALhIbCNmX6dECEgcIBBUjlq6YMIsCOABAAVgEkAEAgAFGpQEY1Ul5rQHOnAfztQEEZkOwuAHc44XtAsABBBi9jOznDlACWAA
+  waist:
+    id: Unique_Belt_005_x1
+    name: Hellcat Waistguard
+    icon: unique_belt_005_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/ClsIoOu9tAwSBwgEFZmrjWkdRXvG3R1yjh0hHbUvKgMdqSA2uh1DTkRRHX52VaEwiwI4qQNAAFASWARgrAOAAUalAakgNrqtAakgNrq1AcCnQtS4AYL3qaEHwAEDGLKu7ZgNUAJYAA
+  rightFinger:
+    id: Ring_25
+    name: Bond Apocalypse
+    icon: ring_25_demonhunter_male
+    displayColor: yellow
+    tooltipParams: item/CpEBCJTettYDEgcIBBU2VV1EHUo8Hr0daGvZNB2Wr7nsHWYjBlAdww2c5R2r05k5IgsIARVnQgMAGBQgDDCLAjipA0AAUBBYBGCsA2owCgwIABDG_Pz1gICA4CUSIAiQ7YbtCxIHCAQVKxe0wTCLAjgAQABQElgEkAEA2AEepQFKPB69rQGo1nX8uAGNg_PrBcABARjs1OrFCFACWAA
+  leftFinger:
+    id: Ring_25
+    name: Demonic Ring
+    icon: ring_25_demonhunter_male
+    displayColor: yellow
+    tooltipParams: item/Cl8Iyp6K9Q4SBwgEFTZVXUQdnQeVJB0CmefLHWhr2TQdSjwevR3DDZzlHUq1-UsiCwgAFar-AQAYGiAcMIsCOJoDQABQEFgEYJoDpQECmefLrQGWr7nsuAGFv7SdB8ABARjs1OrFCFACWAA
+  neck:
+    id: Amulet17
+    name: Bloody Focus
+    icon: amulet17_demonhunter_male
+    displayColor: yellow
+    tooltipParams: item/Cl8It5Ks9AYSBwgEFbDFRGQdgIHGxB1pSWnqHVYi1aodwNyHGx3QM7brHU8ZrAwiCwgAFbT-AQAYACAIMIsCOOMDQABQEFgEYOMDpQFWItWqrQFKPB69uAGPr8CbA8ABAhjglqbEDFACWAA
+followers:
+  templar:
+    slug: templar
+    level: 70
+    items:
+      special:
+        id: Templar_Special_203
+        name: Unyielding Reward
+        icon: templar_special_203_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/CjgI9fuU2wsSBwgEFekLY0QdDheAyR2DrB6mHTKHYggdDlz0_CILCAAVrUQDABgGIBIwCTgAQABQDBjSr5jGCA
+      mainHand:
+        id: Unique_Mace_1H_001_104
+        name: Echoing Fury
+        icon: unique_mace_1h_001_104_demonhunter_male
+        displayColor: orange
+        tooltipParams: item/CjkI4pz6wgwSBwgEFQhjE3Ad8jctFB2cbLMUHb7m3bUd1KFb4B2DDibvHWSRAaMwCTiuA0AAUBJgrgMYkIybgQ4
+      offHand:
+        id: Shield_205_104
+        name: Battle Gear
+        icon: shield_205_104_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/CkEI_c602gISBwgEFWNqJewdNed7qB0pEnPgHaxsf_0dnGyzFB1AAOIGIgsIARVnQgMAGB4gGDAJOPcEQABQDmD3BBi51tS9Ag
+    stats:
+      goldFind: 0
+      magicFind: 0
+      experienceBonus: 0
+    skills:
+    - skill:
+        slug: intervene
+        name: Intervene
+        icon: templar_intervene
+        level: 5
+        tooltipUrl: skill/templar/intervene
+        description: "Cooldown: 10 seconds\r\n\r\nTaunt enemies within 10 yards of
+          you for 3 seconds when you are hit."
+        simpleDescription: "Cooldown: 10 seconds\r\n\r\nTaunt enemies near you when
+          you are hit."
+        skillCalcId: Z
+    - skill:
+        slug: intimidate
+        name: Intimidate
+        icon: templar_intimidate
+        level: 10
+        tooltipUrl: skill/templar/intimidate
+        description: Enemies that hit or are hit by the Templar are slowed by 80%
+          for 3 seconds.
+        simpleDescription: Enemies that hit or are hit by the Templar are slowed.
+        skillCalcId: Y
+    - skill:
+        slug: charge
+        name: Charge
+        icon: templar_shieldcharge
+        level: 15
+        tooltipUrl: skill/templar/charge
+        description: "Cooldown: 10 seconds\r\n\r\nCharges a target, dealing 280% weapon
+          damage and stunning all enemies within 8 yards for 3 seconds."
+        simpleDescription: "Cooldown: 10 seconds\r\n\r\nCharges an enemy, dealing
+          damage and stunning nearby enemies."
+        skillCalcId: c
+    - skill:
+        slug: inspire
+        name: Inspire
+        icon: templar_inspire
+        level: 20
+        tooltipUrl: skill/templar/inspire
+        description: "Increases your resource generation.\r\n\r\nMana: 7 per second.\r\nHatred:
+          1 per second.\r\nWrath: 1.1 per second.\r\nArcane Power: 1.4 per second.\r\nFury:
+          10% generated.\r\nSpirit: 10% generated."
+        simpleDescription: Increases your resource generation.
+        skillCalcId: d
+  scoundrel:
+    slug: scoundrel
+    level: 70
+    items:
+      special:
+        id: x1_FollowerItem_Scoundrel_Legendary_01
+        name: Skeleton Key
+        icon: x1_followeritem_scoundrel_legendary_01_demonhunter_male
+        displayColor: orange
+        tooltipParams: item/CkUIjdrAlQsSBwgEFYmhVzodco4dIR1_jofMHbDBCXIdaklp6h2bBgDLHcn6vKAwiwI45QJAAFASWARg5QKAAUa1AaYBTPIYkoa9pQc
+      mainHand:
+        id: Crossbow_302
+        name: Killing Arc
+        icon: crossbow_302_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/CkcI0pX9zQcSBwgEFUZgygodmgYAyx3ib8yEHS4UxeIdyPq8oB3JZof-HbDk6hEiCwgAFav-AQAYFCASMIkCOKAEQABQEGCgBBiMgdOsAQ
+      rightFinger:
+        id: Unique_Ring_023_x1
+        name: Obsidian Ring of the Zodiac
+        icon: unique_ring_023_x1_demonhunter_male
+        displayColor: orange
+        tooltipParams: item/CkUIkM2izgUSBwgEFQJvR7kd6Zy9wx2p05k5HcHjikYdCTMWRh1B5KJGHRkcPdgwiwI4tAJAAFASWARgtAKAATy1ATJVXUQY-8PE6wg
+      leftFinger:
+        id: Unique_Ring_004_x1
+        name: Puzzle Ring
+        icon: unique_ring_004_x1_demonhunter_male
+        displayColor: orange
+        tooltipParams: item/CkwI8KLMxwgSBwgEFWHKI7kdZz7s5B24vCB6HX52VaEdP_IJ2B2pIDa6MIkCOIwCQABQElgGYIwCgAFGtQE2VV1EyAGzkvUDyAHzkpMEGL3W4e0I
+      neck:
+        id: Unique_Amulet_005_x1
+        name: Ouroboros
+        icon: unique_amulet_005_x1_demonhunter_male
+        displayColor: orange
+        tooltipParams: item/CkUI7-XNxQYSBwgEFfrRCFsdS7X5Sx1lOtTgHTsnbyQdEC_KKh3zcAetHX5Wsy4wiwI49wJAAFASWARg9wKAAUa1AbDFRGQY9MfGsAs
+    stats:
+      goldFind: 7
+      magicFind: 0
+      experienceBonus: 39
+    skills:
+    - skill:
+        slug: crippling-shot
+        name: Crippling Shot
+        icon: scoundrel_cripplingshot
+        level: 5
+        tooltipUrl: skill/scoundrel/crippling-shot
+        description: "Cooldown: 4 seconds\r\n\r\nRanged attack that deals 140% weapon
+          damage and slows enemies hit by 80% for 4 seconds."
+        simpleDescription: "Cooldown: 4 seconds\r\n\r\nRanged attack that slows enemies."
+        skillCalcId: a
+    - skill:
+        slug: dirty-fighting
+        name: Dirty Fighting
+        icon: scoundrel_dirtyfighting
+        level: 10
+        tooltipUrl: skill/scoundrel/dirty-fighting
+        description: "Cooldown: 6 seconds\r\n\r\nBlinds nearby enemies in front of
+          the Scoundrel for 2 seconds."
+        simpleDescription: "Cooldown: 6 seconds\r\n\r\nBlinds nearby enemies in front
+          of the Scoundrel."
+        skillCalcId: b
+    - skill:
+        slug: powered-shot
+        name: Powered Shot
+        icon: scoundrel_powershot
+        level: 15
+        tooltipUrl: skill/scoundrel/powered-shot
+        description: "Cooldown: 8 seconds\r\n\r\nRanged attack that explodes on impact,
+          dealing 310% weapon damage as Arcane to enemies within 10 yards and has
+          a 100% chance to Stun enemies for 2 seconds."
+        simpleDescription: "Cooldown: 8 seconds\r\n\r\nDeals damage in an area that
+          has a chance to Stun enemies."
+        skillCalcId: c
+    - skill:
+        slug: anatomy
+        name: Anatomy
+        icon: scoundrel_anatomy
+        level: 20
+        tooltipUrl: skill/scoundrel/anatomy
+        description: Increases Critical Hit Chance by 1.8% for you and the Scoundrel.
+        simpleDescription: Increases Critical Hit Chance for you and the Scoundrel.
+        skillCalcId: W
+  enchantress:
+    slug: enchantress
+    level: 70
+    items:
+      special:
+        id: Enchantress_Special_206
+        name: Disciple's Gnaw
+        icon: enchantress_special_206_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/Cj4IzqeN2Q4SBwgEFTWjYi0dkpTcCB3ycAetHZoGAMsdaUlp6h3pcC-7IgsIARV5QgMAGAQgGjCJAjgAQABQEBjqjJXWBQ
+      mainHand:
+        id: Unique_Staff_009_104
+        name: The Grand Vizier
+        icon: unique_staff_009_104_demonhunter_male
+        displayColor: orange
+        tooltipParams: item/CjkI8bv32QwSBwgEFXZlv7QdiCNbLh231vezHee-mnEdr7KS4B1DMvhUHbTz7AcwCTipA0AAUBJgqQMYk-qEtAk
+      neck:
+        id: Amulet13
+        name: Victory Turmoil
+        icon: amulet13_demonhunter_male
+        displayColor: yellow
+        tooltipParams: item/CkYI54_2uAESBwgEFazFRGQdsUY_4h12kP9GHXWx7PAdnGyzFB0PXPT8HT6kUAciCwgBFXdCAwAYGiAQMAk4mwNAAFAQYJsDGNiWpsQM
+    stats:
+      goldFind: 8
+      magicFind: 8
+      experienceBonus: 25
+    skills:
+    - skill:
+        slug: charm
+        name: Charm
+        icon: enchantress_charm
+        level: 15
+        tooltipUrl: skill/enchantress/charm
+        description: "Cooldown: 18 seconds\r\n\r\nCharms an enemy to fight for you
+          for 8 seconds."
+        simpleDescription: "Cooldown: 18 seconds\r\n\r\nTemporarily Charms an enemy
+          to fight for you."
+        skillCalcId: a
+    - skill:
+        slug: powered-armor
+        name: Powered Armor
+        icon: enchantress_poweredarmor
+        level: 20
+        tooltipUrl: skill/enchantress/powered-armor
+        description: Buffs you and the Enchantress, increasing Armor by 3% and slowing
+          melee attackers by 60% for 1 seconds.
+        simpleDescription: Increases Armor and slows melee attackers for you and the
+          Enchantress.
+        skillCalcId: Y
+    - skill:
+        slug: erosion
+        name: Erosion
+        icon: enchantress_scorchedearth
+        level: 25
+        tooltipUrl: skill/enchantress/erosion
+        description: "Cooldown: 15 seconds\r\n\r\nConjures a pool of energy that deals
+          330% weapon damage as Arcane over 5 seconds. Affected enemies will also
+          take 3% increased damage."
+        simpleDescription: "Cooldown: 15 seconds\r\n\r\nConjures a pool of energy
+          that deals damage and causes affected enemies to take additional damage."
+        skillCalcId: X
+    - skill:
+        slug: focused-mind
+        name: Focused Mind
+        icon: enchantress_focusedmind
+        level: 30
+        tooltipUrl: skill/enchantress/focused-mind
+        description: A 40 yard aura that increases attack speed for you and the Enchantress
+          by 3%.
+        simpleDescription: An aura that increases attack speed for you and the Enchantress.
+        skillCalcId: d
+legendaryPowers: []
+stats:
+  life: 316216
+  damage: 715153.0
+  toughness: 3491820.0
+  healing: 453856.0
+  attackSpeed: 1.0499999523162842
+  armor: 13983
+  strength: 7897
+  dexterity: 77
+  vitality: 3159
+  intelligence: 77
+  physicalResist: 105
+  fireResist: 249
+  coldResist: 247
+  lightningResist: 243
+  poisonResist: 368
+  arcaneResist: 410
+  critDamage: 4.45
+  blockChance: 0.0
+  blockAmountMin: 0
+  blockAmountMax: 0
+  damageIncrease: 0.0
+  critChance: 0.21000000075
+  damageReduction: 0.0
+  thorns: 1832.0
+  lifeSteal: 0.0
+  lifePerKill: 0.0
+  goldFind: 0.6499999999999999
+  magicFind: 0.39
+  lifeOnHit: 18560.0
+  primaryResource: 120
+  secondaryResource: 0
+progression:
+  act1:
+    completed: true
+    completedQuests:
+    - slug: the-fallen-star
+      name: The Fallen Star
+    - slug: the-legacy-of-cain
+      name: The Legacy of Cain
+    - slug: a-shattered-crown
+      name: A Shattered Crown
+    - slug: reign-of-the-black-king
+      name: Reign of the Black King
+    - slug: sword-of-the-stranger
+      name: Sword of the Stranger
+    - slug: the-broken-blade
+      name: The Broken Blade
+    - slug: the-doom-in-wortham
+      name: The Doom in Wortham
+    - slug: trailing-the-coven
+      name: Trailing the Coven
+    - slug: the-imprisoned-angel
+      name: The Imprisoned Angel
+    - slug: return-to-new-tristram
+      name: Return to New Tristram
+  act2:
+    completed: true
+    completedQuests:
+    - slug: shadows-in-the-desert
+      name: Shadows in the Desert
+    - slug: the-road-to-alcarnus
+      name: The Road to Alcarnus
+    - slug: city-of-blood
+      name: City of Blood
+    - slug: a-royal-audience
+      name: A Royal Audience
+    - slug: unexpected-allies
+      name: Unexpected Allies
+    - slug: betrayer-of-the-horadrim
+      name: Betrayer of the Horadrim
+    - slug: blood-and-sand
+      name: Blood and Sand
+    - slug: the-black-soulstone
+      name: The Black Soulstone
+    - slug: the-scouring-of-caldeum
+      name: The Scouring of Caldeum
+    - slug: lord-of-lies
+      name: Lord of Lies
+  act3:
+    completed: true
+    completedQuests:
+    - slug: the-siege-of-bastions-keep
+      name: The Siege of Bastion's Keep
+    - slug: turning-the-tide
+      name: Turning the Tide
+    - slug: the-breached-keep
+      name: The Breached Keep
+    - slug: tremors-in-the-stone
+      name: Tremors in the Stone
+    - slug: machines-of-war
+      name: Machines of War
+    - slug: siegebreaker
+      name: Siegebreaker
+    - slug: heart-of-sin
+      name: Heart of Sin
+  act4:
+    completed: true
+    completedQuests:
+    - slug: fall-of-the-high-heavens
+      name: Fall of the High Heavens
+    - slug: the-light-of-hope
+      name: The Light of Hope
+    - slug: beneath-the-spire
+      name: Beneath the Spire
+    - slug: prime-evil
+      name: Prime Evil
+  act5:
+    completed: false
+    completedQuests:
+    - slug: the-fall-of-westmarch
+      name: The Fall of Westmarch
+    - slug: souls-of-the-dead
+      name: Souls of the Dead
+    - slug: the-harbinger
+      name: The Harbinger
+    - slug: the-witch
+      name: The Witch
+    - slug: the-pandemonium-gate
+      name: The Pandemonium Gate
+    - slug: the-battlefields-of-eternity
+      name: The Battlefields of Eternity
+    - slug: breaching-the-fortress
+      name: Breaching the Fortress
 dead: false
-life: 316216
-damage: 715153.0
-attack_speed: 1.0499999523162842
-armor: 13983
-strength: 7897
-dexterity: 77
-vitality: 3159
-intelligence: 77
-physical_resist: 105
-fire_resist: 249
-cold_resist: 247
-lightning_resist: 243
-poison_resist: 368
-arcane_resist: 410
-critical_damage: 4.45
-block_chance: 0.0
-block_amount_min: 0
-block_amount_max: 0
-damage_increase: 0.0
-critical_chance: 0.21000000075
-damage_reduction: 0.0
-thorns: 1832.0
-life_steal: 0.0
-life_per_kill: 0.0
-gold_find: 0.6499999999999999
-magic_find: 0.39
-life_on_hit: 18560.0
-primary_resource: 120
-secondary_resource: 0
-elite_kills: 8443
+last-updated: 1437538897

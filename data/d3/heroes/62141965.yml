@@ -1,39 +1,242 @@
 ---
+id: 62141965
 name: hulk
-paragon_level: 256
-hero_id: 62141965
-level: 35
-hardcore: false
-gender: 0
 class: barbarian
+gender: 0
+level: 35
+kills:
+  elites: 36
+paragonLevel: 256
+hardcore: false
+seasonal: false
+seasonCreated: 3
+skills:
+  active:
+  - skill:
+      slug: bash
+      name: Bash
+      icon: barbarian_bash
+      level: 1
+      categorySlug: primary
+      tooltipUrl: skill/barbarian/bash
+      description: "Generate: 6 Fury per attack\r\n\r\nBrutally smash an enemy for
+        320% weapon damage."
+      simpleDescription: "Generate: 6 Fury per attack\r\n\r\nBrutally strike a single
+        enemy."
+      skillCalcId: a
+  - skill:
+      slug: hammer-of-the-ancients
+      name: Hammer of the Ancients
+      icon: barbarian_hammeroftheancients
+      level: 2
+      categorySlug: secondary
+      tooltipUrl: skill/barbarian/hammer-of-the-ancients
+      description: "Cost: 20 Fury\r\n\r\nCall forth a massive hammer to smash enemies
+        directly in front of you for 535% weapon damage. Hammer of the Ancients has
+        a 1% increased Critical Hit Chance for every 5 Fury that you have."
+      simpleDescription: "Cost: 20 Fury\r\n\r\nCall down a mystical hammer and smash
+        groups of enemies."
+      skillCalcId: Z
+  - skill:
+      slug: ground-stomp
+      name: Ground Stomp
+      icon: barbarian_groundstomp
+      level: 4
+      categorySlug: defensive
+      tooltipUrl: skill/barbarian/ground-stomp
+      description: "Generate: 15 Fury\r\nCooldown: 12 seconds\r\n\r\nSmash the ground,
+        stunning all enemies within 14 yards for 4 seconds."
+      simpleDescription: "Generate: 15 Fury\r\nCooldown: 12 seconds\r\n\r\nSmash the
+        ground and Stun nearby enemies for 4 seconds."
+      skillCalcId: Y
+  - skill:
+      slug: overpower
+      name: Overpower
+      icon: barbarian_overpower
+      level: 9
+      categorySlug: might
+      tooltipUrl: skill/barbarian/overpower
+      description: "Cooldown: 12 seconds\r\n\r\nDeal 380% weapon damage to all enemies
+        within 9 yards.\r\n\r\nCritical Hits have a chance to reduce the cooldown
+        of Overpower by 1 second."
+      simpleDescription: "Cooldown: 12 seconds\r\n\r\nUnleash a devastating attack
+        against nearby enemies.\r\n\r\nThe cooldown of Overpower is reduced when you
+        land Critical Hits."
+      skillCalcId: d
+  - skill:
+      slug: threatening-shout
+      name: Threatening Shout
+      icon: barbarian_threateningshout
+      level: 14
+      categorySlug: tactics
+      tooltipUrl: skill/barbarian/threatening-shout
+      description: "Generate: 15 Fury\r\nCooldown: 10 seconds\r\n\r\nShout with great
+        ferocity, reducing damage done by enemies within 25 yards by 20% for 15 seconds."
+      simpleDescription: "Generate: 15 Fury\r\nCooldown: 10 seconds\r\n\r\nStrike
+        fear in your enemies and make their attacks do less damage."
+      skillCalcId: f
+  - skill:
+      slug: earthquake
+      name: Earthquake
+      icon: barbarian_earthquake
+      level: 19
+      categorySlug: rage
+      tooltipUrl: skill/barbarian/earthquake
+      description: "Cost: 25 Fury\r\nCooldown: 60 seconds\r\n\r\nShake the ground
+        violently, dealing 4200% weapon damage as Fire over 8 seconds to all enemies
+        within 18 yards."
+      simpleDescription: "Cost: 25 Fury\r\nCooldown: 60 seconds\r\n\r\nViolent tremors
+        shake the earth and damage nearby enemies."
+      skillCalcId: T
+  passive:
+  - {}
+  - {}
+  - {}
+  - {}
+items:
+  torso:
+    id: ChestArmor_005
+    name: Champion Memory
+    icon: chestarmor_005_barbarian_male
+    displayColor: yellow
+    tooltipParams: item/CkQI5Kew_A0SBwgEFawZGWAdUsCW-R343cT8HXs1H8wd7WB86R1-YMNiIgsIARVyQgMAGAIgKDCJEji3AUAASBJQDmDqBBjY5siBDFACWAA
+    dyeColor:
+      item:
+        id: Dye_01
+        name: Tanner's Dye
+        icon: dye_01_demonhunter_male
+        displayColor: white
+        tooltipParams: item/tanners-dye
+  feet:
+    id: Boots_005
+    name: Sergeant's Runners
+    icon: boots_005_barbarian_male
+    displayColor: yellow
+    tooltipParams: item/Cj8I5rfFlQUSBwgEFRs9m38d6eLkBR3tYHzpHfjdxPwdp3AvuyILCAAVsf4BABgSIBIwiRI4igFAAEgDUAxg4gMYtvTZ-Q9QAlgA
+    dyeColor:
+      item:
+        id: Dye_19
+        name: Purity Dye
+        icon: dye_19_demonhunter_male
+        displayColor: white
+        tooltipParams: item/purity-dye
+  hands:
+    id: Gloves_006
+    name: Frost Gage
+    icon: gloves_006_barbarian_male
+    displayColor: yellow
+    tooltipParams: item/CkQI0pDOqQkSBwgEFUVTkqQdyQgg8B0RgPYFHevJJgYd8IUdIR0FYmG4IgsIABWp_gEAGBAgGDCJEjjSAkAASA9QDmDmAxj1su22C1ACWAA
+    dyeColor:
+      item:
+        id: Dye_05
+        name: Cardinal Dye
+        icon: dye_05_demonhunter_male
+        displayColor: white
+        tooltipParams: item/cardinal-dye
+  shoulders:
+    id: Shoulders_002
+    name: Insightful Leather Mantle
+    icon: shoulders_002_barbarian_male
+    displayColor: blue
+    tooltipParams: item/CiEI3e-pzwUSBwgEFUrwyBUdtOetZDCJEji7AUAAUAZg9QQYlMHH3AJQAlgA
+  legs:
+    id: Pants_005
+    name: Rugged Plate
+    icon: pants_005_barbarian_male
+    displayColor: yellow
+    tooltipParams: item/CkQI-9asxgESBwgEFRqK1aUdEQs6dB1uNR_MHbcoaHcd7WB86R1ti3fwIgsIABXO_gEAGBogHDCJEji8AUAASANQDmD9BBjL19OiC1ACWAA
+    dyeColor:
+      item:
+        id: Dye_19
+        name: Purity Dye
+        icon: dye_19_demonhunter_male
+        displayColor: white
+        tooltipParams: item/purity-dye
+  bracers:
+    id: Bracers_005
+    name: Arcing Bracelets of Invasion
+    icon: bracers_005_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiYI04PruAsSBwgEFVYkyssd-N3E_B07dXkFMIkSOIMBQABQCGC_AxjT7q7DBlACWAA
+  mainHand:
+    id: Sword_2H_006
+    name: Eviscerator's Reign
+    icon: sword_2h_006_demonhunter_male
+    displayColor: yellow
+    tooltipParams: item/CkII74HF_AcSBwgEFX31LvIdPOJJoh3WoZC-HTx0gicdGzcfzB1-YMNiIgsIARVyQgMAGAggHDCJEjjcA0AAUA5g1QQYhaqI3QFQAlgA
+  waist:
+    id: Belt_006
+    name: Clever Chain Belt of Invasion
+    icon: belt_006_barbarian_male
+    displayColor: blue
+    tooltipParams: item/CiYIpouqvwUSBwgEFTyfQtQdOZMhgh2ncC-7MIkSOJUCQABQCGDWAxiHg-u7BVACWAA
+  rightFinger:
+    id: Ring_12
+    name: Reptilian Ring of Thorns
+    icon: ring_12_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiYIyOe44wcSBwgEFRJVXUQdx9z-7B1bPamCMIkSOKUDQABQCGCQBBik1OrFCFACWAA
+  leftFinger:
+    id: Ring_06
+    name: Clever Ring
+    icon: ring_06_demonhunter_male
+    displayColor: blue
+    tooltipParams: item/CiEIqJSPhwwSBwgEFfVUXUQdfmDDYjCJEjiFAUAAUAZgyAMY6tPqxQhQAlgA
+  neck:
+    id: Amulet05
+    name: Highborn Palisade
+    icon: amulet05_demonhunter_male
+    displayColor: yellow
+    tooltipParams: item/CkIIm5vvwQESBwgEFY3FRGQdktpG1x07dXkFHevJJgYd9ZwK6h2zW1RNIgsIARVoQgMAGB4gJjCJEjilAkAAUA5gpwMYmpamxAxQAlgA
+followers: {}
+legendaryPowers: []
+stats:
+  life: 6156
+  damage: 966.493
+  toughness: 10181.5
+  healing: 642.845
+  attackSpeed: 1.100000023841858
+  armor: 1146
+  strength: 658
+  dexterity: 42
+  vitality: 570
+  intelligence: 42
+  physicalResist: 4
+  fireResist: 4
+  coldResist: 21
+  lightningResist: 4
+  poisonResist: 4
+  arcaneResist: 4
+  critDamage: 1.6400000000000001
+  blockChance: 0.0
+  blockAmountMin: 0
+  blockAmountMax: 0
+  damageIncrease: 0.0
+  critChance: 0.05000000075
+  damageReduction: 0.0
+  thorns: 12.0
+  lifeSteal: 0.0
+  lifePerKill: 0.0
+  goldFind: 0.0
+  magicFind: 0.0
+  lifeOnHit: 0.0
+  primaryResource: 100
+  secondaryResource: 0
+progression:
+  act1:
+    completed: false
+    completedQuests: []
+  act2:
+    completed: false
+    completedQuests: []
+  act3:
+    completed: false
+    completedQuests: []
+  act4:
+    completed: false
+    completedQuests: []
+  act5:
+    completed: false
+    completedQuests: []
 dead: false
-life: 6156
-damage: 966.493
-attack_speed: 1.100000023841858
-armor: 1146
-strength: 658
-dexterity: 42
-vitality: 570
-intelligence: 42
-physical_resist: 4
-fire_resist: 4
-cold_resist: 21
-lightning_resist: 4
-poison_resist: 4
-arcane_resist: 4
-critical_damage: 1.6400000000000001
-block_chance: 0.0
-block_amount_min: 0
-block_amount_max: 0
-damage_increase: 0.0
-critical_chance: 0.05000000075
-damage_reduction: 0.0
-thorns: 12.0
-life_steal: 0.0
-life_per_kill: 0.0
-gold_find: 0.0
-magic_find: 0.0
-life_on_hit: 0.0
-primary_resource: 100
-secondary_resource: 0
-elite_kills: 36
+last-updated: 1431291779
