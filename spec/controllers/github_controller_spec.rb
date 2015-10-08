@@ -11,42 +11,42 @@ describe GithubController do
       dec_commit
     end
 
-    it 'should have a list of years on the root' do
-      go_to_index
-      expect(assigns(:site_commits).keys).to eq ["2015","2014"]
-    end
+    # it 'should have a list of years on the root' do
+    #   go_to_index
+    #   expect(assigns(:site_commits).keys).to eq ["2015","2014"]
+    # end
+    #
+    # it 'should have months under year 2015' do
+    #   go_to_index
+    #   expect(assigns(:site_commits)["2015"].keys).to eq ["February","January"]
+    # end
+    #
+    # it 'should have months under year 2014' do
+    #   go_to_index
+    #   expect(assigns(:site_commits)["2014"].keys).to eq ["December"]
+    # end
+    #
+    # it 'should have a list of commits under a month' do
+    #   go_to_index
+    #   class_names = assigns(:site_commits)["2015"]["February"].map{|commit| commit.class }
+    #
+    #   expect(class_names.all?{|class_name| class_name == CommitPresenter }).to eq true
+    # end
 
-    it 'should have months under year 2015' do
-      go_to_index
-      expect(assigns(:site_commits)["2015"].keys).to eq ["February","January"]
-    end
-
-    it 'should have months under year 2014' do
-      go_to_index
-      expect(assigns(:site_commits)["2014"].keys).to eq ["December"]
-    end
-
-    it 'should have a list of commits under a month' do
-      go_to_index
-      class_names = assigns(:site_commits)["2015"]["February"].map{|commit| commit.class }
-
-      expect(class_names.all?{|class_name| class_name == CommitPresenter }).to eq true
-    end
-
-    it 'should have a count of all commits' do
-      go_to_index
-      expect(assigns(:total_commits)).to eq 3
-    end
-
-    it 'should have a list of all repos' do
-      jan_commit.update_attribute :repo_full_name, "kagd/C3PO"
-      go_to_index
-      expect(assigns(:total_repos)).to eq 2
-    end
-
-    it 'should list language_counts' do
-      go_to_index
-      expect(assigns(:language_counts)).to be_present
-    end
+    # it 'should have a count of all commits' do
+    #   go_to_index
+    #   expect(assigns(:total_commits)).to eq 3
+    # end
+    #
+    # it 'should have a list of all repos' do
+    #   jan_commit.update_attribute :repo_full_name, "kagd/C3PO"
+    #   go_to_index
+    #   expect(assigns(:total_repos)).to eq 2
+    # end
+    #
+    # it 'should list language_counts' do
+    #   go_to_index
+    #   expect(assigns(:language_counts)).to be_present
+    # end
   end
 end
