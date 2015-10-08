@@ -3,6 +3,11 @@ set :state, :production
 ## Servers we are going to deploy to ----------------------
 server '159.203.78.230', user: 'deploy', roles: %w{app db}
 
+set :whenever_command,      -> { [:bundle, :exec, :whenever] }
+set :whenever_environment,  -> { fetch :rails_env, fetch(:stage, "production") }
+set :whenever_identifier,   -> { "#{fetch(:application)}_#{fetch(:stage)}" }
+set :whenever_roles,        -> { :app }
+
 ## Server Settings ----------------------------------------
 set :deploy_to, "/var/www/api_site"
 

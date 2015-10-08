@@ -15,7 +15,8 @@ gem 'digital_opera',    '~> 0.0.14'
 gem 'httparty',         '~> 0.13.3'
 gem 'dotenv-rails',     '~> 2.0.2'
 gem 'uglifier',         '>= 1.3.0'
-gem "therubyracer"
+gem "therubyracer",     '~> 0.12.2'
+gem 'whenever',         '~> 0.9.4', require: false
 
 group :development do
   # deployment
@@ -23,7 +24,7 @@ group :development do
   gem 'capistrano-rvm',      '~> 0.1.1'
   gem 'capistrano-rails',    '~> 1.1'
   gem 'capistrano-bundler',  '~> 1.1.2'
-  gem 'capistrano3-puma'
+  gem 'capistrano3-puma',    '~> 1.2.1'
 end
 
 group :development, :test do

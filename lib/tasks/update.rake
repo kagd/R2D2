@@ -6,11 +6,11 @@ namespace :update do
     service.run
   end
 
-  desc "Update BitBucket"
-  task :bitbucket => :environment do
-    service = BitbucketService.new
-    service.run
-  end
+  # desc "Update BitBucket"
+  # task :bitbucket => :environment do
+  #   service = BitbucketService.new
+  #   service.run
+  # end
 
   desc "Update Diablo"
   task :diablo => :environment do
@@ -22,6 +22,6 @@ namespace :update do
   task :all => :environment do
     Rake::Task['update:diablo'].invoke
     Rake::Task['update:github'].invoke
-    Rake::Task['update:bitbucket'].invoke
+    # Rake::Task['update:bitbucket'].invoke
   end
 end

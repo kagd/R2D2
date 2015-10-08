@@ -65,13 +65,12 @@ class D3Service < BaseService
       response = self.class.get("/d3/profile/#{ENV['BNET_TAG']}/hero/#{id}", @options)
       json = JSON.parse response.body
 
-      talk "Saving Hero #{json['name']}"
-
       if json['code'].present?
         talk "Error getting hero #{id}", :red
         puts json
         get_hero(id)
       else
+        talk "Saving Hero #{json['name']}"
         hero_file_path = Rails.root.join('data', 'd3', 'heroes', "#{id}.yml")
         File.open(hero_file_path, "w") do |f|
           f.write json.to_yaml

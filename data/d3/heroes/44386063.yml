@@ -510,7 +510,7 @@ stats:
   blockAmountMin: 15870
   blockAmountMax: 23805
   damageIncrease: 0.0
-  critChance: 0.47500000075000004
+  critChance: 0.47500000075
   damageReduction: 0.0
   thorns: 6471.0
   lifeSteal: 0.0
