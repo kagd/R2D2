@@ -62,8 +62,9 @@ class GithubService < BaseService
           end
         end
 
-      rescue
+      rescue Exception => e
         talk "Problem getting commits for #{repo[:full_name]}", :red
+        puts e.message
       end
     end
   end
