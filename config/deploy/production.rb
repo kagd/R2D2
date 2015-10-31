@@ -5,7 +5,7 @@ server '159.203.78.230', user: 'deploy', roles: %w{app db}
 
 set :whenever_command,      -> { [:bundle, :exec, :whenever] }
 set :whenever_environment,  -> { fetch :rails_env, fetch(:stage, "production") }
-set :whenever_identifier,   -> { "#{fetch(:application)}_#{fetch(:stage)}" }
+set :whenever_identifier,   -> { "#{fetch(:application)}_#{fetch(:state)}" }
 set :whenever_roles,        -> { :app }
 
 ## Server Settings ----------------------------------------
