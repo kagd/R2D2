@@ -1,6 +1,6 @@
 class GithubController < ApiController
   def index
-    @commits = Commit.where(repo_full_name: ['kagd/R2D2', 'kagd/kagd.github.io', 'kagd/grantrklinsing.com']).order('date ASC')
+    @commits = Commit.where(repo_full_name: ['kagd/R2D2', 'kagd/grantrklinsing.com']).order('date ASC')
     @last_commit = @commits.last
 
     # service = CommitService.new commits
