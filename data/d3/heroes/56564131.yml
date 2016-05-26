@@ -6,7 +6,7 @@ gender: 1
 level: 11
 kills:
   elites: 37
-paragonLevel: 256
+paragonLevel: 262
 hardcore: false
 seasonal: false
 seasonCreated: 0
@@ -19,10 +19,10 @@ skills:
       level: 1
       categorySlug: primary
       tooltipUrl: skill/demon-hunter/hungering-arrow
-      description: "Generate: 3 Hatred\r\n\r\nFire a magically imbued arrow that seeks
+      description: "Generate: 4 Hatred\r\n\r\nFire a magically imbued arrow that seeks
         out enemies for 155% weapon damage and has a 35% chance to pierce through
         them."
-      simpleDescription: "Generate: 3 Hatred\r\n\r\nFire a piercing arrow that seeks
+      simpleDescription: "Generate: 4 Hatred\r\n\r\nFire a piercing arrow that seeks
         additional enemies."
       skillCalcId: a
     rune:
@@ -81,8 +81,8 @@ skills:
       icon: demonhunter_passive_tacticaladvantage
       level: 10
       tooltipUrl: skill/demon-hunter/tactical-advantage
-      description: Whenever you use Vault, Smoke Screen, or backflip with Evasive
-        Fire you gain 60% movement speed for 2 seconds.
+      description: Whenever you use Vault, Shadow Power, Smoke Screen, or backflip
+        with Evasive Fire you gain 60% movement speed for 2 seconds.
       flavor: Never start a fair fight.
       skillCalcId: Z
   - {}

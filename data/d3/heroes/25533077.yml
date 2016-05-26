@@ -6,7 +6,7 @@ gender: 1
 level: 22
 kills:
   elites: 187
-paragonLevel: 256
+paragonLevel: 262
 hardcore: false
 seasonal: false
 seasonCreated: 0
@@ -66,7 +66,7 @@ skills:
       categorySlug: defensive
       tooltipUrl: skill/barbarian/leap
       description: "Generate: 15 Fury\r\nCooldown: 10 seconds\r\n\r\nLeap into the
-        air, dealing 180% weapon damage to all enemies within 8 yards of your destination
+        air, dealing 180% weapon damage to all enemies within 10 yards of your destination
         and slowing their movement speed by 60% for 3 seconds."
       simpleDescription: "Generate: 15 Fury\r\nCooldown: 10 seconds\r\n\r\nLeap towards
         enemies and attack them."
@@ -76,7 +76,7 @@ skills:
       type: d
       name: Iron Impact
       level: 14
-      description: Gain 50% additional Armor per enemy hit for 3 seconds after landing.
+      description: Gain 150% additional Armor for 4 seconds after landing.
       simpleDescription: Increase your Armor for a limited time after landing.
       tooltipParams: rune/leap/d
       skillCalcId: a
@@ -125,7 +125,7 @@ skills:
       categorySlug: rage
       tooltipUrl: skill/barbarian/earthquake
       description: "Cost: 25 Fury\r\nCooldown: 60 seconds\r\n\r\nShake the ground
-        violently, dealing 4200% weapon damage as Fire over 8 seconds to all enemies
+        violently, dealing 4800% weapon damage as Fire over 8 seconds to all enemies
         within 18 yards."
       simpleDescription: "Cost: 25 Fury\r\nCooldown: 60 seconds\r\n\r\nViolent tremors
         shake the earth and damage nearby enemies."

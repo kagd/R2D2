@@ -6,7 +6,7 @@ gender: 1
 level: 70
 kills:
   elites: 171
-paragonLevel: 256
+paragonLevel: 262
 hardcore: false
 seasonal: false
 seasonCreated: 2
@@ -238,7 +238,7 @@ stats:
   damageIncrease: 0.0
   critChance: 0.05000000075
   damageReduction: 0.0
-  thorns: 2488.0
+  thorns: 3107.0
   lifeSteal: 0.0
   lifePerKill: 4023.0
   goldFind: 0.8

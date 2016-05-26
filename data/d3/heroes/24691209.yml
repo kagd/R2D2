@@ -6,7 +6,7 @@ gender: 1
 level: 12
 kills:
   elites: 138
-paragonLevel: 0
+paragonLevel: 81
 hardcore: true
 seasonal: false
 seasonCreated: 0
@@ -91,7 +91,7 @@ skills:
       categorySlug: defensive
       tooltipUrl: skill/wizard/diamond-skin
       description: "Cooldown: 15 seconds\r\n\r\nTransform your skin to diamond for
-        3 seconds, absorbing up to 93337 damage from incoming attacks."
+        3 seconds, absorbing up to 40% of your Life in damage from incoming attacks."
       simpleDescription: "Cooldown: 15 seconds\r\n\r\nTransform your skin to diamond,
         temporarily absorbing damage for a short duration."
       skillCalcId: X

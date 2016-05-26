@@ -6,7 +6,7 @@ gender: 0
 level: 68
 kills:
   elites: 592
-paragonLevel: 256
+paragonLevel: 262
 hardcore: false
 seasonal: false
 seasonCreated: 0
@@ -138,7 +138,7 @@ skills:
       categorySlug: voodoo
       tooltipUrl: skill/witch-doctor/gargantuan
       description: "Cooldown: 60 seconds\r\n\r\nSummon a Gargantuan zombie to fight
-        for you. The Gargantuan attacks for 100% of your weapon damage as Physical."
+        for you. The Gargantuan attacks for 450% of your weapon damage as Physical."
       simpleDescription: "Cooldown: 60 seconds\r\n\r\nSummon a Gargantuan zombie to
         fight for you."
       skillCalcId: T
@@ -148,7 +148,7 @@ skills:
       name: Humongoid
       level: 22
       description: The Gargantuan gains the Cleave ability, allowing its attacks to
-        hit multiple enemies for 130% of your weapon damage as Cold.
+        hit multiple enemies for 585% of your weapon damage as Cold.
       simpleDescription: The Gargantuan gains the Cleave ability, allowing it to attack
         multiple enemies.
       tooltipParams: rune/gargantuan/b

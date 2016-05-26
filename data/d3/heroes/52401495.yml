@@ -5,8 +5,8 @@ class: demon-hunter
 gender: 0
 level: 70
 kills:
-  elites: 2729
-paragonLevel: 256
+  elites: 2833
+paragonLevel: 262
 hardcore: false
 seasonal: false
 seasonCreated: 1
@@ -19,10 +19,10 @@ skills:
       level: 1
       categorySlug: primary
       tooltipUrl: skill/demon-hunter/hungering-arrow
-      description: "Generate: 3 Hatred\r\n\r\nFire a magically imbued arrow that seeks
+      description: "Generate: 4 Hatred\r\n\r\nFire a magically imbued arrow that seeks
         out enemies for 155% weapon damage and has a 35% chance to pierce through
         them."
-      simpleDescription: "Generate: 3 Hatred\r\n\r\nFire a piercing arrow that seeks
+      simpleDescription: "Generate: 4 Hatred\r\n\r\nFire a piercing arrow that seeks
         additional enemies."
       skillCalcId: a
     rune:
@@ -348,7 +348,7 @@ items:
     name: Stone of Jordan
     icon: unique_ring_019_x1_demonhunter_male
     displayColor: orange
-    tooltipParams: item/CocBCOP_5bkNEgcIBBXHoDi5Hay801Mdf46HzB10RaeJHdzXvgQd8dNq1TCLEjijAkAAUBJYBGCjAmowCgwIABCxw7P5gICAgA4SIAjw9eSgBRIHCAQVbBejwTCLAjgAQABQElgEkAEA2AEGgAFGpQF0RaeJrQFmIwZQtQE2VV1EuAGNoO1uwAEBGPH8uuwIUABYAA
+    tooltipParams: item/CocBCOP_5bkNEgcIBBXHoDi5Hay801Mdf46HzB10RaeJHdzXvgQd8dNq1TCLEjijAkAAUBJYBGCjAmowCgwIABCxw7P5gICAgA4SIAjw9eSgBRIHCAQVbBejwTCLAjgAQABQElgEkAEA2AESgAFGpQF0RaeJrQFmIwZQtQE2VV1EuAGNoO1uwAEBGPH8uuwIUABYAA
   leftFinger:
     id: Unique_Ring_107_x1
     name: Ring of Royal Grandeur
@@ -551,9 +551,9 @@ legendaryPowers:
 - 
 stats:
   life: 353016
-  damage: 652460.0
-  toughness: 4641340.0
-  healing: 708376.0
+  damage: 654542.0
+  toughness: 4658530.0
+  healing: 710999.0
   attackSpeed: 1.4839999747276307
   armor: 13130
   strength: 77
@@ -573,7 +573,7 @@ stats:
   damageIncrease: 0.0
   critChance: 0.30500000075
   damageReduction: 0.0
-  thorns: 4901.0
+  thorns: 8185.0
   lifeSteal: 0.0
   lifePerKill: 0.0
   goldFind: 1.0499999999999998
@@ -676,4 +676,4 @@ progression:
     - slug: angel-of-death
       name: Angel of Death
 dead: false
-last-updated: 1442032837
+last-updated: 1452490826

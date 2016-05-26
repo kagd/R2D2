@@ -6,7 +6,7 @@ gender: 1
 level: 70
 kills:
   elites: 9755
-paragonLevel: 256
+paragonLevel: 262
 hardcore: false
 seasonal: false
 seasonCreated: 0
@@ -141,9 +141,9 @@ skills:
       tooltipUrl: skill/wizard/archon
       description: "Cooldown: 120 seconds\r\n\r\nTransform into a being of pure arcane
         energy for 20 seconds. While in Archon form, your normal abilities are replaced
-        by powerful Archon abilities and your damage, Armor and resistances are increased
-        by 20%.\r\n\r\nEach enemy killed while in Archon form increases your damage
-        by 6% for the remaining duration of Archon."
+        by powerful Archon abilities, your damage is increased by 30%, and your Armor
+        and resistances are increased by 150%.\r\n\r\nEach enemy killed while in Archon
+        form increases your damage by 6% for the remaining duration of Archon."
       simpleDescription: "Cooldown: 120 seconds\r\n\r\nBecome a being of pure energy
         and gain potent new abilities for 20 seconds."
       skillCalcId: m
@@ -524,7 +524,7 @@ stats:
   damageIncrease: 0.0
   critChance: 0.19000000075
   damageReduction: 0.0
-  thorns: 4673.0
+  thorns: 8885.0
   lifeSteal: 0.0
   lifePerKill: 4648.0
   goldFind: 0.69

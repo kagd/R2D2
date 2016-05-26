@@ -6,7 +6,7 @@ gender: 1
 level: 22
 kills:
   elites: 331
-paragonLevel: 0
+paragonLevel: 81
 hardcore: true
 seasonal: false
 seasonCreated: 0
@@ -71,7 +71,7 @@ skills:
       categorySlug: defensive
       tooltipUrl: skill/wizard/diamond-skin
       description: "Cooldown: 15 seconds\r\n\r\nTransform your skin to diamond for
-        3 seconds, absorbing up to 93337 damage from incoming attacks."
+        3 seconds, absorbing up to 40% of your Life in damage from incoming attacks."
       simpleDescription: "Cooldown: 15 seconds\r\n\r\nTransform your skin to diamond,
         temporarily absorbing damage for a short duration."
       skillCalcId: X
@@ -80,7 +80,7 @@ skills:
       type: c
       name: Crystal Shell
       level: 14
-      description: Increase the maximum amount of damage absorbed to 186675 damage.
+      description: Increase the maximum amount of damage absorbed to 80% of your Life.
       simpleDescription: Increase the maximum amount of damage absorbed.
       tooltipParams: rune/diamond-skin/c
       skillCalcId: a

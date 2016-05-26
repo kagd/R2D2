@@ -6,7 +6,7 @@ gender: 0
 level: 70
 kills:
   elites: 1924
-paragonLevel: 256
+paragonLevel: 262
 hardcore: false
 seasonal: false
 seasonCreated: 0
@@ -55,10 +55,8 @@ skills:
       type: a
       name: Crumble
       level: 39
-      description: Foes who are killed explode, dealing 660% weapon damage as Fire
-        to enemies behind them and knocking those enemies back.
-      simpleDescription: Foes who are killed explode, dealing Fire damage to enemies
-        behind them and knocking those enemies back.
+      description: Increases the weapon damage of Shield bash to 875%.
+      simpleDescription: Increases the weapon damage of Shield Bash.
       tooltipParams: rune/shield-bash/a
       skillCalcId: Y
       order: 3
@@ -510,9 +508,9 @@ stats:
   blockAmountMin: 15870
   blockAmountMax: 23805
   damageIncrease: 0.0
-  critChance: 0.47500000075
+  critChance: 0.47500000075000004
   damageReduction: 0.0
-  thorns: 6471.0
+  thorns: 10716.0
   lifeSteal: 0.0
   lifePerKill: 3456.0
   goldFind: 0.29000000000000004

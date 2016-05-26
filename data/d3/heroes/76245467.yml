@@ -1,0 +1,245 @@
+---
+id: 76245467
+name: Joboo
+class: witch-doctor
+gender: 0
+level: 70
+kills:
+  elites: 178
+paragonLevel: 127
+hardcore: false
+seasonal: true
+seasonCreated: 6
+skills:
+  active:
+  - skill:
+      slug: poison-dart
+      name: Poison Dart
+      icon: witchdoctor_poisondart
+      level: 1
+      categorySlug: primary
+      tooltipUrl: skill/witch-doctor/poison-dart
+      description: "This is a Signature spell. Signature spells are free to cast.\r\n\r\nShoot
+        a deadly Poison Dart that deals 185% weapon damage as Poison and an additional
+        40% weapon damage as Poison over 2 seconds."
+      simpleDescription: "Signature Spell\r\n\r\nShoot a deadly Poison Dart."
+      skillCalcId: a
+  - skill:
+      slug: grasp-of-the-dead
+      name: Grasp of the Dead
+      icon: witchdoctor_graspofthedead
+      level: 2
+      categorySlug: secondary
+      tooltipUrl: skill/witch-doctor/grasp-of-the-dead
+      description: "Cost: 150 Mana\r\nCooldown: 8 seconds\r\n\r\nGhoulish hands reach
+        out from the ground, slowing enemy movement by 60% and dealing 760% weapon
+        damage as Physical over 8 seconds."
+      simpleDescription: "Cost: 150 Mana\r\nCooldown: 8 seconds\r\n\r\nSummon ghoulish
+        hands from the ground that Slow and damage enemies."
+      skillCalcId: Z
+  - skill:
+      slug: summon-zombie-dogs
+      name: Summon Zombie Dogs
+      icon: witchdoctor_summonzombiedog
+      level: 4
+      categorySlug: defensive
+      tooltipUrl: skill/witch-doctor/summon-zombie-dogs
+      description: "Cooldown: 45 seconds\r\n\r\nSummon 3 Zombie Dogs from the depths
+        to fight by your side. Each dog deals 120% of your weapon damage as Physical
+        per hit."
+      simpleDescription: "Cooldown: 45 seconds\r\n\r\nSummon 3 Zombie Dogs to fight
+        by your side."
+      skillCalcId: Y
+  - skill:
+      slug: soul-harvest
+      name: Soul Harvest
+      icon: witchdoctor_soulharvest
+      level: 9
+      categorySlug: terror
+      tooltipUrl: skill/witch-doctor/soul-harvest
+      description: "Cooldown: 12 seconds\r\n\r\nFeed on the life force of enemies
+        within 18 yards. Gain 3% Intelligence for 30 seconds for each affected enemy.
+        This effect stacks up to 5 times."
+      simpleDescription: "Cooldown: 12 seconds\r\n\r\nFeed on the life force of enemies
+        to increase your Intelligence for 30 seconds."
+      skillCalcId: d
+  - skill:
+      slug: zombie-charger
+      name: Zombie Charger
+      icon: witchdoctor_zombiecharger
+      level: 14
+      categorySlug: decay
+      tooltipUrl: skill/witch-doctor/zombie-charger
+      description: "Cost: 150 Mana\r\n\r\nCall forth a reckless, suicidal zombie that
+        deals 560% weapon damage as Poison to all enemies in its path before decomposing."
+      simpleDescription: "Cost: 150 Mana\r\n\r\nRaise a zombie that charges enemies
+        in its path before decomposing."
+      skillCalcId: f
+  - skill:
+      slug: gargantuan
+      name: Gargantuan
+      icon: witchdoctor_gargantuan
+      level: 19
+      categorySlug: voodoo
+      tooltipUrl: skill/witch-doctor/gargantuan
+      description: "Cooldown: 60 seconds\r\n\r\nSummon a Gargantuan zombie to fight
+        for you. The Gargantuan attacks for 450% of your weapon damage as Physical."
+      simpleDescription: "Cooldown: 60 seconds\r\n\r\nSummon a Gargantuan zombie to
+        fight for you."
+      skillCalcId: T
+  passive:
+  - {}
+  - {}
+  - {}
+  - {}
+items:
+  head:
+    id: Unique_Helm_006_x1
+    name: Mempo of Twilight
+    icon: unique_helm_006_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/ClEIiZTBlAsSBwgEFVml7RMdoSncBR1yjh0hHTsnbyQdZiMGUB1-dlWhHfNwB60wiVI4iQNAAFASWAZgiQOAAUa1AX_5Tl3IAfOSkwTIAbOS9QMYspXtvgJQBlgA
+  torso:
+    id: P4_Unique_Chest_012
+    name: Aquila Cuirass
+    icon: p4_unique_chest_012_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CkwI1sLEjwsSBwgEFeJOJ0UdrNOZOR07J28kHVi3G5UdcyMGUB2bhvbiMIlSOPICQABQElgGYPICgAFGtQExIhlgyAHzkpMEyAGzkvUDGMS7utIIUAZYAA
+  feet:
+    id: Boots_208
+    name: Wander Sense
+    icon: boots_208_witchdoctor_male
+    displayColor: yellow
+    tooltipParams: item/CkkI2MqOqggSBwgEFaBFm38dCGO0lR1a0ZldHeri5AUdkpTcCB1wi3fwHelwL7siCwgBFXJCAwAYGCAAMIlSOOwEQABIElAQYOwEGMCW2vkPUAZYAA
+    dyeColor:
+      item:
+        id: Dye_01
+        name: Tanner's Dye
+        icon: dye_01_demonhunter_male
+        displayColor: white
+        tooltipParams: item/tanners-dye
+  hands:
+    id: Unique_Gloves_Set_02_p3
+    name: Arachyr’s Claws
+    icon: unique_gloves_set_02_p3_demonhunter_male
+    displayColor: green
+    tooltipParams: item/ClEI-_7QyQwSBwgEFXTxrnodOLLA1R2svNNTHbi8IHod0p-eRB1-VrMuHfNwB60wiVI4uwNAAFASWAZguwOAAUa1AclbkqTIAbOS9QPIAfOSkwQY6MX3qg9QBlgAoAHrmIjiDqAB6MX3qg8
+    setItemsEquipped:
+    - Unique_Gloves_Set_02_p3
+    - Unique_Shoulder_Set_02_p3
+  shoulders:
+    id: Unique_Shoulder_Set_02_p3
+    name: Arachyr’s Mantle
+    icon: unique_shoulder_set_02_p3_demonhunter_male
+    displayColor: green
+    tooltipParams: item/ClEI9cmLkg0SBwgEFcr53okdP_IJ2B1xi3fwHZztZwAdQ05EUR07J28kHZuG9uIwiVI45QJAAFASWAZg5QKAAUa1AdL4yBXIAfOSkwTIAbOS9QMY65iI4g5QBlgAoAHrmIjiDqAB6MX3qg8
+    setItemsEquipped:
+    - Unique_Gloves_Set_02_p3
+    - Unique_Shoulder_Set_02_p3
+  legs:
+    id: Unique_Pants_007_p2
+    name: Pox Faulds
+    icon: unique_pants_007_p2_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CkwItt2gjQoSBwgEFZOE2dEdRXvG3R1DTkRRHeLaKtAdOJ3kBB2bhvbiMIlSOPICQABQElgGYPICgAFGtQGfktWlyAGzkvUDyAHzkpMEGNnts-IFUAZYAA
+  bracers:
+    id: Unique_Bracer_101_x1
+    name: Warzechian Armguards
+    icon: unique_bracer_101_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CksIupeoQRIHCAQVfrhaOR3c174EHYQDodYd5hXbDR1xi3fwHdw7U2gwiVo4hgJAAFASWAZghgKAAUa1AdssysvIAbOS9QPIAfOSkwQY_OHVlQdQBlgA
+  mainHand:
+    id: P4_Unique_CeremonialDagger_008
+    name: Last Breath
+    icon: p4_unique_ceremonialdagger_008_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CkwI0oWB0QESBwgEFdkYLkAdG13PRB2cBgDLHUXgTSId5G_MhB30cAetMIlaOLYDQABQElgGYLYDgAFGtQH1miLayAHzkpMEyAGzkvUDGLLj8IIIUAZYAA
+  offHand:
+    id: Unique_Mojo_011_x1
+    name: Zunimassa's String of Skulls
+    icon: unique_mojo_011_x1_demonhunter_male
+    displayColor: green
+    tooltipParams: item/ClEIi72LogUSBwgEFUT9wMYdco4dIR2wgiblHVtBnqwdflazLh2bBgDLHfNwB60wiVI4mwNAAFASWAZgmwOAAUa1ASxh2PfIAfOSkwTIAbOS9QMY94r4kwdQBlgAoAH3iviTBw
+    setItemsEquipped:
+    - Unique_Mojo_011_x1
+  waist:
+    id: P4_Unique_Belt_03
+    name: String of Ears
+    icon: p4_unique_belt_03_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CkwI6pTz8gkSBwgEFYLGMFgdco4dIR1nPuzkHTsnbyQdQ05EUR2pIDa6MIlSOLYDQABQElgGYLYDgAFGtQHAp0LUyAHzkpMEyAGzkvUDGISahoMLUAZYAA
+  rightFinger:
+    id: Unique_Ring_103_x1
+    name: Rogar's Huge Stone
+    icon: unique_ring_103_x1_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/CkwIz5e2vgcSBwgEFaFmeLsdP_IJ2B2L8XpCHWc-7OQdQ05EUR2bhvbiMIlSOOcCQABQElgGYOcCgAFGtQE2VV1EyAHzkpMEyAGzkvUDGL3lvMgIUAZYAA
+  leftFinger:
+    id: Unique_Ring_017_p4
+    name: Oculus Ring
+    icon: unique_ring_017_p4_demonhunter_male
+    displayColor: orange
+    tooltipParams: item/Cn4IyraNxw0SBwgEFQCHN7kd89VHtB2Yp47AHYvxekIdm4b24h1mIwZQMIlSOOYCQABQElgGYOYCajAKDAgAEOPE75iFgICAExIgCPSO8uYMEgcIBBWHWaDBMItSOABAAFASWASQAQbYAQiAAUa1ATZVXUTIAfOSkwTIAbOS9QMY_-PD7AhQBlgA
+  neck:
+    id: Unique_Amulet_008_x1
+    name: The Traveler's Pledge
+    icon: unique_amulet_008_x1_demonhunter_male
+    displayColor: green
+    tooltipParams: item/ClEIndbgtwwSBwgEFR13Clsdlz-d2h1Fe8bdHXRFp4kdfnZVoR2wwQlyHfNwB60wiVI43QJAAFASWAZg3QKAAUa1AbDFRGTIAfOSkwTIAbOS9QMYutzTsAtQBlgAoAG63NOwCw
+    setItemsEquipped:
+    - Unique_Amulet_008_x1
+followers: {}
+legendaryPowers:
+- 
+- 
+- 
+stats:
+  life: 529812
+  damage: 413047.0
+  toughness: 6780820.0
+  healing: 656368.0
+  attackSpeed: 1.399999976158142
+  armor: 6002
+  strength: 527
+  dexterity: 77
+  vitality: 4136
+  intelligence: 7312
+  physicalResist: 1358
+  fireResist: 1200
+  coldResist: 1200
+  lightningResist: 1200
+  poisonResist: 1357
+  arcaneResist: 1501
+  critDamage: 2.58
+  blockChance: 0.0
+  blockAmountMin: 0
+  blockAmountMax: 0
+  damageIncrease: 0.0
+  critChance: 0.30500000075
+  damageReduction: 0.0
+  thorns: 2614.0
+  lifeSteal: 0.0
+  lifePerKill: 0.0
+  goldFind: 1.46
+  magicFind: 0.0
+  lifeOnHit: 31726.0
+  primaryResource: 750
+  secondaryResource: 0
+progression:
+  act1:
+    completed: false
+    completedQuests: []
+  act2:
+    completed: false
+    completedQuests: []
+  act3:
+    completed: false
+    completedQuests: []
+  act4:
+    completed: false
+    completedQuests: []
+  act5:
+    completed: false
+    completedQuests: []
+dead: false
+last-updated: 1463373639

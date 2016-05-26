@@ -6,7 +6,7 @@ gender: 0
 level: 70
 kills:
   elites: 8443
-paragonLevel: 256
+paragonLevel: 262
 hardcore: false
 seasonal: false
 seasonCreated: 0
@@ -110,18 +110,18 @@ skills:
       categorySlug: tactics
       tooltipUrl: skill/barbarian/war-cry
       description: "Generate: 20 Fury\r\nCooldown: 20 seconds\r\n\r\nUnleash a rallying
-        cry to increase Armor for you and all allies within 100 yards by 20% for 60
+        cry to increase Armor for you and all allies within 100 yards by 20% for 120
         seconds."
       simpleDescription: "Generate: 20 Fury\r\nCooldown: 20 seconds\r\n\r\nA rallying
-        cry increases Armor for you and your allies for 60 seconds."
+        cry increases Armor for you and your allies for 120 seconds."
       skillCalcId: k
     rune:
       slug: war-cry-a
       type: a
       name: Hardened Wrath
       level: 32
-      description: Increase the Armor bonus to 40%.
-      simpleDescription: Increase the Armor bonus of War Cry.
+      description: For the first 5 seconds, gain an additional 60% increased Armor.
+      simpleDescription: For the first few seconds, gain additional Armor.
       tooltipParams: rune/war-cry/a
       skillCalcId: a
       order: 0
@@ -521,7 +521,7 @@ stats:
   damageIncrease: 0.0
   critChance: 0.21000000075
   damageReduction: 0.0
-  thorns: 1832.0
+  thorns: 2692.0
   lifeSteal: 0.0
   lifePerKill: 0.0
   goldFind: 0.6499999999999999

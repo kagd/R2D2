@@ -6,7 +6,7 @@ gender: 0
 level: 35
 kills:
   elites: 36
-paragonLevel: 256
+paragonLevel: 262
 hardcore: false
 seasonal: false
 seasonCreated: 3
@@ -83,7 +83,7 @@ skills:
       categorySlug: rage
       tooltipUrl: skill/barbarian/earthquake
       description: "Cost: 25 Fury\r\nCooldown: 60 seconds\r\n\r\nShake the ground
-        violently, dealing 4200% weapon damage as Fire over 8 seconds to all enemies
+        violently, dealing 4800% weapon damage as Fire over 8 seconds to all enemies
         within 18 yards."
       simpleDescription: "Cost: 25 Fury\r\nCooldown: 60 seconds\r\n\r\nViolent tremors
         shake the earth and damage nearby enemies."
