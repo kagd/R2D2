@@ -16,3 +16,5 @@ set :branch,    'master'
 
 set :rvm_ruby_version, "2.2.1@#{ fetch :application } --create"
 set :rvm_roles, [:app, :web]
+
+after :'deploy:published', :'update:all'
