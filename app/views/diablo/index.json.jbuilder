@@ -1,5 +1,6 @@
 json.heroes do
   json.array! @heroes do |hero|
+    json.id hero['id']
     json.name hero['name']
     json.gender (hero['gender'] == 0 ? 'male' : 'female')
     json.class hero['class']
